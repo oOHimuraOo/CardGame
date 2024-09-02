@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://boo6e78wmxt38"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Carta/Maquina de comportamento/Comportamento/Script/atropelar.gd" id="1_oel5x"]
+
+[node name="Atropelar" type="Node"]
+script = ExtResource("1_oel5x")

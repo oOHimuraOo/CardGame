@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=3 uid="uid://8i5y40j57hru"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/borda_historico_info.gd" id="1_13l6k"]
+[ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="2_rtit8"]
+
+[sub_resource type="Gradient" id="Gradient_120sb"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0.501961, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_13t8s"]
+gradient = SubResource("Gradient_120sb")
+
+[sub_resource type="Gradient" id="Gradient_vh8my"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.619608, 0.478431, 0, 0.392157)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_il02k"]
+gradient = SubResource("Gradient_vh8my")
+
+[node name="BordaHistoricoInfo" type="NinePatchRect"]
+custom_minimum_size = Vector2(200, 0)
+texture = SubResource("GradientTexture1D_13t8s")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+script = ExtResource("1_13l6k")
+
+[node name="Marginalizador" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="OrganizadorDeMiolo" type="VBoxContainer" parent="Marginalizador"]
+layout_mode = 2
+
+[node name="ImagemRaca" type="TextureRect" parent="Marginalizador/OrganizadorDeMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("2_rtit8")
+expand_mode = 1
+
+[node name="EtiquetaNome" type="Label" parent="Marginalizador/OrganizadorDeMiolo"]
+layout_mode = 2
+text = "Nome da raca"
+
+[node name="OrganizadorQuantidadeBanidas" type="HBoxContainer" parent="Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="ImagemIconeBanidas" type="TextureRect" parent="Marginalizador/OrganizadorDeMiolo/OrganizadorQuantidadeBanidas"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+
+[node name="EtiquetaQuantidadeBanidas" type="Label" parent="Marginalizador/OrganizadorDeMiolo/OrganizadorQuantidadeBanidas"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Banidas"
+
+[node name="BotaoHistoriaSelecionada" type="TextureButton" parent="Marginalizador"]
+layout_mode = 2
+texture_hover = SubResource("GradientTexture1D_il02k")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Marginalizador/BotaoHistoriaSelecionada" to="." method="quando_botao_historia_selecionada_pressionada"]

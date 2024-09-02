@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://dc2ccqim7uhj7"]
+
+[ext_resource type="Script" path="res://Interface do servidor/Script/interface_do_servidor_base.gd" id="1_bge88"]
+[ext_resource type="Script" path="res://Interface do servidor/Script/Enviando.gd" id="2_r0bhk"]
+[ext_resource type="Script" path="res://Interface do servidor/Script/Recebendo.gd" id="3_cac2e"]
+[ext_resource type="Script" path="res://Interface do servidor/Script/Iniciando.gd" id="4_6575g"]
+[ext_resource type="Script" path="res://Interface do servidor/Script/Finalizando.gd" id="5_rukp8"]
+
+[node name="SERVER" type="Node"]
+script = ExtResource("1_bge88")
+
+[node name="Enviando" type="Node" parent="."]
+script = ExtResource("2_r0bhk")
+
+[node name="Recebendo" type="Node" parent="."]
+script = ExtResource("3_cac2e")
+
+[node name="Iniciando" type="Node" parent="."]
+script = ExtResource("4_6575g")
+
+[node name="Finalizando" type="Node" parent="."]
+script = ExtResource("5_rukp8")

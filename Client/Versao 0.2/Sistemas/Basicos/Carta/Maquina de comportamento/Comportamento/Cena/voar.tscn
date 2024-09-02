@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx4mbkry5jfmt"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Carta/Maquina de comportamento/Comportamento/Script/voar.gd" id="1_ot8ry"]
+
+[node name="Voar" type="Node"]
+script = ExtResource("1_ot8ry")

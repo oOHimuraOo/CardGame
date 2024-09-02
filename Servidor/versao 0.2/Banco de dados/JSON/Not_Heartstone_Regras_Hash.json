@@ -1,0 +1,728 @@
+{
+  "regra0": {
+	"0": {
+	  "letra": "a",
+	  "novo_valor": "s"
+	},
+	"1": {
+	  "letra": "b",
+	  "novo_valor": "j"
+	},
+	"2": {
+	  "letra": "c",
+	  "novo_valor": "5"
+	},
+	"3": {
+	  "letra": "d",
+	  "novo_valor": "P"
+	},
+	"4": {
+	  "letra": "e",
+	  "novo_valor": "9"
+	},
+	"5": {
+	  "letra": "f",
+	  "novo_valor": "8"
+	},
+	"6": {
+	  "letra": "g",
+	  "novo_valor": "6"
+	},
+	"7": {
+	  "letra": "h",
+	  "novo_valor": "F"
+	},
+	"8": {
+	  "letra": "i",
+	  "novo_valor": "y"
+	},
+	"9": {
+	  "letra": "j",
+	  "novo_valor": "X"
+	},
+	"10": {
+	  "letra": "l",
+	  "novo_valor": "B"
+	},
+	"11": {
+	  "letra": "m",
+	  "novo_valor": "p"
+	},
+	"12": {
+	  "letra": "n",
+	  "novo_valor": "9"
+	},
+	"13": {
+	  "letra": "o",
+	  "novo_valor": "m"
+	},
+	"14": {
+	  "letra": "p",
+	  "novo_valor": "t"
+	},
+	"15": {
+	  "letra": "q",
+	  "novo_valor": "Z"
+	},
+	"16": {
+	  "letra": "r",
+	  "novo_valor": "M"
+	},
+	"17": {
+	  "letra": "s",
+	  "novo_valor": "i"
+	},
+	"18": {
+	  "letra": "t",
+	  "novo_valor": "9"
+	},
+	"19": {
+	  "letra": "u",
+	  "novo_valor": "s"
+	},
+	"20": {
+	  "letra": "v",
+	  "novo_valor": "8"
+	},
+	"21": {
+	  "letra": "w",
+	  "novo_valor": "l"
+	},
+	"22": {
+	  "letra": "x",
+	  "novo_valor": "Q"
+	},
+	"23": {
+	  "letra": "y",
+	  "novo_valor": "A"
+	},
+	"24": {
+	  "letra": "z",
+	  "novo_valor": "Y"
+	},
+	"25": {
+	  "letra": "1",
+	  "novo_valor": "2"
+	},
+	"26": {
+	  "letra": "2",
+	  "novo_valor": "o"
+	},
+	"27": {
+	  "letra": "3",
+	  "novo_valor": "l"
+	},
+	"28": {
+	  "letra": "4",
+	  "novo_valor": "z"
+	},
+	"29": {
+	  "letra": "5",
+	  "novo_valor": "s"
+	},
+	"30": {
+	  "letra": "6",
+	  "novo_valor": "j"
+	},
+	"31": {
+	  "letra": "7",
+	  "novo_valor": "2"
+	},
+	"32": {
+	  "letra": "8",
+	  "novo_valor": "y"
+	},
+	"33": {
+	  "letra": "9",
+	  "novo_valor": "9"
+	},
+	"34": {
+	  "letra": "0",
+	  "novo_valor": "D"
+	},
+	"35": {
+	  "letra": "A",
+	  "novo_valor": "j"
+	},
+	"36": {
+	  "letra": "B",
+	  "novo_valor": "R"
+	},
+	"37": {
+	  "letra": "C",
+	  "novo_valor": "o"
+	},
+	"38": {
+	  "letra": "D",
+	  "novo_valor": "E"
+	},
+	"39": {
+	  "letra": "E",
+	  "novo_valor": "y"
+	},
+	"40": {
+	  "letra": "F",
+	  "novo_valor": "M"
+	},
+	"41": {
+	  "letra": "G",
+	  "novo_valor": "I"
+	},
+	"42": {
+	  "letra": "H",
+	  "novo_valor": "M"
+	},
+	"43": {
+	  "letra": "I",
+	  "novo_valor": "H"
+	},
+	"44": {
+	  "letra": "J",
+	  "novo_valor": "W"
+	},
+	"45": {
+	  "letra": "L",
+	  "novo_valor": "J"
+	},
+	"46": {
+	  "letra": "M",
+	  "novo_valor": "G"
+	},
+	"47": {
+	  "letra": "N",
+	  "novo_valor": "0"
+	},
+	"48": {
+	  "letra": "O",
+	  "novo_valor": "U"
+	},
+	"49": {
+	  "letra": "P",
+	  "novo_valor": "z"
+	},
+	"50": {
+	  "letra": "Q",
+	  "novo_valor": "G"
+	},
+	"51": {
+	  "letra": "R",
+	  "novo_valor": "U"
+	},
+	"52": {
+	  "letra": "S",
+	  "novo_valor": "T"
+	},
+	"53": {
+	  "letra": "T",
+	  "novo_valor": "E"
+	},
+	"54": {
+	  "letra": "U",
+	  "novo_valor": "z"
+	},
+	"55": {
+	  "letra": "V",
+	  "novo_valor": "x"
+	},
+	"56": {
+	  "letra": "W",
+	  "novo_valor": "M"
+	},
+	"57": {
+	  "letra": "X",
+	  "novo_valor": "A"
+	},
+	"58": {
+	  "letra": "Y",
+	  "novo_valor": "l"
+	},
+	"59": {
+	  "letra": "Z",
+	  "novo_valor": "Y"
+	}
+  },
+  "regra1": {
+	"0": {
+	  "letra": "a",
+	  "novo_valor": 3
+	},
+	"1": {
+	  "letra": "b",
+	  "novo_valor": 1
+	},
+	"2": {
+	  "letra": "c",
+	  "novo_valor": -1
+	},
+	"3": {
+	  "letra": "d",
+	  "novo_valor": 5
+	},
+	"4": {
+	  "letra": "e",
+	  "novo_valor": 1
+	},
+	"5": {
+	  "letra": "f",
+	  "novo_valor": 3
+	},
+	"6": {
+	  "letra": "g",
+	  "novo_valor": 3
+	},
+	"7": {
+	  "letra": "h",
+	  "novo_valor": 3
+	},
+	"8": {
+	  "letra": "i",
+	  "novo_valor": 5
+	},
+	"9": {
+	  "letra": "j",
+	  "novo_valor": 2
+	},
+	"10": {
+	  "letra": "l",
+	  "novo_valor": 3
+	},
+	"11": {
+	  "letra": "m",
+	  "novo_valor": 3
+	},
+	"12": {
+	  "letra": "n",
+	  "novo_valor": 3
+	},
+	"13": {
+	  "letra": "o",
+	  "novo_valor": -1
+	},
+	"14": {
+	  "letra": "p",
+	  "novo_valor": 1
+	},
+	"15": {
+	  "letra": "q",
+	  "novo_valor": 3
+	},
+	"16": {
+	  "letra": "r",
+	  "novo_valor": 2
+	},
+	"17": {
+	  "letra": "s",
+	  "novo_valor": 2
+	},
+	"18": {
+	  "letra": "t",
+	  "novo_valor": 0
+	},
+	"19": {
+	  "letra": "u",
+	  "novo_valor": 3
+	},
+	"20": {
+	  "letra": "v",
+	  "novo_valor": 4
+	},
+	"21": {
+	  "letra": "w",
+	  "novo_valor": 1
+	},
+	"22": {
+	  "letra": "x",
+	  "novo_valor": 5
+	},
+	"23": {
+	  "letra": "y",
+	  "novo_valor": 0
+	},
+	"24": {
+	  "letra": "z",
+	  "novo_valor": 1
+	},
+	"25": {
+	  "letra": "1",
+	  "novo_valor": 3
+	},
+	"26": {
+	  "letra": "2",
+	  "novo_valor": 1
+	},
+	"27": {
+	  "letra": "3",
+	  "novo_valor": 3
+	},
+	"28": {
+	  "letra": "4",
+	  "novo_valor": 5
+	},
+	"29": {
+	  "letra": "5",
+	  "novo_valor": 1
+	},
+	"30": {
+	  "letra": "6",
+	  "novo_valor": 3
+	},
+	"31": {
+	  "letra": "7",
+	  "novo_valor": 3
+	},
+	"32": {
+	  "letra": "8",
+	  "novo_valor": 4
+	},
+	"33": {
+	  "letra": "9",
+	  "novo_valor": 3
+	},
+	"34": {
+	  "letra": "0",
+	  "novo_valor": 2
+	},
+	"35": {
+	  "letra": "A",
+	  "novo_valor": 2
+	},
+	"36": {
+	  "letra": "B",
+	  "novo_valor": -1
+	},
+	"37": {
+	  "letra": "C",
+	  "novo_valor": 3
+	},
+	"38": {
+	  "letra": "D",
+	  "novo_valor": 1
+	},
+	"39": {
+	  "letra": "E",
+	  "novo_valor": 3
+	},
+	"40": {
+	  "letra": "F",
+	  "novo_valor": 1
+	},
+	"41": {
+	  "letra": "G",
+	  "novo_valor": 0
+	},
+	"42": {
+	  "letra": "H",
+	  "novo_valor": 3
+	},
+	"43": {
+	  "letra": "I",
+	  "novo_valor": 3
+	},
+	"44": {
+	  "letra": "J",
+	  "novo_valor": 1
+	},
+	"45": {
+	  "letra": "L",
+	  "novo_valor": 3
+	},
+	"46": {
+	  "letra": "M",
+	  "novo_valor": 0
+	},
+	"47": {
+	  "letra": "N",
+	  "novo_valor": 1
+	},
+	"48": {
+	  "letra": "O",
+	  "novo_valor": 3
+	},
+	"49": {
+	  "letra": "P",
+	  "novo_valor": 1
+	},
+	"50": {
+	  "letra": "Q",
+	  "novo_valor": 5
+	},
+	"51": {
+	  "letra": "R",
+	  "novo_valor": 0
+	},
+	"52": {
+	  "letra": "S",
+	  "novo_valor": 3
+	},
+	"53": {
+	  "letra": "T",
+	  "novo_valor": 5
+	},
+	"54": {
+	  "letra": "U",
+	  "novo_valor": 0
+	},
+	"55": {
+	  "letra": "V",
+	  "novo_valor": 3
+	},
+	"56": {
+	  "letra": "W",
+	  "novo_valor": -1
+	},
+	"57": {
+	  "letra": "X",
+	  "novo_valor": 4
+	},
+	"58": {
+	  "letra": "Y",
+	  "novo_valor": 4
+	},
+	"59": {
+	  "letra": "Z",
+	  "novo_valor": 4
+	}
+  },
+  "regra2": {
+	"0": {
+	  "palavra_1": "ponte",
+	  "palavra_2": "cadeira"
+	},
+	"1": {
+	  "palavra_1": "dinheiro",
+	  "palavra_2": "bebida"
+	},
+	"2": {
+	  "palavra_1": "sol",
+	  "palavra_2": "janela"
+	},
+	"3": {
+	  "palavra_1": "estrada",
+	  "palavra_2": "história"
+	},
+	"4": {
+	  "palavra_1": "leite",
+	  "palavra_2": "floresta"
+	},
+	"5": {
+	  "palavra_1": "oásis",
+	  "palavra_2": "loja"
+	},
+	"6": {
+	  "palavra_1": "trabalho",
+	  "palavra_2": "mar"
+	},
+	"7": {
+	  "palavra_1": "mar",
+	  "palavra_2": "cozinha"
+	},
+	"8": {
+	  "palavra_1": "árvore",
+	  "palavra_2": "navio"
+	},
+	"9": {
+	  "palavra_1": "lago",
+	  "palavra_2": "produto"
+	},
+	"10": {
+	  "palavra_1": "bicicleta",
+	  "palavra_2": "esporte"
+	},
+	"11": {
+	  "palavra_1": "manteiga",
+	  "palavra_2": "estrada"
+	},
+	"12": {
+	  "palavra_1": "legume",
+	  "palavra_2": "computador"
+	},
+	"13": {
+	  "palavra_1": "estrada",
+	  "palavra_2": "história"
+	},
+	"14": {
+	  "palavra_1": "peixe",
+	  "palavra_2": "rio"
+	},
+	"15": {
+	  "palavra_1": "deserto",
+	  "palavra_2": "negócio"
+	},
+	"16": {
+	  "palavra_1": "teatro",
+	  "palavra_2": "cidade"
+	},
+	"17": {
+	  "palavra_1": "queijo",
+	  "palavra_2": "montanha"
+	},
+	"18": {
+	  "palavra_1": "vôlei",
+	  "palavra_2": "trovão"
+	},
+	"19": {
+	  "palavra_1": "pintura",
+	  "palavra_2": "nuvem"
+	},
+	"20": {
+	  "palavra_1": "peixe",
+	  "palavra_2": "sol"
+	},
+	"21": {
+	  "palavra_1": "poema",
+	  "palavra_2": "porta"
+	},
+	"22": {
+	  "palavra_1": "gato",
+	  "palavra_2": "lua"
+	},
+	"23": {
+	  "palavra_1": "carro",
+	  "palavra_2": "floresta"
+	},
+	"24": {
+	  "palavra_1": "ponte",
+	  "palavra_2": "arte"
+	},
+	"25": {
+	  "palavra_1": "loja",
+	  "palavra_2": "janela"
+	},
+	"26": {
+	  "palavra_1": "navio",
+	  "palavra_2": "vôlei"
+	},
+	"27": {
+	  "palavra_1": "floresta",
+	  "palavra_2": "música"
+	},
+	"28": {
+	  "palavra_1": "legume",
+	  "palavra_2": "carro"
+	},
+	"29": {
+	  "palavra_1": "cozinha",
+	  "palavra_2": "praia"
+	},
+	"30": {
+	  "palavra_1": "pão",
+	  "palavra_2": "legume"
+	},
+	"31": {
+	  "palavra_1": "lua",
+	  "palavra_2": "professor"
+	},
+	"32": {
+	  "palavra_1": "bicicleta",
+	  "palavra_2": "esporte"
+	},
+	"33": {
+	  "palavra_1": "jardim",
+	  "palavra_2": "compra"
+	},
+	"34": {
+	  "palavra_1": "restaurante",
+	  "palavra_2": "ponte"
+	},
+	"35": {
+	  "palavra_1": "arte",
+	  "palavra_2": "lua"
+	},
+	"36": {
+	  "palavra_1": "brincadeira",
+	  "palavra_2": "jardim"
+	},
+	"37": {
+	  "palavra_1": "água",
+	  "palavra_2": "mar"
+	},
+	"38": {
+	  "palavra_1": "ciclismo",
+	  "palavra_2": "oásis"
+	},
+	"39": {
+	  "palavra_1": "dança",
+	  "palavra_2": "vento"
+	},
+	"40": {
+	  "palavra_1": "professor",
+	  "palavra_2": "mar"
+	},
+	"41": {
+	  "palavra_1": "cachorro",
+	  "palavra_2": "neve"
+	},
+	"42": {
+	  "palavra_1": "caderno",
+	  "palavra_2": "peixe"
+	},
+	"43": {
+	  "palavra_1": "dança",
+	  "palavra_2": "vento"
+	},
+	"44": {
+	  "palavra_1": "cliente",
+	  "palavra_2": "água"
+	},
+	"45": {
+	  "palavra_1": "ponte",
+	  "palavra_2": "arte"
+	},
+	"46": {
+	  "palavra_1": "fruta",
+	  "palavra_2": "relâmpago"
+	},
+	"47": {
+	  "palavra_1": "neve",
+	  "palavra_2": "floresta"
+	},
+	"48": {
+	  "palavra_1": "esporte",
+	  "palavra_2": "mesa"
+	},
+	"49": {
+	  "palavra_1": "cliente",
+	  "palavra_2": "porta"
+	},
+	"50": {
+	  "palavra_1": "ponte",
+	  "palavra_2": "cidade"
+	},
+	"51": {
+	  "palavra_1": "fruta",
+	  "palavra_2": "ponte"
+	},
+	"52": {
+	  "palavra_1": "trovão",
+	  "palavra_2": "computador"
+	},
+	"53": {
+	  "palavra_1": "cadeira",
+	  "palavra_2": "telefone"
+	},
+	"54": {
+	  "palavra_1": "mesa",
+	  "palavra_2": "janela"
+	},
+	"55": {
+	  "palavra_1": "tempestade",
+	  "palavra_2": "montanha"
+	},
+	"56": {
+	  "palavra_1": "foguete",
+	  "palavra_2": "cidade"
+	},
+	"57": {
+	  "palavra_1": "peixe",
+	  "palavra_2": "cachorro"
+	},
+	"58": {
+	  "palavra_1": "oásis",
+	  "palavra_2": "rio"
+	},
+	"59": {
+	  "palavra_1": "vôlei",
+	  "palavra_2": "vinho"
+	}
+  }
+}

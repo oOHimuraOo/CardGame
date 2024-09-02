@@ -1,0 +1,3 @@
+class_name RENASCER
+extends COMPORTAMENTO_BASE
+

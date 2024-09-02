@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://btg61ylgh8qak"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Script/Client.gd" id="1_2pklp"]
+[ext_resource type="PackedScene" uid="uid://2teiyh4e2uc2" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Cena Matriz/gerenciador_de_interfaces.tscn" id="2_yy5kq"]
+
+[node name="Client" type="Node" groups=["Client"]]
+script = ExtResource("1_2pklp")
+
+[node name="GerenciadorDeInterfaces" parent="." instance=ExtResource("2_yy5kq")]

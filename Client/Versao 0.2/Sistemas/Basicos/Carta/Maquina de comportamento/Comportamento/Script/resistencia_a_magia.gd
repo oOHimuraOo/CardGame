@@ -1,0 +1,4 @@
+class_name RESISTENCIA_A_MAGIA
+extends COMPORTAMENTO_BASE
+
+

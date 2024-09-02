@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxo737w2r5eea"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Construtor de deck/Script/carta_lista.gd" id="1_fpyya"]
+
+[sub_resource type="Gradient" id="Gradient_dr3qp"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0.509804, 0.14902)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_i6xix"]
+gradient = SubResource("Gradient_dr3qp")
+
+[sub_resource type="Gradient" id="Gradient_hdcmt"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.45098, 0.341176, 0, 0.32549)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_8k43m"]
+gradient = SubResource("Gradient_hdcmt")
+
+[node name="CartaLista" type="TextureButton"]
+custom_minimum_size = Vector2(0, 50)
+size_flags_horizontal = 3
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_i6xix")
+texture_hover = SubResource("GradientTexture1D_8k43m")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("1_fpyya")
+
+[node name="OrganizadorCartaLista" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+offset_top = 5.0
+offset_right = 500.0
+offset_bottom = 55.0
+
+[node name="ImagemIconeRaca" type="TextureRect" parent="OrganizadorCartaLista"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+
+[node name="EtiquetaAbreviacaoRaca" type="Label" parent="OrganizadorCartaLista/ImagemIconeRaca"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "MV"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ImagemIconeCusto" type="TextureRect" parent="OrganizadorCartaLista"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+
+[node name="EtiquetaCusto" type="Label" parent="OrganizadorCartaLista/ImagemIconeCusto"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "9
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NomeDaCarta" type="Label" parent="OrganizadorCartaLista"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Nome da carta"
+horizontal_alignment = 1
+vertical_alignment = 1

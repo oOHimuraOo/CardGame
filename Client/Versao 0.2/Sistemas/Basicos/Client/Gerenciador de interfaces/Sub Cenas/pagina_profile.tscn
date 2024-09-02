@@ -1,0 +1,159 @@
+[gd_scene load_steps=7 format=3 uid="uid://b2vg2hso3hfu0"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/pagina_profile_base.gd" id="1_31gfr"]
+[ext_resource type="PackedScene" uid="uid://cqv0gxtia03fu" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/borda_heroi_info.tscn" id="2_4hhfu"]
+[ext_resource type="PackedScene" uid="uid://8i5y40j57hru" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/borda_historico_info.tscn" id="3_3g55b"]
+[ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="4_3nawa"]
+
+[sub_resource type="Gradient" id="Gradient_dj2gv"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vo11a"]
+gradient = SubResource("Gradient_dj2gv")
+
+[node name="PaginaProfile" type="VBoxContainer"]
+script = ExtResource("1_31gfr")
+borda_heroi_cena = ExtResource("2_4hhfu")
+borda_historico_cena = ExtResource("3_3g55b")
+
+[node name="OrganizadorMioloProfile" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 50
+
+[node name="Marginalizador" type="MarginContainer" parent="OrganizadorMioloProfile"]
+custom_minimum_size = Vector2(750, 0)
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="GeradorDeScroll" type="ScrollContainer" parent="OrganizadorMioloProfile/Marginalizador"]
+layout_mode = 2
+
+[node name="OrganizadorVerticalMiolo" type="VBoxContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="OrganizadorCabecario" type="HBoxContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo"]
+layout_mode = 2
+
+[node name="BordaRank" type="NinePatchRect" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo/OrganizadorCabecario"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo/OrganizadorCabecario/BordaRank"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="ImagemRank" type="TextureRect" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo/OrganizadorCabecario/BordaRank/Marginalizador"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_vo11a")
+expand_mode = 1
+
+[node name="EtiquetaNickJogador" type="Label" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo/OrganizadorCabecario"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 54
+text = "Nick do jogador"
+
+[node name="Espacador" type="MarginContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="EtiquetaDesempenho" type="Label" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+text = "Desempenho dos herois:"
+
+[node name="MioloDesempenho" type="HBoxContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="GeradorDeScroll" type="ScrollContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo/MioloDesempenho"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorDeDesempenho" type="HBoxContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo/MioloDesempenho/GeradorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Espacador2" type="MarginContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="EtiquetaHistoricoRacas" type="Label" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+text = "Historico das raças:"
+
+[node name="OrganizadorMioloHistorico" type="HBoxContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="GeradorDeScroll" type="ScrollContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo/OrganizadorMioloHistorico"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorDeHistorico" type="HBoxContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo/OrganizadorMioloHistorico/GeradorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Espacador3" type="MarginContainer" parent="OrganizadorMioloProfile/Marginalizador/GeradorDeScroll/OrganizadorVerticalMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorVisualizadorHistoria" type="VBoxContainer" parent="OrganizadorMioloProfile"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ImagemHistoria" type="NinePatchRect" parent="OrganizadorMioloProfile/OrganizadorVisualizadorHistoria"]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+texture = ExtResource("4_3nawa")
+
+[node name="GeradorDeScroll" type="ScrollContainer" parent="OrganizadorMioloProfile/OrganizadorVisualizadorHistoria"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanoDeFundoDoTexto" type="Panel" parent="OrganizadorMioloProfile/OrganizadorVisualizadorHistoria/GeradorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="OrganizadorTexto" type="VBoxContainer" parent="OrganizadorMioloProfile/OrganizadorVisualizadorHistoria/GeradorDeScroll/PlanoDeFundoDoTexto"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EtiquetaTituloHistoria" type="Label" parent="OrganizadorMioloProfile/OrganizadorVisualizadorHistoria/GeradorDeScroll/PlanoDeFundoDoTexto/OrganizadorTexto"]
+layout_mode = 2
+text = "TITULO DO TEXTO
+"
+
+[node name="TextoHistoria" type="RichTextLabel" parent="OrganizadorMioloProfile/OrganizadorVisualizadorHistoria/GeradorDeScroll/PlanoDeFundoDoTexto/OrganizadorTexto"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Texto muito texto!"

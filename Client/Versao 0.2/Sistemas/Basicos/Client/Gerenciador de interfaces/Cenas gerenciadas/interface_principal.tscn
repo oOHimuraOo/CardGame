@@ -1,0 +1,138 @@
+[gd_scene load_steps=16 format=3 uid="uid://dsn0nevrakfg1"]
+
+[ext_resource type="PackedScene" uid="uid://tr10hwj1d6jg" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/pagina_home.tscn" id="1_nrkbx"]
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/interface_principal_base.gd" id="1_pisga"]
+[ext_resource type="PackedScene" uid="uid://b2vg2hso3hfu0" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/pagina_profile.tscn" id="2_7cqg4"]
+[ext_resource type="PackedScene" uid="uid://31j6aho3q881" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/pagina_decks.tscn" id="3_va01d"]
+[ext_resource type="PackedScene" uid="uid://dp5obxsqpoovc" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/pagina_packs.tscn" id="4_c0smi"]
+[ext_resource type="PackedScene" uid="uid://dxnidluuqvw0q" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/pagina_loja.tscn" id="5_fh5y5"]
+[ext_resource type="PackedScene" uid="uid://c7rdv4yj1khfq" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/pagina_ranking.tscn" id="6_dxdkh"]
+
+[sub_resource type="Gradient" id="Gradient_g0omq"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_5tkji"]
+gradient = SubResource("Gradient_g0omq")
+
+[sub_resource type="Gradient" id="Gradient_df8qo"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1ge4j"]
+gradient = SubResource("Gradient_df8qo")
+
+[sub_resource type="Gradient" id="Gradient_pnxtc"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ebs16"]
+gradient = SubResource("Gradient_pnxtc")
+
+[sub_resource type="Gradient" id="Gradient_60mwl"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_stk5m"]
+gradient = SubResource("Gradient_60mwl")
+
+[node name="InterfacePrincipal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pisga")
+
+[node name="BordaPlanoDeFundo" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_5tkji")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="OrganizadorDeInterface" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador"]
+layout_mode = 2
+
+[node name="OrganizadorDeBarraDeRecurso" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 25
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/OrganizadorDeBarraDeRecurso"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ImagemRank" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/OrganizadorDeBarraDeRecurso"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_1ge4j")
+expand_mode = 1
+
+[node name="ImagemGold" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/OrganizadorDeBarraDeRecurso"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_ebs16")
+expand_mode = 1
+
+[node name="EtiquetaGold" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/OrganizadorDeBarraDeRecurso"]
+layout_mode = 2
+text = "999"
+
+[node name="ImagemPack" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/OrganizadorDeBarraDeRecurso"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_stk5m")
+expand_mode = 1
+
+[node name="EtiquetaPack" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/OrganizadorDeBarraDeRecurso"]
+layout_mode = 2
+text = "99"
+
+[node name="ImagemLevel" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/OrganizadorDeBarraDeRecurso"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_stk5m")
+expand_mode = 1
+
+[node name="EtiquetaLevel" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/OrganizadorDeBarraDeRecurso"]
+layout_mode = 2
+text = "999
+"
+
+[node name="ControladorDeAbasDoMiolo" type="TabContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PaginaHome" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/ControladorDeAbasDoMiolo" instance=ExtResource("1_nrkbx")]
+layout_mode = 2
+
+[node name="PaginaProfile" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/ControladorDeAbasDoMiolo" instance=ExtResource("2_7cqg4")]
+visible = false
+layout_mode = 2
+
+[node name="PaginaDecks" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/ControladorDeAbasDoMiolo" instance=ExtResource("3_va01d")]
+visible = false
+layout_mode = 2
+
+[node name="PaginaPacks" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/ControladorDeAbasDoMiolo" instance=ExtResource("4_c0smi")]
+layout_mode = 2
+
+[node name="PaginaLoja" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/ControladorDeAbasDoMiolo" instance=ExtResource("5_fh5y5")]
+layout_mode = 2
+
+[node name="PaginaRanking" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeInterface/ControladorDeAbasDoMiolo" instance=ExtResource("6_dxdkh")]
+layout_mode = 2

@@ -1,0 +1,42 @@
+{
+	"2024-08-30": {
+		"carrossel": {
+			"0": {
+				"img": "res://icon.svg",
+				"titulo": "titulo da imagem 0",
+				"link": "link de redicionamento",
+				"texto": "texto da imagem 0 | em: 2024-08-30"
+			},
+			"1": {
+				"img": "res://icon.svg",
+				"titulo": "titulo da imagem 1",
+				"link": "link de redicionamento",
+				"texto": "texto da imagem 1 | em: 2024-08-30"
+			},
+			"2": {
+				"img": "res://icon.svg",
+				"titulo": "titulo da imagem 2",
+				"link": "link de redicionamento",
+				"texto": "texto da imagem 2 | em: 2024-08-30"
+			}
+		},
+		"imagem_auxiliar_1": {
+			"img": "res://icon.svg",
+			"titulo": "titulo da imagem1",
+			"texto": "texto da imagem auxiliar 1 | em: 2024-08-30",
+			"link": "link da imagem"
+		},
+		"imagem_auxiliar_2": {
+			"img": "res://icon.svg",
+			"titulo": "titulo da imagem2",
+			"texto": "texto da imagem auxiliar 2 | em: 2024-08-30",
+			"link": "link da imagem"
+		},
+		"imagem_auxiliar_3": {
+			"img": "res://icon.svg",
+			"titulo": "titulo da imagem3",
+			"texto": "texto da imagem auxiliar 3 | em: 2024-08-30",
+			"link": "link da imagem"
+		}
+	}
+}

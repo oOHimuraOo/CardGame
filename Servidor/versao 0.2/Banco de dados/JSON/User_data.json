@@ -1,0 +1,531 @@
+{
+	"7#sPpy9#marcozinha": {
+		"senha": "252902542",
+		"email": "admin@admin",
+		"informcoes_do_jogador": {
+			"nick": "admin",
+			"rank": 0,
+			"level": 0,
+			"exp_atual": 0,
+			"exp_proximo_nivel": 100,
+			"gold": 0,
+			"packs": {
+				"edicao_0": {
+					"quantidade": 0
+				},
+				"edicao_1": {
+					"quantidade": 0
+				}
+			},
+			"racas_banidas": {
+				"mortoVivo": 0,
+				"besta": 0,
+				"dragao": 0,
+				"naga": 0,
+				"elemental": 0,
+				"pirata": 0,
+				"elfo": 0,
+				"anao": 0,
+				"metamorfo": 0,
+				"humano": 0
+			},
+			"decks_do_jogador": {
+				"mortoVivo_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							5,
+							6,
+							7,
+							8,
+							9,
+							10,
+							11,
+							12,
+							13,
+							14
+						]
+					},
+					"nome": "mortoVivo_base",
+					"raca": "Morto-Vivo",
+					"imagem": "res://icon.svg"
+				},
+				"besta_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"nome": "besta_base",
+					"raca": "Besta",
+					"imagem": "res://icon.svg"
+				},
+				"dragao_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"nome": "dragao_base",
+					"raca": "Dragao",
+					"imagem": "res://icon.svg"
+				},
+				"naga_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"nome": "naga_base",
+					"raca": "Naga",
+					"imagem": "res://icon.svg"
+				},
+				"elemental_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"nome": "elemental_base",
+					"raca": "Elemental",
+					"imagem": "res://icon.svg"
+				},
+				"pirata_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"nome": "pirata_base",
+					"raca": "Pirata",
+					"imagem": "res://icon.svg"
+				},
+				"elfo_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"nome": "elfo_base",
+					"raca": "Elfo",
+					"imagem": "res://icon.svg"
+				},
+				"anao_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"nome": "anao_base",
+					"raca": "Anao",
+					"imagem": "res://icon.svg"
+				},
+				"metamorfo_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"nome": "metamorfo_base",
+					"raca": "Metamorfo",
+					"imagem": "res://icon.svg"
+				},
+				"humano_base": {
+					"cartas": {
+						"edicao_0": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"nome": "humano_base",
+					"raca": "Humano",
+					"imagem": "res://icon.svg"
+				}
+			},
+			"registro_de_partidas": {
+				"partida_0": {
+					"heroi": "nome do heroi",
+					"vitoria": null,
+					"data": "09:47 | 19/08/2024"
+				},
+				"partida_1 ": {
+					"heroi": "nome do heroi",
+					"vitoria": null,
+					"data": "09:47 | 19/08/2024"
+				},
+				"partida_2": {
+					"heroi": "nome do heroi",
+					"vitoria": null,
+					"data": "09:47 | 19/08/2024"
+				}
+			},
+			"registro_de_herois": {
+				"heroi_1": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_2": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_3": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_4": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_5": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_6": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_7": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_8": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_9": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_10": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_11": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_12": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_13": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_14": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				},
+				"heroi_15": {
+					"partidas_jogada": 0,
+					"vitorias": 0,
+					"derrotas": 0
+				}
+			},
+			"colecao": {
+				"edicao_0": [
+					99,
+					142,
+					46,
+					112,
+					76,
+					5,
+					39,
+					50,
+					100,
+					100,
+					85,
+					108,
+					28,
+					13,
+					13,
+					20,
+					20,
+					145,
+					8,
+					104,
+					146,
+					146,
+					78,
+					78,
+					40,
+					40,
+					131,
+					137,
+					137,
+					34,
+					34,
+					58,
+					59,
+					68,
+					136,
+					24,
+					107,
+					27,
+					27,
+					125,
+					125,
+					51,
+					9,
+					143,
+					143,
+					126,
+					148,
+					74,
+					31,
+					10
+				],
+				"edicao_1": [
+					94,
+					94,
+					94,
+					27,
+					37,
+					97,
+					14,
+					14,
+					91,
+					65,
+					65,
+					65,
+					29,
+					36,
+					36,
+					79,
+					101,
+					101,
+					108,
+					108,
+					41,
+					41,
+					93,
+					114,
+					114,
+					21,
+					83,
+					24,
+					13,
+					86,
+					34,
+					112,
+					68,
+					68,
+					56,
+					56,
+					74,
+					74,
+					74,
+					63,
+					82,
+					87,
+					87,
+					0,
+					0,
+					0,
+					39,
+					39,
+					2,
+					2,
+					111,
+					52,
+					7,
+					45,
+					60,
+					60,
+					60,
+					18,
+					48,
+					35,
+					61,
+					61,
+					20,
+					46,
+					31,
+					32,
+					10,
+					10,
+					75,
+					75,
+					75,
+					5,
+					49,
+					49,
+					49,
+					105,
+					92,
+					76,
+					76,
+					76,
+					64,
+					4,
+					89,
+					81,
+					81,
+					100,
+					80,
+					72,
+					72,
+					72,
+					72,
+					38,
+					78,
+					62,
+					16,
+					17,
+					17,
+					19,
+					44,
+					44,
+					33,
+					50,
+					25,
+					25,
+					42
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,283 @@
+[gd_scene load_steps=20 format=3 uid="uid://tr10hwj1d6jg"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/pagina_home_base.gd" id="1_ucrkn"]
+
+[sub_resource type="Gradient" id="Gradient_tqcp5"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_sw5h6"]
+gradient = SubResource("Gradient_tqcp5")
+
+[sub_resource type="Gradient" id="Gradient_cm1el"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ixqo6"]
+gradient = SubResource("Gradient_cm1el")
+
+[sub_resource type="Gradient" id="Gradient_7dwjs"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.0784314, 0.0784314, 0.0784314, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_kekg3"]
+gradient = SubResource("Gradient_7dwjs")
+
+[sub_resource type="Gradient" id="Gradient_nybcq"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0.65098, 0.129412)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_tju7r"]
+gradient = SubResource("Gradient_nybcq")
+
+[sub_resource type="Gradient" id="Gradient_6orbd"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0.8, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_2fw4l"]
+gradient = SubResource("Gradient_6orbd")
+
+[sub_resource type="Gradient" id="Gradient_wp112"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_sadwc"]
+gradient = SubResource("Gradient_wp112")
+
+[sub_resource type="Gradient" id="Gradient_mwm1q"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_c63aw"]
+gradient = SubResource("Gradient_mwm1q")
+
+[sub_resource type="Gradient" id="Gradient_lwogh"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_7al4p"]
+gradient = SubResource("Gradient_lwogh")
+
+[sub_resource type="Gradient" id="Gradient_v33ot"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fegga"]
+gradient = SubResource("Gradient_v33ot")
+
+[node name="PaginaHome" type="VBoxContainer"]
+script = ExtResource("1_ucrkn")
+
+[node name="OrganizadorMioloHome" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="OrganizadorVerticalCarrosselHome" type="VBoxContainer" parent="OrganizadorMioloHome"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorHorizontalCarrosselHome" type="HBoxContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ImagemCarrossel" type="TextureRect" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome"]
+custom_minimum_size = Vector2(1200, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_sw5h6")
+expand_mode = 1
+
+[node name="OrganizadorMioloCarrossel" type="VBoxContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="OrganizadorBotoesCarrossel" type="HBoxContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BotaoVoltarCarrossel" type="TextureButton" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel/OrganizadorBotoesCarrossel"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaBotaoVoltarCarrossel" type="Label" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel/OrganizadorBotoesCarrossel/BotaoVoltarCarrossel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "<"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Marginalizador" type="MarginContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel/OrganizadorBotoesCarrossel"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BotaoAvancarCarrossel" type="TextureButton" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel/OrganizadorBotoesCarrossel"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaBotaoAvancarCarrossel" type="Label" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel/OrganizadorBotoesCarrossel/BotaoAvancarCarrossel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = ">"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlanoDefundoTextoCarrossel" type="Panel" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="TextoCarrossel" type="RichTextLabel" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel/PlanoDefundoTextoCarrossel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Eu sou um texto!"
+
+[node name="OrganizadorImagensAuxiliares" type="VBoxContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="ImagemAuxiliar1" type="TextureRect" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("GradientTexture1D_ixqo6")
+expand_mode = 1
+
+[node name="OrganizadorTextoImagemAuxiliar1" type="VBoxContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Marginalizador" type="MarginContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar1/OrganizadorTextoImagemAuxiliar1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanoDeFundoTextoImagemAuxiliar1" type="Panel" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar1/OrganizadorTextoImagemAuxiliar1"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="OrganizadorTextoImagemAuxiliar1" type="RichTextLabel" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar1/OrganizadorTextoImagemAuxiliar1/PlanoDeFundoTextoImagemAuxiliar1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Eu sou um texto!"
+
+[node name="ImagemAuxiliar2" type="TextureRect" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("GradientTexture1D_ixqo6")
+expand_mode = 1
+
+[node name="OrganizadorTextoImagemAuxiliar2" type="VBoxContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Marginalizador" type="MarginContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar2/OrganizadorTextoImagemAuxiliar2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanoDeFundoTextoImagemAuxiliar2" type="Panel" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar2/OrganizadorTextoImagemAuxiliar2"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="OrganizadorTextoImagemAuxiliar2" type="RichTextLabel" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar2/OrganizadorTextoImagemAuxiliar2/PlanoDeFundoTextoImagemAuxiliar2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Eu sou um texto!"
+
+[node name="ImagemAuxiliar3" type="TextureRect" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("GradientTexture1D_ixqo6")
+expand_mode = 1
+
+[node name="OrganizadorTextoImagemAuxiliar3" type="VBoxContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Marginalizador" type="MarginContainer" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar3/OrganizadorTextoImagemAuxiliar3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanoDeFundoTextoImagemAuxiliar3" type="Panel" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar3/OrganizadorTextoImagemAuxiliar3"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="OrganizadorTextoImagemAuxiliar3" type="RichTextLabel" parent="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/OrganizadorImagensAuxiliares/ImagemAuxiliar3/OrganizadorTextoImagemAuxiliar3/PlanoDeFundoTextoImagemAuxiliar3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Eu sou um texto!"
+
+[node name="OrganizadorBarraLevel" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 25
+
+[node name="BarraLevel" type="TextureProgressBar" parent="OrganizadorBarraLevel"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+value = 75.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_kekg3")
+texture_over = SubResource("GradientTexture1D_tju7r")
+texture_progress = SubResource("GradientTexture1D_2fw4l")
+
+[node name="BotaoJogar" type="TextureButton" parent="OrganizadorBarraLevel"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_sadwc")
+texture_pressed = SubResource("GradientTexture1D_c63aw")
+texture_hover = SubResource("GradientTexture1D_7al4p")
+texture_disabled = SubResource("GradientTexture1D_fegga")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaBotaoJogar" type="Label" parent="OrganizadorBarraLevel/BotaoJogar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "jogar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel/OrganizadorBotoesCarrossel/BotaoVoltarCarrossel" to="." method="quando_botao_voltar_carrossel_pressionado"]
+[connection signal="pressed" from="OrganizadorMioloHome/OrganizadorVerticalCarrosselHome/OrganizadorHorizontalCarrosselHome/ImagemCarrossel/OrganizadorMioloCarrossel/OrganizadorBotoesCarrossel/BotaoAvancarCarrossel" to="." method="quando_botao_avancar_carrossel_pressionado"]
+[connection signal="pressed" from="OrganizadorBarraLevel/BotaoJogar" to="." method="quando_botao_jogar_pressionado"]

@@ -1,0 +1,87 @@
+[gd_scene load_steps=10 format=3 uid="uid://x4c8y86wvl3c"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/borda_deck.gd" id="1_66kyi"]
+
+[sub_resource type="Gradient" id="Gradient_1hfq1"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.470588, 0, 0.47451, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4163w"]
+gradient = SubResource("Gradient_1hfq1")
+
+[sub_resource type="Gradient" id="Gradient_at3n7"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vba3b"]
+gradient = SubResource("Gradient_at3n7")
+
+[sub_resource type="Gradient" id="Gradient_lney0"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3eh5v"]
+gradient = SubResource("Gradient_lney0")
+
+[sub_resource type="Gradient" id="Gradient_bvc8i"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.529412, 0.4, 0, 0.364706)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1nx8n"]
+gradient = SubResource("Gradient_bvc8i")
+
+[node name="BordaDeck" type="NinePatchRect"]
+custom_minimum_size = Vector2(455, 457)
+texture = SubResource("GradientTexture1D_4163w")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+script = ExtResource("1_66kyi")
+
+[node name="Marginalizador" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="OrganizadorMiolo" type="VBoxContainer" parent="Marginalizador"]
+layout_mode = 2
+
+[node name="ImagemDeck" type="TextureRect" parent="Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("GradientTexture1D_vba3b")
+expand_mode = 1
+
+[node name="OrganizadorBarraInfo" type="HBoxContainer" parent="Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="ImagemRaca" type="TextureRect" parent="Marginalizador/OrganizadorMiolo/OrganizadorBarraInfo"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_3eh5v")
+expand_mode = 1
+
+[node name="EtiquetaNomeDeck" type="Label" parent="Marginalizador/OrganizadorMiolo/OrganizadorBarraInfo"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Nome do deck"
+vertical_alignment = 1
+
+[node name="BotaoSelecionadorDeck" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_hover = SubResource("GradientTexture1D_1nx8n")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="BotaoSelecionadorDeck" to="." method="_on_botao_selecionador_deck_pressed"]

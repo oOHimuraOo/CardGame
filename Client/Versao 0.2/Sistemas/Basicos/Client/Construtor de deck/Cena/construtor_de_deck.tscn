@@ -1,0 +1,548 @@
+[gd_scene load_steps=19 format=3 uid="uid://bd3oc5hes481y"]
+
+[ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="1_w4cmy"]
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Construtor de deck/Script/construtor_de_deck_base.gd" id="1_xfovb"]
+[ext_resource type="PackedScene" uid="uid://bxo737w2r5eea" path="res://Sistemas/Basicos/Client/Construtor de deck/Cena/carta_lista.tscn" id="2_7mxr3"]
+
+[sub_resource type="Gradient" id="Gradient_y0w1c"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_7crcm"]
+gradient = SubResource("Gradient_y0w1c")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5vn3"]
+bg_color = Color(0.203922, 0.203922, 0.203922, 1)
+
+[sub_resource type="Gradient" id="Gradient_254vv"]
+colors = PackedColorArray(0, 0, 0, 0.282353, 1, 1, 1, 0.282353)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vibpl"]
+gradient = SubResource("Gradient_254vv")
+
+[sub_resource type="Gradient" id="Gradient_wdo2r"]
+colors = PackedColorArray(0, 0.243137, 0, 1, 4.69275e-07, 0.490135, 9.62615e-07, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_buvt5"]
+gradient = SubResource("Gradient_wdo2r")
+
+[sub_resource type="Gradient" id="Gradient_ftmck"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_rohxx"]
+gradient = SubResource("Gradient_ftmck")
+
+[sub_resource type="Gradient" id="Gradient_2fbqf"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_erq3t"]
+gradient = SubResource("Gradient_2fbqf")
+
+[sub_resource type="Gradient" id="Gradient_4ygff"]
+offsets = PackedFloat32Array(0, 0.556338, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0.627451, 0.482353, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_eh05s"]
+gradient = SubResource("Gradient_4ygff")
+
+[sub_resource type="Gradient" id="Gradient_ba3k2"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.439049, 0.439049, 0.439049, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nfryr"]
+gradient = SubResource("Gradient_ba3k2")
+
+[node name="ConstrutorDeDeck" type="Control" groups=["Construtor"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xfovb")
+
+[node name="BordaPlanoDeFundo" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_7crcm")
+patch_margin_left = 25
+patch_margin_top = 25
+patch_margin_right = 25
+patch_margin_bottom = 25
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="OrganizadorMiolo" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador"]
+layout_mode = 2
+
+[node name="PlanoDeFundoCartas" type="Panel" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_s5vn3")
+
+[node name="OrganizadorDeCartas" type="GridContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 33
+theme_override_constants/v_separation = 48
+columns = 6
+
+[node name="OrganizadorSlot1" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot1" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot1"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot1" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot1"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot2" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot2" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot2"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot2" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot2"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot3" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot3" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot3"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot3" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot3"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot4" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot4" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot4"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot4" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot4"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot5" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot5" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot5"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot5" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot5"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot6" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot6" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot6"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot6" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot6"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot7" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot7" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot7"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot7" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot7"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot8" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot8" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot8"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot8" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot8"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot9" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot9" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot9"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot9" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot9"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot10" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot10" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot10"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot10" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot10"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot11" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot11" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot11"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot11" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot11"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot12" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot12" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot12"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot12" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot12"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot13" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot13" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot13"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot13" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot13"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot14" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot14" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot14"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot14" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot14"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot15" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot15" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot15"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot15" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot15"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot16" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot16" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot16"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot16" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot16"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot17" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot17" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot17"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot17" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot17"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorSlot18" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas" groups=["Organizador"]]
+custom_minimum_size = Vector2(0, 284)
+layout_mode = 2
+
+[node name="CartaSlot18" type="Control" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot18"]
+custom_minimum_size = Vector2(200, 284)
+layout_mode = 2
+
+[node name="EtiquetaSlot18" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorDeCartas/OrganizadorSlot18"]
+layout_mode = 2
+text = "0/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorBotoes" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="BotaoVoltar" type="TextureButton" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorBotoes"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_hover = SubResource("GradientTexture1D_vibpl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaVoltar" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorBotoes/BotaoVoltar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "<"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorBotoes"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="BotaoAvancar" type="TextureButton" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorBotoes"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_hover = SubResource("GradientTexture1D_vibpl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaAvancar" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorBotoes/BotaoAvancar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = ">"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorListaDeck" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="BordaCabecalho" type="NinePatchRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_buvt5")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="OrganizadorCabecalho" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho/Marginalizador"]
+layout_mode = 2
+
+[node name="SelecionadorDeRacaDoDeck" type="OptionButton" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho/Marginalizador/OrganizadorCabecalho"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+icon_alignment = 1
+expand_icon = true
+item_count = 1
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("1_w4cmy")
+popup/item_0/id = 0
+
+[node name="EtiquetaNomeDoDeck" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho/Marginalizador/OrganizadorCabecalho"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorCartasLista" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 5
+
+[node name="CartaLista" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista2" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista3" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista4" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista5" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista6" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista7" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista8" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista9" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista10" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista11" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista12" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista13" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista14" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="CartaLista15" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista" instance=ExtResource("2_7mxr3")]
+layout_mode = 2
+
+[node name="BotaoAplicarMudanca" type="TextureButton" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_rohxx")
+texture_pressed = SubResource("GradientTexture1D_erq3t")
+texture_hover = SubResource("GradientTexture1D_eh05s")
+texture_disabled = SubResource("GradientTexture1D_nfryr")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaAplicarMudanca" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BotaoAplicarMudanca"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Aplicar mudança
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorBotoes/BotaoVoltar" to="." method="quando_botao_voltar_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorBotoes/BotaoAvancar" to="." method="quando_botao_avancar_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista" to="." method="quando_carta_lista_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista2" to="." method="quando_carta_lista_2_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista3" to="." method="quando_carta_lista_3_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista4" to="." method="quando_carta_lista_4_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista5" to="." method="quando_carta_lista_5_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista6" to="." method="quando_carta_lista_6_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista7" to="." method="quando_carta_lista_7_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista8" to="." method="quando_carta_lista_8_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista9" to="." method="quando_carta_lista_9_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista10" to="." method="quando_carta_lista_10_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista11" to="." method="quando_carta_lista_11_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista12" to="." method="quando_carta_lista_12_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista13" to="." method="quando_carta_lista_13_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista14" to="." method="quando_carta_lista_14_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista15" to="." method="quando_carta_lista_15_pressionado"]
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BotaoAplicarMudanca" to="." method="_on_botao_aplicar_mudanca_pressed"]

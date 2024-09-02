@@ -1,0 +1,2 @@
+class_name VINCULO_COM_A_VIDA
+extends COMPORTAMENTO_BASE

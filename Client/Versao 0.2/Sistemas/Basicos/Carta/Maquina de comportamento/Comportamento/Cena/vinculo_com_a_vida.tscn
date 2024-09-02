@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://u7hovasle3eh"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Carta/Maquina de comportamento/Comportamento/Script/vinculo_com_a_vida.gd" id="1_ay64a"]
+
+[node name="VinculoComAVida" type="Node"]
+script = ExtResource("1_ay64a")

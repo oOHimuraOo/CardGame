@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://viidvvp584nh"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Banco de dados/Script/banco_de_dados.gd" id="1_qg3wa"]
+
+[node name="BancoDeDados" type="Node"]
+script = ExtResource("1_qg3wa")

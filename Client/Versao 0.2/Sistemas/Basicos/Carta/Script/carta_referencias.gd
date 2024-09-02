@@ -1,0 +1,16 @@
+class_name CARTA_REFERENCIAS
+extends Control
+
+@onready var imagem_retrato_carta:TextureRect = $BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta
+@onready var etiqueta_custo:Label = $BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario/BordaCustoETier/Marginalizador/OrganizadorCustoETier/EtiquetaCusto
+@onready var cor_tier:ColorRect = $BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario/BordaCustoETier/Marginalizador/OrganizadorCustoETier/OrganizadorTier/Marginalizador/CorTier
+@onready var etiqueta_nome:Label = $BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemNomeETipo/OrganizadorNomeETipo/EtiquetaNome
+@onready var etiqueta_tipo:Label = $BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemNomeETipo/OrganizadorNomeETipo/EtiquetaTipo
+@onready var texto_descritivo:RichTextLabel = $BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/Marginalizador/TextoDescritivo
+@onready var etiqueta_ataque:Label = $BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/OrganizadorAtaqueDefesa/ImagemAtaque/Marginalizador/EtiquetaAtaque
+@onready var etiqueta_defesa:Label = $BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/OrganizadorAtaqueDefesa/ImagemDefesa/Marginalizador/EtiquetaDefesa
+@onready var borda_plano_de_fundo:NinePatchRect = $BordaPlanoDeFundo
+@onready var botao_detector_de_carta:TextureButton = $BotaoDetectorDeCarta
+
+@onready var maquina_de_comportamento:MAQUINA_DE_COMPORTAMENTO = $MaquinaDeComportamento
+

@@ -1,0 +1,3 @@
+class_name ESCUDO_DIVINO
+extends COMPORTAMENTO_BASE
+

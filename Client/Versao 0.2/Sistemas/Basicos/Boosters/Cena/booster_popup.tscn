@@ -1,0 +1,118 @@
+[gd_scene load_steps=12 format=3 uid="uid://bpdxfy0jxvojo"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Boosters/Script/booster_popup.gd" id="1_nx5ee"]
+
+[sub_resource type="Gradient" id="Gradient_rlbl3"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.145098, 0.145098, 0.145098, 0.588235)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_r33bw"]
+gradient = SubResource("Gradient_rlbl3")
+
+[sub_resource type="Gradient" id="Gradient_x4eu0"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_tjt0q"]
+gradient = SubResource("Gradient_x4eu0")
+
+[sub_resource type="Gradient" id="Gradient_athx0"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_6mh4k"]
+gradient = SubResource("Gradient_athx0")
+
+[sub_resource type="Gradient" id="Gradient_y52fg"]
+offsets = PackedFloat32Array(0, 0.535211, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.172549, 0, 1, 0.34902, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_lddwn"]
+gradient = SubResource("Gradient_y52fg")
+
+[sub_resource type="Gradient" id="Gradient_20a7e"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.366595, 0.366595, 0.366595, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_p318s"]
+gradient = SubResource("Gradient_20a7e")
+
+[node name="BoosterPopup" type="Control" groups=["booster_popup"]]
+process_mode = 2
+custom_minimum_size = Vector2(1600, 910)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -800.0
+offset_top = -455.0
+offset_right = 800.0
+offset_bottom = 455.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nx5ee")
+
+[node name="BordaPlanoDeFundo" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_r33bw")
+patch_margin_left = 50
+patch_margin_top = 50
+patch_margin_right = 50
+patch_margin_bottom = 50
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="OrganizadorDeMiolo" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="GeradorDeScroll" type="ScrollContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 710)
+layout_mode = 2
+
+[node name="ArmazenadorDeCartas" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/GeradorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 25
+
+[node name="Centralizador" type="CenterContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BotaoFechar" type="TextureButton" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/Centralizador"]
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_tjt0q")
+texture_pressed = SubResource("GradientTexture1D_6mh4k")
+texture_hover = SubResource("GradientTexture1D_lddwn")
+texture_disabled = SubResource("GradientTexture1D_p318s")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaBotaoFechar" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/Centralizador/BotaoFechar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Fechar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/Centralizador/BotaoFechar" to="." method="_on_botao_fechar_pressed"]

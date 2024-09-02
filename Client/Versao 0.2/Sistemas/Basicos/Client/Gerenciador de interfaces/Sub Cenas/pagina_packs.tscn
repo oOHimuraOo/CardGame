@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp5obxsqpoovc"]
+
+[ext_resource type="PackedScene" uid="uid://ci036p4kcpeds" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/borda_booster.tscn" id="1_ay5oj"]
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/pagina_packs.gd" id="1_ugetv"]
+
+[node name="PaginaPacks" type="VBoxContainer"]
+visible = false
+theme_override_constants/separation = 5
+script = ExtResource("1_ugetv")
+borda_booster_cena = ExtResource("1_ay5oj")
+
+[node name="CentralizadorBoosterAbrivel" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(0, 710)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorDeBoosters" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+
+[node name="GeradorDeScroll" type="ScrollContainer" parent="OrganizadorDeBoosters"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ControladorDeBoosterDisponivel" type="HBoxContainer" parent="OrganizadorDeBoosters/GeradorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 25
+
+[node name="BotaoAbrirTudo" type="TextureButton" parent="OrganizadorDeBoosters"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="EtiquetaAbrirTudo" type="Label" parent="OrganizadorDeBoosters/BotaoAbrirTudo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Abrir tudo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="OrganizadorDeBoosters/BotaoAbrirTudo" to="." method="quando_botao_abrir_tudo_pressionado"]

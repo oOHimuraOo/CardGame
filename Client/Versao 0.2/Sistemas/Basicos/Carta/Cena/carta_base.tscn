@@ -1,0 +1,265 @@
+[gd_scene load_steps=14 format=3 uid="uid://bsw15dirh1ygh"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Carta/Script/carta_base.gd" id="1_dbntv"]
+[ext_resource type="Texture2D" uid="uid://baye50joob0as" path="res://Assets/Carta/Layout/Cost_Tier.png" id="1_we7ww"]
+[ext_resource type="Texture2D" uid="uid://b8hoh4idfevsh" path="res://Assets/Carta/Layout/Nome_Tipo.png" id="2_53o2y"]
+[ext_resource type="Texture2D" uid="uid://4pd8yal1q20u" path="res://Assets/Carta/Layout/Text.png" id="3_m7ekx"]
+[ext_resource type="Texture2D" uid="uid://d27e0wenkdqld" path="res://Assets/Carta/Layout/Ataque.png" id="4_n2v34"]
+[ext_resource type="Texture2D" uid="uid://ngyx6ikb7s43" path="res://Assets/Carta/Layout/Defesa.png" id="5_an8dn"]
+[ext_resource type="PackedScene" uid="uid://bu84bk4f5npts" path="res://Sistemas/Basicos/Carta/Maquina de comportamento/Cena/maquina_de_comportamento.tscn" id="7_40dcd"]
+
+[sub_resource type="Gradient" id="Gradient_ry7n2"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_iejok"]
+gradient = SubResource("Gradient_ry7n2")
+
+[sub_resource type="Gradient" id="Gradient_klkxn"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0.462745, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_co0cu"]
+gradient = SubResource("Gradient_klkxn")
+
+[sub_resource type="Gradient" id="Gradient_ilyuo"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.529114, 0.416559, 0.00769101, 0.466667)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1odpt"]
+gradient = SubResource("Gradient_ilyuo")
+
+[node name="CartaBase" type="Control"]
+custom_minimum_size = Vector2(500, 710)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 500.0
+offset_bottom = 710.0
+script = ExtResource("1_dbntv")
+
+[node name="BordaPlanoDeFundo" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_iejok")
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="OrganizadorDeMiolo" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ImagemRetratoCarta" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 410)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_co0cu")
+expand_mode = 1
+
+[node name="OrganizadorCabecario" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_constants/separation = 0
+
+[node name="Espacador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BordaCustoETier" type="NinePatchRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario"]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 2
+texture = ExtResource("1_we7ww")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario/BordaCustoETier"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="OrganizadorCustoETier" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario/BordaCustoETier/Marginalizador"]
+layout_mode = 2
+
+[node name="EtiquetaCusto" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario/BordaCustoETier/Marginalizador/OrganizadorCustoETier"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 35
+text = "9"
+vertical_alignment = 2
+
+[node name="OrganizadorTier" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario/BordaCustoETier/Marginalizador/OrganizadorCustoETier"]
+layout_mode = 2
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario/BordaCustoETier/Marginalizador/OrganizadorCustoETier/OrganizadorTier"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+
+[node name="CorTier" type="ColorRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemRetratoCarta/OrganizadorCabecario/BordaCustoETier/Marginalizador/OrganizadorCustoETier/OrganizadorTier/Marginalizador"]
+layout_mode = 2
+
+[node name="ImagemNomeETipo" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture = ExtResource("2_53o2y")
+
+[node name="OrganizadorNomeETipo" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemNomeETipo"]
+layout_mode = 2
+offset_right = 470.0
+offset_bottom = 50.0
+theme_override_constants/separation = 0
+
+[node name="Espacador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemNomeETipo/OrganizadorNomeETipo"]
+custom_minimum_size = Vector2(46, 0)
+layout_mode = 2
+
+[node name="EtiquetaNome" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemNomeETipo/OrganizadorNomeETipo"]
+custom_minimum_size = Vector2(136, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Batata"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador2" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemNomeETipo/OrganizadorNomeETipo"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EtiquetaTipo" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemNomeETipo/OrganizadorNomeETipo"]
+custom_minimum_size = Vector2(136, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Morto-Vivo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador3" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemNomeETipo/OrganizadorNomeETipo"]
+custom_minimum_size = Vector2(46, 0)
+layout_mode = 2
+
+[node name="ImagemTextoDescritivo" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("3_m7ekx")
+expand_mode = 1
+
+[node name="OrganizadorTextoDescritivo" type="VBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 72
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_right = 72
+theme_override_constants/margin_bottom = 2
+
+[node name="TextoDescritivo" type="RichTextLabel" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/Marginalizador"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Esse é um texto teste e por isso estou testando esse texto então vou continuar digitando um monte de palavra aleatoria até que a barra de scroll apareça e assim eu seguirei sem nem colocar uma virgula ou um ponto pois a minha vontade é apenas de testar a caixa de texto."
+
+[node name="OrganizadorAtaqueDefesa" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo"]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ImagemAtaque" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/OrganizadorAtaqueDefesa"]
+custom_minimum_size = Vector2(95, 0)
+layout_mode = 2
+texture = ExtResource("4_n2v34")
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/OrganizadorAtaqueDefesa/ImagemAtaque"]
+custom_minimum_size = Vector2(95, 0)
+layout_mode = 2
+offset_right = 95.0
+offset_bottom = 44.0
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 21
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 0
+
+[node name="EtiquetaAtaque" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/OrganizadorAtaqueDefesa/ImagemAtaque/Marginalizador"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Espacador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/OrganizadorAtaqueDefesa"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ImagemDefesa" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/OrganizadorAtaqueDefesa"]
+custom_minimum_size = Vector2(95, 0)
+layout_mode = 2
+texture = ExtResource("5_an8dn")
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/OrganizadorAtaqueDefesa/ImagemDefesa"]
+custom_minimum_size = Vector2(95, 0)
+layout_mode = 2
+offset_right = 95.0
+offset_bottom = 44.0
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 21
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 0
+
+[node name="EtiquetaDefesa" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorDeMiolo/ImagemTextoDescritivo/OrganizadorTextoDescritivo/OrganizadorAtaqueDefesa/ImagemDefesa/Marginalizador"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="MaquinaDeComportamento" parent="." instance=ExtResource("7_40dcd")]
+
+[node name="BotaoDetectorDeCarta" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_hover = SubResource("GradientTexture1D_1odpt")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="gui_input" from="BotaoDetectorDeCarta" to="." method="quando_botao_detector_de_carta_detectar_input"]
+[connection signal="pressed" from="BotaoDetectorDeCarta" to="." method="quando_botao_detector_de_carta_pressionada"]

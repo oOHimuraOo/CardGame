@@ -1,0 +1,3 @@
+class_name PROVOCAR
+extends COMPORTAMENTO_BASE
+

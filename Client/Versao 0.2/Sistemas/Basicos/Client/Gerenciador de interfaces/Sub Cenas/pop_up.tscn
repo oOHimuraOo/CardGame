@@ -1,0 +1,116 @@
+[gd_scene load_steps=10 format=3 uid="uid://cqad6pe21mdlm"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/pop_up.gd" id="1_64nxf"]
+
+[sub_resource type="Gradient" id="Gradient_7f76m"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_cvpa6"]
+gradient = SubResource("Gradient_7f76m")
+
+[sub_resource type="Gradient" id="Gradient_pxuye"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_82j71"]
+gradient = SubResource("Gradient_pxuye")
+
+[sub_resource type="Gradient" id="Gradient_240t1"]
+offsets = PackedFloat32Array(0, 0.521127, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0.486275, 0.686275, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_f4q4w"]
+gradient = SubResource("Gradient_240t1")
+
+[sub_resource type="Gradient" id="Gradient_sqp5t"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.281187, 0.281187, 0.281187, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_lh7vw"]
+gradient = SubResource("Gradient_sqp5t")
+
+[node name="PopUp" type="Control"]
+process_mode = 2
+custom_minimum_size = Vector2(350, 200)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -100.0
+offset_right = 175.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_64nxf")
+
+[node name="PlanoDeFundo" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="OrganizadorMiolo" type="VBoxContainer" parent="PlanoDeFundo/Marginalizador"]
+layout_mode = 2
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="EtiquetaTexto" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+text = "Usuario criado com sucesso!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorBotao" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorBotao"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BotaoOk" type="TextureButton" parent="PlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorBotao"]
+custom_minimum_size = Vector2(75, 25)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_cvpa6")
+texture_pressed = SubResource("GradientTexture1D_82j71")
+texture_hover = SubResource("GradientTexture1D_f4q4w")
+texture_disabled = SubResource("GradientTexture1D_lh7vw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaOk" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorBotao/BotaoOk"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Ok"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorBotao"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="PlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorBotao/BotaoOk" to="." method="_on_botao_ok_pressed"]

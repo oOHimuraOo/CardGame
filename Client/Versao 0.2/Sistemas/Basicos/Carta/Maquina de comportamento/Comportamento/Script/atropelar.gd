@@ -1,0 +1,3 @@
+class_name ATROPELAR
+extends COMPORTAMENTO_BASE
+

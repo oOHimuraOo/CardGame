@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://31j6aho3q881"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/pagina_decks_base.gd" id="1_2qisc"]
+[ext_resource type="PackedScene" uid="uid://x4c8y86wvl3c" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/borda_deck.tscn" id="2_s8kp5"]
+
+[sub_resource type="Gradient" id="Gradient_qd5bd"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.498039, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_q75q5"]
+gradient = SubResource("Gradient_qd5bd")
+
+[node name="PaginaDecks" type="VBoxContainer"]
+script = ExtResource("1_2qisc")
+borda_deck_cena = ExtResource("2_s8kp5")
+
+[node name="BordaMiolo" type="NinePatchRect" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("GradientTexture1D_q75q5")
+patch_margin_left = 25
+patch_margin_top = 25
+patch_margin_right = 25
+patch_margin_bottom = 25
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaMiolo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="GeradorDeScroll" type="ScrollContainer" parent="BordaMiolo/Marginalizador"]
+layout_mode = 2
+
+[node name="OrganizadorEmGrid" type="GridContainer" parent="BordaMiolo/Marginalizador/GeradorDeScroll"]
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 4

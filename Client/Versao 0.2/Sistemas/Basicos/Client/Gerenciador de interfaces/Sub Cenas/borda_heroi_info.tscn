@@ -1,0 +1,99 @@
+[gd_scene load_steps=7 format=3 uid="uid://cqv0gxtia03fu"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/borda_heroi_info.gd" id="1_flxt1"]
+[ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="2_khy6k"]
+
+[sub_resource type="Gradient" id="Gradient_ti42m"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0.254902, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_6jig7"]
+gradient = SubResource("Gradient_ti42m")
+
+[sub_resource type="Gradient" id="Gradient_qpjsp"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.65098, 0.509804, 0, 0.270588)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_q6h48"]
+gradient = SubResource("Gradient_qpjsp")
+
+[node name="BordaHeroiInfo" type="NinePatchRect"]
+custom_minimum_size = Vector2(200, 0)
+texture = SubResource("GradientTexture1D_6jig7")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+script = ExtResource("1_flxt1")
+
+[node name="Marginalizador" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="OrganizadorMiolo" type="VBoxContainer" parent="Marginalizador"]
+layout_mode = 2
+
+[node name="ImagemHeroi" type="TextureRect" parent="Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("2_khy6k")
+expand_mode = 1
+
+[node name="EtiquetaNome" type="Label" parent="Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+text = "Nome do heroi"
+
+[node name="OrganizadorPartidas" type="HBoxContainer" parent="Marginalizador/OrganizadorMiolo"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="IconePartidas" type="TextureRect" parent="Marginalizador/OrganizadorMiolo/OrganizadorPartidas"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+
+[node name="EtiquetaQuantidadePartidas" type="Label" parent="Marginalizador/OrganizadorMiolo/OrganizadorPartidas"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "melhor raca"
+
+[node name="OrganizadorVitorias" type="HBoxContainer" parent="Marginalizador/OrganizadorMiolo"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="IconeVitorias" type="TextureRect" parent="Marginalizador/OrganizadorMiolo/OrganizadorVitorias"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+
+[node name="EtiquetaQuantidadeVitorias" type="Label" parent="Marginalizador/OrganizadorMiolo/OrganizadorVitorias"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Vitorias"
+
+[node name="OrganizadorDerrotas" type="HBoxContainer" parent="Marginalizador/OrganizadorMiolo"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="IconeDerrotas" type="TextureRect" parent="Marginalizador/OrganizadorMiolo/OrganizadorDerrotas"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+
+[node name="EtiquetaQuantidadeDerrotas" type="Label" parent="Marginalizador/OrganizadorMiolo/OrganizadorDerrotas"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Derrotas"
+
+[node name="BotaoSelecionadorDeHistoria" type="TextureButton" parent="Marginalizador"]
+layout_mode = 2
+texture_hover = SubResource("GradientTexture1D_q6h48")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Marginalizador/BotaoSelecionadorDeHistoria" to="." method="_quando_botao_selecionador_de_historia_pressionado"]

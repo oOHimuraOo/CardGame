@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bu84bk4f5npts"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Carta/Maquina de comportamento/Script/maquina_de_comportamento.gd" id="1_l3b5m"]
+
+[node name="MaquinaDeComportamento" type="Node"]
+script = ExtResource("1_l3b5m")
+
+[node name="Mao" type="Node" parent="."]
+
+[node name="Entrar" type="Node" parent="."]
+
+[node name="Sair" type="Node" parent="."]
+
+[node name="InicioDaManutencao" type="Node" parent="."]
+
+[node name="FinalDaManutencao" type="Node" parent="."]
+
+[node name="InicioDoCombate" type="Node" parent="."]
+
+[node name="FinalDoCombate" type="Node" parent="."]
+
+[node name="Atacar" type="Node" parent="."]
+
+[node name="Bloquear" type="Node" parent="."]
+
+[node name="Morrer" type="Node" parent="."]

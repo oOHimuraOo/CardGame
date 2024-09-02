@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c43nt4k3d4swp"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Carta/Maquina de comportamento/Comportamento/Script/renascer.gd" id="1_4wj6n"]
+
+[node name="Renascer" type="Node"]
+script = ExtResource("1_4wj6n")

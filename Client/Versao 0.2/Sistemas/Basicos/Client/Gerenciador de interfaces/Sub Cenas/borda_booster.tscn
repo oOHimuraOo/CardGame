@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://ci036p4kcpeds"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/borda_booster.gd" id="1_8qn4t"]
+
+[sub_resource type="Gradient" id="Gradient_avqeu"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.556863, 0.215686, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_iu2dw"]
+gradient = SubResource("Gradient_avqeu")
+
+[sub_resource type="Gradient" id="Gradient_odhjw"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.486275, 0.4, 0, 0.411765)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jdfts"]
+gradient = SubResource("Gradient_odhjw")
+
+[node name="BordaBooster" type="NinePatchRect"]
+custom_minimum_size = Vector2(500, 710)
+layout_direction = 1
+texture = SubResource("GradientTexture1D_iu2dw")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+script = ExtResource("1_8qn4t")
+
+[node name="Marginalizador" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="ImagemColecaoBooster" type="TextureRect" parent="Marginalizador"]
+layout_mode = 2
+
+[node name="EtiquetaColecao" type="Label" parent="Marginalizador/ImagemColecaoBooster"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Nome da colecao"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BotaoDestacarBooster" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_hover = SubResource("GradientTexture1D_jdfts")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="BotaoDestacarBooster" to="." method="quando_botao_destacar_booster_pressionado"]

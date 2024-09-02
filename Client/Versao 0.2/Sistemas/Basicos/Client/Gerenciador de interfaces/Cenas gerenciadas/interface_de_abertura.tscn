@@ -1,0 +1,685 @@
+[gd_scene load_steps=37 format=3 uid="uid://23kgsip4aa2e"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/interface_de_abertura_base.gd" id="1_d6rie"]
+[ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="1_y6ofp"]
+
+[sub_resource type="Gradient" id="Gradient_7jsho"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.355314, 0.355314, 0.355314, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wjtfb"]
+gradient = SubResource("Gradient_7jsho")
+
+[sub_resource type="Gradient" id="Gradient_i7yul"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ygw72"]
+gradient = SubResource("Gradient_i7yul")
+
+[sub_resource type="Gradient" id="Gradient_oxshl"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_cfnb0"]
+gradient = SubResource("Gradient_oxshl")
+
+[sub_resource type="Gradient" id="Gradient_524kx"]
+offsets = PackedFloat32Array(0, 0.556338, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.0862745, 0.313726, 0.956863, 0.717647, 1, 1, 0.988235, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_f6o1c"]
+gradient = SubResource("Gradient_524kx")
+
+[sub_resource type="Gradient" id="Gradient_r0shw"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.389287, 0.389287, 0.389287, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_kpoya"]
+gradient = SubResource("Gradient_r0shw")
+
+[sub_resource type="Gradient" id="Gradient_sfar7"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_srxmk"]
+gradient = SubResource("Gradient_sfar7")
+
+[sub_resource type="Gradient" id="Gradient_rqt01"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qb4nr"]
+gradient = SubResource("Gradient_rqt01")
+
+[sub_resource type="Gradient" id="Gradient_pimyb"]
+offsets = PackedFloat32Array(0, 0.556338, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0.423529, 0.745098, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_88kks"]
+gradient = SubResource("Gradient_pimyb")
+
+[sub_resource type="Gradient" id="Gradient_425fi"]
+offsets = PackedFloat32Array(0.0140845)
+colors = PackedColorArray(0.270222, 0.270222, 0.270222, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nx6sh"]
+gradient = SubResource("Gradient_425fi")
+
+[sub_resource type="Gradient" id="Gradient_tjvyx"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1q4e8"]
+gradient = SubResource("Gradient_tjvyx")
+
+[sub_resource type="Gradient" id="Gradient_tsvbx"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4yxva"]
+gradient = SubResource("Gradient_tsvbx")
+
+[sub_resource type="Gradient" id="Gradient_olgvu"]
+offsets = PackedFloat32Array(0, 0.542253, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0.509804, 0.733333, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mx2sr"]
+gradient = SubResource("Gradient_olgvu")
+
+[sub_resource type="Gradient" id="Gradient_lg1dd"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.389287, 0.389287, 0.389287, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nltbo"]
+gradient = SubResource("Gradient_lg1dd")
+
+[sub_resource type="Gradient" id="Gradient_iwrl7"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_846ey"]
+gradient = SubResource("Gradient_iwrl7")
+
+[sub_resource type="Gradient" id="Gradient_oeima"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_f4pvk"]
+gradient = SubResource("Gradient_oeima")
+
+[sub_resource type="Gradient" id="Gradient_yl8rb"]
+offsets = PackedFloat32Array(0, 0.528169, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0.321569, 0.709804, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qkbma"]
+gradient = SubResource("Gradient_yl8rb")
+
+[sub_resource type="Gradient" id="Gradient_4sfks"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.223103, 0.223103, 0.223103, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qfj3u"]
+gradient = SubResource("Gradient_4sfks")
+
+[node name="InterfaceDeAbertura" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d6rie")
+
+[node name="BordaEfundo" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_wjtfb")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Centralizador" type="MarginContainer" parent="BordaEfundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="PlanoDeFundoParallax" type="ParallaxBackground" parent="BordaEfundo/Centralizador"]
+
+[node name="Camada1" type="ParallaxLayer" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax"]
+
+[node name="ImagemCamada1" type="TextureRect" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax/Camada1"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Camada2" type="ParallaxLayer" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax"]
+
+[node name="ImagemCamada2" type="TextureRect" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax/Camada2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Camada3" type="ParallaxLayer" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax"]
+
+[node name="ImagemCamada3" type="TextureRect" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax/Camada3"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Camada4" type="ParallaxLayer" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax"]
+
+[node name="ImagemCamada4" type="TextureRect" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax/Camada4"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Camada5" type="ParallaxLayer" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax"]
+
+[node name="ImagemCamada5" type="TextureRect" parent="BordaEfundo/Centralizador/PlanoDeFundoParallax/Camada5"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="OrganizadorDeMioloVertical" type="VBoxContainer" parent="BordaEfundo/Centralizador"]
+layout_mode = 2
+
+[node name="OrganizadorDeMioloHorizontal" type="HBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 25
+
+[node name="OrganizadorDeBotoes" type="VBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BotaoCreditos" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_ygw72")
+texture_pressed = SubResource("GradientTexture1D_cfnb0")
+texture_hover = SubResource("GradientTexture1D_f6o1c")
+texture_disabled = SubResource("GradientTexture1D_kpoya")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaCreditos" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes/BotaoCreditos"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Creditos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoCriarConta" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_ygw72")
+texture_pressed = SubResource("GradientTexture1D_cfnb0")
+texture_hover = SubResource("GradientTexture1D_f6o1c")
+texture_disabled = SubResource("GradientTexture1D_kpoya")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaCriarConta" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes/BotaoCriarConta"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Criar Conta"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoOpcoes" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+disabled = true
+texture_normal = SubResource("GradientTexture1D_ygw72")
+texture_pressed = SubResource("GradientTexture1D_cfnb0")
+texture_hover = SubResource("GradientTexture1D_f6o1c")
+texture_disabled = SubResource("GradientTexture1D_kpoya")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaOpcoes" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes/BotaoOpcoes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Opcoes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoPatchNotes" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_ygw72")
+texture_pressed = SubResource("GradientTexture1D_cfnb0")
+texture_hover = SubResource("GradientTexture1D_f6o1c")
+texture_disabled = SubResource("GradientTexture1D_kpoya")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaPatchNotes" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes/BotaoPatchNotes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Patch Notes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Marginalizador2" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="BotaoSair" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_ygw72")
+texture_pressed = SubResource("GradientTexture1D_cfnb0")
+texture_hover = SubResource("GradientTexture1D_f6o1c")
+texture_disabled = SubResource("GradientTexture1D_kpoya")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaSair" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorDeBotoes/BotaoSair"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Sair"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorColetadorDeInfo" type="VBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorLogo" type="HBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo"]
+layout_mode = 2
+
+[node name="Marginalizador" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorLogo"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ImagemLogo" type="TextureRect" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorLogo"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+texture = ExtResource("1_y6ofp")
+
+[node name="Marginalizador2" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorLogo"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorHorizontal" type="HBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Marginalizador1" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorLogin" type="VBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="EtiquetaUsuario" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorLogin"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Usuario:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColetorUsuario" type="LineEdit" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorLogin"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+placeholder_text = "Digite aqui seu usuario"
+max_length = 16
+clear_button_enabled = true
+
+[node name="EtiquetaSenha" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorLogin"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Senha:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColetorSenha" type="LineEdit" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorLogin"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+placeholder_text = "Digite aqui sua senha"
+max_length = 32
+clear_button_enabled = true
+secret = true
+
+[node name="Marginalizador1" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorLogin"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="BotaoConfirmar" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorLogin"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+disabled = true
+texture_normal = SubResource("GradientTexture1D_srxmk")
+texture_pressed = SubResource("GradientTexture1D_qb4nr")
+texture_hover = SubResource("GradientTexture1D_88kks")
+texture_disabled = SubResource("GradientTexture1D_nx6sh")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaConfirmar" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorLogin/BotaoConfirmar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Confirmar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VerificadorConectarAutomaticamente" type="CheckBox" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorLogin"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Conectar Automaticamente"
+
+[node name="Marginalizador2" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorLogin"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorCreditos" type="VBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal"]
+visible = false
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="GeradorDeScroll" type="ScrollContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCreditos"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextoCreditos" type="RichTextLabel" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCreditos/GeradorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tudo foi feito por oOHimuraOo"
+
+[node name="BotaoVoltarCreditos" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCreditos"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_1q4e8")
+texture_pressed = SubResource("GradientTexture1D_4yxva")
+texture_hover = SubResource("GradientTexture1D_mx2sr")
+texture_disabled = SubResource("GradientTexture1D_nltbo")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaVoltarCreditos" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCreditos/BotaoVoltarCreditos"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Voltar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorCriar" type="VBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal"]
+visible = false
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Marginalizador1" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorUsuario" type="HBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar"]
+layout_mode = 2
+tooltip_text = "O usuario só pode ter letras minusculas, letras maiusculas e numeros. Max: 16 Char."
+theme_override_constants/separation = 15
+
+[node name="EtiquetaUsuario" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorUsuario"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Usuario:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColetorUsuarioCriar" type="LineEdit" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorUsuario"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "O usuario só pode ter letras minusculas, letras maiusculas e numeros. Max: 16 char."
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Digite aqui seu usuario"
+
+[node name="OrganizadorSenha" type="HBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar"]
+layout_mode = 2
+tooltip_text = "A senha pode ter letras, numeros e caractere especiais. Max: 32 Char."
+theme_override_constants/separation = 15
+
+[node name="EtiquetaSenha" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorSenha"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Senha:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColetorSenhaCriar" type="LineEdit" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorSenha"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "A senha pode ter letras, numeros e caractere especiais. Max: 32 char"
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Digite aqui sua senha"
+max_length = 32
+secret = true
+
+[node name="OrganizadorEmail" type="HBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="EtiquetaEmail" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorEmail"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "E-mail:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColetorEmailCriar" type="LineEdit" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorEmail"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "o e-mail deve ser um e-mail valido. Contendo 1 arroba e um provedor."
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Digite aqui seu e-mail"
+
+[node name="OrganizadorNick" type="HBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar"]
+layout_mode = 2
+tooltip_text = "Max: 8 char"
+theme_override_constants/separation = 15
+
+[node name="EtiquetaNick" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorNick"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Nick:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColetorNickCriar" type="LineEdit" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorNick"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Max: 8 char"
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Digite aqui seu nick"
+max_length = 16
+
+[node name="VerificadorTermos" type="CheckBox" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar"]
+layout_mode = 2
+text = "Aceito os termos e condicoes"
+
+[node name="Marginalizador2" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorBotoes" type="HBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="BotaoCriar" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorBotoes"]
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+texture_normal = SubResource("GradientTexture1D_846ey")
+texture_pressed = SubResource("GradientTexture1D_f4pvk")
+texture_hover = SubResource("GradientTexture1D_qkbma")
+texture_disabled = SubResource("GradientTexture1D_qfj3u")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaCriar" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorBotoes/BotaoCriar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Criar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoCancelar" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorBotoes"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = SubResource("GradientTexture1D_846ey")
+texture_pressed = SubResource("GradientTexture1D_f4pvk")
+texture_hover = SubResource("GradientTexture1D_qkbma")
+texture_disabled = SubResource("GradientTexture1D_qfj3u")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaCancelar" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar/OrganizadorBotoes/BotaoCancelar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Cancelar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Marginalizador3" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorCriar"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorPatchNotes" type="VBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal"]
+visible = false
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="GeradorDeScroll" type="ScrollContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorPatchNotes"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextoPatchNotes" type="RichTextLabel" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorPatchNotes/GeradorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tudo foi feito por oOHimuraOo"
+
+[node name="BotaoVoltarPatchNotes" type="TextureButton" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorPatchNotes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_1q4e8")
+texture_pressed = SubResource("GradientTexture1D_4yxva")
+texture_hover = SubResource("GradientTexture1D_mx2sr")
+texture_disabled = SubResource("GradientTexture1D_nltbo")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaVoltarPatchNotes" type="Label" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal/OrganizadorPatchNotes/BotaoVoltarPatchNotes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Voltar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Marginalizador2" type="MarginContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal/OrganizadorColetadorDeInfo/OrganizadorHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CaixaVazia" type="VBoxContainer" parent="BordaEfundo/Centralizador/OrganizadorDeMioloVertical/OrganizadorDeMioloHorizontal"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2

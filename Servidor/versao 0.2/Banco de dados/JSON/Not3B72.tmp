@@ -1,0 +1,39 @@
+{
+	"2024-08-19": {
+		"carrossel": {
+			"0":{
+				"img": "url da img",
+				"titulo": "titulo da imagem",
+				"link": "link de redicionamento",
+				"texto": "texto da imagem 1"
+			},
+			"1":{
+				"img": "url da img",
+				"titulo": "titulo da imagem",
+				"link": "link de redicionamento",
+				"texto": "texto da imagem 2"
+			},
+			"2":{
+				"img": "url da img",
+				"titulo": "titulo da imagem",
+				"link": "link de redicionamento",
+				"texto": "texto da imagem 3"
+			}
+		},
+		"imagem_auxiliar_1": {
+			"titulo": "titulo da imagem",
+			"texto": "texto da imagem",
+			"link": "link da imagem"
+		},
+		"imagem_auxiliar_2": {
+			"titulo": "titulo da imagem",
+			"texto": "texto da imagem",
+			"link": "link da imagem"
+		},
+		"imagem_auxiliar_3": {
+			"titulo": "titulo da imagem",
+			"texto": "texto da imagem",
+			"link": "link da imagem"
+		}
+	}
+}
