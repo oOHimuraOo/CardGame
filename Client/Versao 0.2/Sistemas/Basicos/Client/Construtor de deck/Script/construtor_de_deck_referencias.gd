@@ -7,6 +7,8 @@ extends Control
 @onready var selecionador_de_raca_do_deck:OptionButton = $BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho/Marginalizador/OrganizadorCabecalho/SelecionadorDeRacaDoDeck
 @onready var etiqueta_nome_do_deck:Label = $BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho/Marginalizador/OrganizadorCabecalho/EtiquetaNomeDoDeck
 @onready var botao_aplicar_mudanca:TextureButton = $BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BotaoAplicarMudanca
+@onready var organizador_cartas_lista:VBoxContainer = $BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista
+@onready var etiqueta_aplicar_mudanca = $BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BotaoAplicarMudanca/EtiquetaAplicarMudanca
 
 @onready var carta_lista:TextureButton = $BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista
 @onready var carta_lista_2:TextureButton = $BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista2

@@ -51,11 +51,11 @@ func booster_aberto(carta_tirada) -> void:
 
 func informacoes_da_colecao(colecao:Dictionary) -> void:
 	var construtor:CONSTRUTOR_DE_DECK_BASE = get_tree().get_first_node_in_group("Construtor")
-	construtor.gerar_catalogo(colecao)
+	construtor.inicializar_colecao(colecao)
 
 func informacoes_do_deck(deck:Dictionary) -> void:
 	var construtor:CONSTRUTOR_DE_DECK_BASE = get_tree().get_first_node_in_group("Construtor")
-	construtor.carregar_deck(deck)
+	construtor.decklist.gerar_decklist(deck)
 
 func atualizacao_de_deck_validada(validacao:bool, msg:String) -> void:
 	var construtor:CONSTRUTOR_DE_DECK_BASE = get_tree().get_first_node_in_group("Construtor")

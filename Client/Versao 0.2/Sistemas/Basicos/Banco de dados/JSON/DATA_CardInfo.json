@@ -2,7 +2,9 @@
   "edicao_0": {
 	"0": {
 	  "Nome": "Carta 00",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -15,7 +17,9 @@
 	},
 	"1": {
 	  "Nome": "Carta 01",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 0,
@@ -29,7 +33,9 @@
 	},
 	"2": {
 	  "Nome": "Carta 02",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -44,7 +50,9 @@
 	},
 	"3": {
 	  "Nome": "Carta 03",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 0,
@@ -57,7 +65,9 @@
 	},
 	"4": {
 	  "Nome": "Carta 04",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -71,7 +81,9 @@
 	},
 	"5": {
 	  "Nome": "Carta 05",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -86,7 +98,9 @@
 	},
 	"6": {
 	  "Nome": "Carta 06",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 1,
@@ -99,7 +113,9 @@
 	},
 	"7": {
 	  "Nome": "Carta 07",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -113,7 +129,9 @@
 	},
 	"8": {
 	  "Nome": "Carta 08",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 1,
@@ -128,7 +146,9 @@
 	},
 	"9": {
 	  "Nome": "Carta 09",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -141,7 +161,9 @@
 	},
 	"10": {
 	  "Nome": "Carta 10",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -155,7 +177,9 @@
 	},
 	"11": {
 	  "Nome": "Carta 11",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 2,
@@ -170,7 +194,9 @@
 	},
 	"12": {
 	  "Nome": "Carta 12",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -183,7 +209,9 @@
 	},
 	"13": {
 	  "Nome": "Carta 13",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 2,
@@ -197,7 +225,9 @@
 	},
 	"14": {
 	  "Nome": "Carta 14",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -212,7 +242,9 @@
 	},
 	"15": {
 	  "Nome": "Carta 15",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -225,7 +257,9 @@
 	},
 	"16": {
 	  "Nome": "Carta 16",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 3,
@@ -239,7 +273,9 @@
 	},
 	"17": {
 	  "Nome": "Carta 17",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -254,7 +290,9 @@
 	},
 	"18": {
 	  "Nome": "Carta 18",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 3,
@@ -267,7 +305,9 @@
 	},
 	"19": {
 	  "Nome": "Carta 19",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -281,7 +321,9 @@
 	},
 	"20": {
 	  "Nome": "Carta 20",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -296,7 +338,9 @@
 	},
 	"21": {
 	  "Nome": "Carta 21",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 4,
@@ -309,7 +353,9 @@
 	},
 	"22": {
 	  "Nome": "Carta 22",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -323,7 +369,9 @@
 	},
 	"23": {
 	  "Nome": "Carta 23",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 4,
@@ -338,7 +386,9 @@
 	},
 	"24": {
 	  "Nome": "Carta 24",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -351,7 +401,9 @@
 	},
 	"25": {
 	  "Nome": "Carta 25",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -365,7 +417,9 @@
 	},
 	"26": {
 	  "Nome": "Carta 26",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 5,
@@ -380,7 +434,9 @@
 	},
 	"27": {
 	  "Nome": "Carta 27",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -393,7 +449,9 @@
 	},
 	"28": {
 	  "Nome": "Carta 28",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 5,
@@ -407,7 +465,9 @@
 	},
 	"29": {
 	  "Nome": "Carta 29",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -422,7 +482,9 @@
 	},
 	"30": {
 	  "Nome": "Carta 30",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -435,7 +497,9 @@
 	},
 	"31": {
 	  "Nome": "Carta 31",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 0,
@@ -449,7 +513,9 @@
 	},
 	"32": {
 	  "Nome": "Carta 32",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -464,7 +530,9 @@
 	},
 	"33": {
 	  "Nome": "Carta 33",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 0,
@@ -477,7 +545,9 @@
 	},
 	"34": {
 	  "Nome": "Carta 34",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -491,7 +561,9 @@
 	},
 	"35": {
 	  "Nome": "Carta 35",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -506,7 +578,9 @@
 	},
 	"36": {
 	  "Nome": "Carta 36",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 1,
@@ -519,7 +593,9 @@
 	},
 	"37": {
 	  "Nome": "Carta 37",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -533,7 +609,9 @@
 	},
 	"38": {
 	  "Nome": "Carta 38",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 1,
@@ -548,7 +626,9 @@
 	},
 	"39": {
 	  "Nome": "Carta 39",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -561,7 +641,9 @@
 	},
 	"40": {
 	  "Nome": "Carta 40",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -575,7 +657,9 @@
 	},
 	"41": {
 	  "Nome": "Carta 41",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 2,
@@ -590,7 +674,9 @@
 	},
 	"42": {
 	  "Nome": "Carta 42",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -603,7 +689,9 @@
 	},
 	"43": {
 	  "Nome": "Carta 43",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 2,
@@ -617,7 +705,9 @@
 	},
 	"44": {
 	  "Nome": "Carta 44",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -632,7 +722,9 @@
 	},
 	"45": {
 	  "Nome": "Carta 45",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -645,7 +737,9 @@
 	},
 	"46": {
 	  "Nome": "Carta 46",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 3,
@@ -655,7 +749,9 @@
 	},
 	"47": {
 	  "Nome": "Carta 47",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -665,7 +761,9 @@
 	},
 	"48": {
 	  "Nome": "Carta 48",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 3,
@@ -675,7 +773,9 @@
 	},
 	"49": {
 	  "Nome": "Carta 49",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -685,7 +785,9 @@
 	},
 	"50": {
 	  "Nome": "Carta 50",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -695,7 +797,9 @@
 	},
 	"51": {
 	  "Nome": "Carta 51",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 4,
@@ -705,7 +809,9 @@
 	},
 	"52": {
 	  "Nome": "Carta 52",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -715,7 +821,9 @@
 	},
 	"53": {
 	  "Nome": "Carta 53",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 4,
@@ -725,7 +833,9 @@
 	},
 	"54": {
 	  "Nome": "Carta 54",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -735,7 +845,9 @@
 	},
 	"55": {
 	  "Nome": "Carta 55",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -745,7 +857,9 @@
 	},
 	"56": {
 	  "Nome": "Carta 56",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 5,
@@ -755,7 +869,9 @@
 	},
 	"57": {
 	  "Nome": "Carta 57",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -765,7 +881,9 @@
 	},
 	"58": {
 	  "Nome": "Carta 58",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 5,
@@ -775,7 +893,9 @@
 	},
 	"59": {
 	  "Nome": "Carta 59",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -785,7 +905,9 @@
 	},
 	"60": {
 	  "Nome": "Carta 60",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -795,7 +917,9 @@
 	},
 	"61": {
 	  "Nome": "Carta 61",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 0,
@@ -805,7 +929,9 @@
 	},
 	"62": {
 	  "Nome": "Carta 62",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -815,7 +941,9 @@
 	},
 	"63": {
 	  "Nome": "Carta 63",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 0,
@@ -825,7 +953,9 @@
 	},
 	"64": {
 	  "Nome": "Carta 64",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -835,7 +965,9 @@
 	},
 	"65": {
 	  "Nome": "Carta 65",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -845,7 +977,9 @@
 	},
 	"66": {
 	  "Nome": "Carta 66",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 1,
@@ -855,7 +989,9 @@
 	},
 	"67": {
 	  "Nome": "Carta 67",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -865,7 +1001,9 @@
 	},
 	"68": {
 	  "Nome": "Carta 68",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 1,
@@ -875,7 +1013,9 @@
 	},
 	"69": {
 	  "Nome": "Carta 69",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -885,7 +1025,9 @@
 	},
 	"70": {
 	  "Nome": "Carta 70",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -895,7 +1037,9 @@
 	},
 	"71": {
 	  "Nome": "Carta 71",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 2,
@@ -905,7 +1049,9 @@
 	},
 	"72": {
 	  "Nome": "Carta 72",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -915,7 +1061,9 @@
 	},
 	"73": {
 	  "Nome": "Carta 73",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 2,
@@ -925,7 +1073,9 @@
 	},
 	"74": {
 	  "Nome": "Carta 74",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -935,7 +1085,9 @@
 	},
 	"75": {
 	  "Nome": "Carta 75",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -945,7 +1097,9 @@
 	},
 	"76": {
 	  "Nome": "Carta 76",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 3,
@@ -955,7 +1109,9 @@
 	},
 	"77": {
 	  "Nome": "Carta 77",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -965,7 +1121,9 @@
 	},
 	"78": {
 	  "Nome": "Carta 78",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 3,
@@ -975,7 +1133,9 @@
 	},
 	"79": {
 	  "Nome": "Carta 79",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -985,7 +1145,9 @@
 	},
 	"80": {
 	  "Nome": "Carta 80",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -995,7 +1157,9 @@
 	},
 	"81": {
 	  "Nome": "Carta 81",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 4,
@@ -1005,7 +1169,9 @@
 	},
 	"82": {
 	  "Nome": "Carta 82",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -1015,7 +1181,9 @@
 	},
 	"83": {
 	  "Nome": "Carta 83",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 4,
@@ -1025,7 +1193,9 @@
 	},
 	"84": {
 	  "Nome": "Carta 84",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -1035,7 +1205,9 @@
 	},
 	"85": {
 	  "Nome": "Carta 85",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -1045,7 +1217,9 @@
 	},
 	"86": {
 	  "Nome": "Carta 86",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 5,
@@ -1055,7 +1229,9 @@
 	},
 	"87": {
 	  "Nome": "Carta 87",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -1065,7 +1241,9 @@
 	},
 	"88": {
 	  "Nome": "Carta 88",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 5,
@@ -1075,7 +1253,9 @@
 	},
 	"89": {
 	  "Nome": "Carta 89",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -1085,7 +1265,9 @@
 	},
 	"90": {
 	  "Nome": "Carta 90",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -1095,7 +1277,9 @@
 	},
 	"91": {
 	  "Nome": "Carta 91",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 0,
@@ -1105,7 +1289,9 @@
 	},
 	"92": {
 	  "Nome": "Carta 92",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -1115,7 +1301,9 @@
 	},
 	"93": {
 	  "Nome": "Carta 93",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 0,
@@ -1125,7 +1313,9 @@
 	},
 	"94": {
 	  "Nome": "Carta 94",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -1135,7 +1325,9 @@
 	},
 	"95": {
 	  "Nome": "Carta 95",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -1145,7 +1337,9 @@
 	},
 	"96": {
 	  "Nome": "Carta 96",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 1,
@@ -1155,7 +1349,9 @@
 	},
 	"97": {
 	  "Nome": "Carta 97",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -1165,7 +1361,9 @@
 	},
 	"98": {
 	  "Nome": "Carta 98",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 1,
@@ -1175,7 +1373,9 @@
 	},
 	"99": {
 	  "Nome": "Carta 99",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -1185,7 +1385,9 @@
 	},
 	"100": {
 	  "Nome": "Carta 100",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -1195,7 +1397,9 @@
 	},
 	"101": {
 	  "Nome": "Carta 101",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 2,
@@ -1205,7 +1409,9 @@
 	},
 	"102": {
 	  "Nome": "Carta 102",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -1215,7 +1421,9 @@
 	},
 	"103": {
 	  "Nome": "Carta 103",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 2,
@@ -1225,7 +1433,9 @@
 	},
 	"104": {
 	  "Nome": "Carta 104",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -1235,7 +1445,9 @@
 	},
 	"105": {
 	  "Nome": "Carta 105",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -1245,7 +1457,9 @@
 	},
 	"106": {
 	  "Nome": "Carta 106",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 3,
@@ -1255,7 +1469,9 @@
 	},
 	"107": {
 	  "Nome": "Carta 107",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -1265,7 +1481,9 @@
 	},
 	"108": {
 	  "Nome": "Carta 108",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 3,
@@ -1275,7 +1493,9 @@
 	},
 	"109": {
 	  "Nome": "Carta 109",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -1285,7 +1505,9 @@
 	},
 	"110": {
 	  "Nome": "Carta 110",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -1295,7 +1517,9 @@
 	},
 	"111": {
 	  "Nome": "Carta 111",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 4,
@@ -1305,7 +1529,9 @@
 	},
 	"112": {
 	  "Nome": "Carta 112",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -1315,7 +1541,9 @@
 	},
 	"113": {
 	  "Nome": "Carta 113",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 4,
@@ -1325,7 +1553,9 @@
 	},
 	"114": {
 	  "Nome": "Carta 114",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -1335,7 +1565,9 @@
 	},
 	"115": {
 	  "Nome": "Carta 115",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -1345,7 +1577,9 @@
 	},
 	"116": {
 	  "Nome": "Carta 116",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 5,
@@ -1355,7 +1589,9 @@
 	},
 	"117": {
 	  "Nome": "Carta 117",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -1365,7 +1601,9 @@
 	},
 	"118": {
 	  "Nome": "Carta 118",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 5,
@@ -1375,7 +1613,9 @@
 	},
 	"119": {
 	  "Nome": "Carta 119",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -1385,7 +1625,9 @@
 	},
 	"120": {
 	  "Nome": "Carta 120",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -1395,7 +1637,9 @@
 	},
 	"121": {
 	  "Nome": "Carta 121",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 0,
@@ -1405,7 +1649,9 @@
 	},
 	"122": {
 	  "Nome": "Carta 122",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -1415,7 +1661,9 @@
 	},
 	"123": {
 	  "Nome": "Carta 123",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 0,
@@ -1425,7 +1673,9 @@
 	},
 	"124": {
 	  "Nome": "Carta 124",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -1435,7 +1685,9 @@
 	},
 	"125": {
 	  "Nome": "Carta 125",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -1445,7 +1697,9 @@
 	},
 	"126": {
 	  "Nome": "Carta 126",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 1,
@@ -1455,7 +1709,9 @@
 	},
 	"127": {
 	  "Nome": "Carta 127",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -1465,7 +1721,9 @@
 	},
 	"128": {
 	  "Nome": "Carta 128",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 1,
@@ -1475,7 +1733,9 @@
 	},
 	"129": {
 	  "Nome": "Carta 129",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -1485,7 +1745,9 @@
 	},
 	"130": {
 	  "Nome": "Carta 130",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -1495,7 +1757,9 @@
 	},
 	"131": {
 	  "Nome": "Carta 131",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 2,
@@ -1505,7 +1769,9 @@
 	},
 	"132": {
 	  "Nome": "Carta 132",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -1515,7 +1781,9 @@
 	},
 	"133": {
 	  "Nome": "Carta 133",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 2,
@@ -1525,7 +1793,9 @@
 	},
 	"134": {
 	  "Nome": "Carta 134",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -1535,7 +1805,9 @@
 	},
 	"135": {
 	  "Nome": "Carta 135",
-	  "Tipo": "Metamorfo",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -1545,7 +1817,9 @@
 	},
 	"136": {
 	  "Nome": "Carta 136",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 3,
@@ -1555,7 +1829,9 @@
 	},
 	"137": {
 	  "Nome": "Carta 137",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -1565,7 +1841,9 @@
 	},
 	"138": {
 	  "Nome": "Carta 138",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 3,
@@ -1575,7 +1853,9 @@
 	},
 	"139": {
 	  "Nome": "Carta 139",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -1585,7 +1865,9 @@
 	},
 	"140": {
 	  "Nome": "Carta 140",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -1595,7 +1877,9 @@
 	},
 	"141": {
 	  "Nome": "Carta 141",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 4,
@@ -1605,7 +1889,9 @@
 	},
 	"142": {
 	  "Nome": "Carta 142",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -1615,7 +1901,9 @@
 	},
 	"143": {
 	  "Nome": "Carta 143",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 4,
@@ -1625,7 +1913,9 @@
 	},
 	"144": {
 	  "Nome": "Carta 144",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -1635,7 +1925,9 @@
 	},
 	"145": {
 	  "Nome": "Carta 145",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -1645,7 +1937,9 @@
 	},
 	"146": {
 	  "Nome": "Carta 146",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 5,
@@ -1655,7 +1949,9 @@
 	},
 	"147": {
 	  "Nome": "Carta 147",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -1665,7 +1961,9 @@
 	},
 	"148": {
 	  "Nome": "Carta 148",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 5,
@@ -1675,7 +1973,9 @@
 	},
 	"149": {
 	  "Nome": "Carta 149",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -1685,19 +1985,877 @@
 	},
 	"150": {
 	  "Nome": "Carta 150",
-	  "Tipo": "Humano",
+	  "Tipo": [
+		"Humano"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
 	  "Defesa": 1,
 	  "Imagem": "Humano_Placeholder.jpg",
 	  "Valor": 3
+	},
+	"151": {
+	  "Nome": "Carta 151",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"152": {
+	  "Nome": "Carta 152",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"153": {
+	  "Nome": "Carta 153",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"154": {
+	  "Nome": "Carta 154",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"155": {
+	  "Nome": "Carta 155",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"156": {
+	  "Nome": "Carta 156",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"157": {
+	  "Nome": "Carta 157",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"158": {
+	  "Nome": "Carta 158",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"159": {
+	  "Nome": "Carta 159",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"160": {
+	  "Nome": "Carta 160",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"161": {
+	  "Nome": "Carta 161",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"162": {
+	  "Nome": "Carta 162",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"163": {
+	  "Nome": "Carta 163",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"164": {
+	  "Nome": "Carta 164",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"165": {
+	  "Nome": "Carta 165",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"166": {
+	  "Nome": "Carta 166",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"167": {
+	  "Nome": "Carta 167",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"168": {
+	  "Nome": "Carta 168",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"169": {
+	  "Nome": "Carta 169",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"170": {
+	  "Nome": "Carta 170",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"171": {
+	  "Nome": "Carta 171",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"172": {
+	  "Nome": "Carta 172",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"173": {
+	  "Nome": "Carta 173",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"174": {
+	  "Nome": "Carta 174",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"175": {
+	  "Nome": "Carta 175",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"176": {
+	  "Nome": "Carta 176",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"177": {
+	  "Nome": "Carta 177",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"178": {
+	  "Nome": "Carta 178",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"179": {
+	  "Nome": "Carta 179",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"180": {
+	  "Nome": "Carta 180",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"181": {
+	  "Nome": "Carta 181",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Morto_Besta_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"182": {
+	  "Nome": "Carta 182",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Morto_Dragao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"183": {
+	  "Nome": "Carta 183",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Morto_Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"184": {
+	  "Nome": "Carta 184",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Elemental"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Morto_Elemental_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"185": {
+	  "Nome": "Carta 185",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Pirata"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Morto_Pirata_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"186": {
+	  "Nome": "Carta 186",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Morto_Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"187": {
+	  "Nome": "Carta 187",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Anao"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Morto_Anao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"188": {
+	  "Nome": "Carta 188",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Metamorfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Morto_Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"189": {
+	  "Nome": "Carta 189",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Morto_Humano_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"190": {
+	  "Nome": "Carta 190",
+	  "Tipo": [
+		"Besta",
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Besta_Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"191": {
+	  "Nome": "Carta 191",
+	  "Tipo": [
+		"Besta",
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"192": {
+	  "Nome": "Carta 192",
+	  "Tipo": [
+		"Besta",
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Besta_Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"193": {
+	  "Nome": "Carta 193",
+	  "Tipo": [
+		"Besta",
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Besta_Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"194": {
+	  "Nome": "Carta 194",
+	  "Tipo": [
+		"Besta",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Besta_Elfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"195": {
+	  "Nome": "Carta 195",
+	  "Tipo": [
+		"Besta",
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Besta_Anao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"196": {
+	  "Nome": "Carta 196",
+	  "Tipo": [
+		"Besta",
+		"Metamorfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Metamorfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"197": {
+	  "Nome": "Carta 197",
+	  "Tipo": [
+		"Besta",
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"198": {
+	  "Nome": "Carta 198",
+	  "Tipo": [
+		"Naga",
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"199": {
+	  "Nome": "Carta 199",
+	  "Tipo": [
+		"Naga",
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"200": {
+	  "Nome": "Carta 200",
+	  "Tipo": [
+		"Naga",
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"201": {
+	  "Nome": "Carta 201",
+	  "Tipo": [
+		"Naga",
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Anao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"202": {
+	  "Nome": "Carta 202",
+	  "Tipo": [
+		"Naga",
+		"Metamorfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Metamorfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"203": {
+	  "Nome": "Carta 203",
+	  "Tipo": [
+		"Naga",
+		"Humano"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"204": {
+	  "Nome": "Carta 204",
+	  "Tipo": [
+		"Elemental",
+		"Pirata"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"205": {
+	  "Nome": "Carta 205",
+	  "Tipo": [
+		"Elemental",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Elfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"206": {
+	  "Nome": "Carta 206",
+	  "Tipo": [
+		"Elemental",
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Elemental_Anao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"207": {
+	  "Nome": "Carta 207",
+	  "Tipo": [
+		"Elemental",
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Elemental_Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"208": {
+	  "Nome": "Carta 208",
+	  "Tipo": [
+		"Elemental",
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Elemental_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"209": {
+	  "Nome": "Carta 209",
+	  "Tipo": [
+		"Pirata",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Pirata_Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"210": {
+	  "Nome": "Carta 210",
+	  "Tipo": [
+		"Pirata",
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Pirata_Anao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"211": {
+	  "Nome": "Carta 211",
+	  "Tipo": [
+		"Pirata",
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Pirata_Metamorfor_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"212": {
+	  "Nome": "Carta 212",
+	  "Tipo": [
+		"Pirata",
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Pirata_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"213": {
+	  "Nome": "Carta 213",
+	  "Tipo": [
+		"Elfo",
+		"Anao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Elfo_Anao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"214": {
+	  "Nome": "Carta 214",
+	  "Tipo": [
+		"Elfo",
+		"Metamorfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Elfo_Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"215": {
+	  "Nome": "Carta 215",
+	  "Tipo": [
+		"Elfo",
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Elfo_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"216": {
+	  "Nome": "Carta 216",
+	  "Tipo": [
+		"Anao",
+		"Metamorfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Anao_Metamorfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"217": {
+	  "Nome": "Carta 217",
+	  "Tipo": [
+		"Anao",
+		"Humano"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Anao_Humano_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"218": {
+	  "Nome": "Carta 218",
+	  "Tipo": [
+		"Metamorfo",
+		"Humano"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Metamorfo_Humano_Placeholder.jpg",
+	  "Valor": 4
 	}
   },
   "edicao_1": {
 	"0": {
 	  "Nome": "Carta 00",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -1710,7 +2868,9 @@
 	},
 	"1": {
 	  "Nome": "Carta 01",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 0,
@@ -1724,7 +2884,9 @@
 	},
 	"2": {
 	  "Nome": "Carta 02",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -1739,7 +2901,9 @@
 	},
 	"3": {
 	  "Nome": "Carta 03",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 0,
@@ -1752,7 +2916,9 @@
 	},
 	"4": {
 	  "Nome": "Carta 04",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -1766,7 +2932,9 @@
 	},
 	"5": {
 	  "Nome": "Carta 05",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -1781,7 +2949,9 @@
 	},
 	"6": {
 	  "Nome": "Carta 06",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 1,
@@ -1794,7 +2964,9 @@
 	},
 	"7": {
 	  "Nome": "Carta 07",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -1808,7 +2980,9 @@
 	},
 	"8": {
 	  "Nome": "Carta 08",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 1,
@@ -1823,7 +2997,9 @@
 	},
 	"9": {
 	  "Nome": "Carta 09",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -1836,7 +3012,9 @@
 	},
 	"10": {
 	  "Nome": "Carta 10",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -1850,7 +3028,9 @@
 	},
 	"11": {
 	  "Nome": "Carta 11",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 2,
@@ -1865,7 +3045,9 @@
 	},
 	"12": {
 	  "Nome": "Carta 12",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -1878,7 +3060,9 @@
 	},
 	"13": {
 	  "Nome": "Carta 13",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 2,
@@ -1892,7 +3076,9 @@
 	},
 	"14": {
 	  "Nome": "Carta 14",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -1907,7 +3093,9 @@
 	},
 	"15": {
 	  "Nome": "Carta 15",
-	  "Tipo": "Morto-Vivo",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -1920,7 +3108,9 @@
 	},
 	"16": {
 	  "Nome": "Carta 16",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 3,
@@ -1934,7 +3124,9 @@
 	},
 	"17": {
 	  "Nome": "Carta 17",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -1949,7 +3141,9 @@
 	},
 	"18": {
 	  "Nome": "Carta 18",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 3,
@@ -1962,7 +3156,9 @@
 	},
 	"19": {
 	  "Nome": "Carta 19",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -1976,7 +3172,9 @@
 	},
 	"20": {
 	  "Nome": "Carta 20",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -1991,7 +3189,9 @@
 	},
 	"21": {
 	  "Nome": "Carta 21",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 4,
@@ -2004,7 +3204,9 @@
 	},
 	"22": {
 	  "Nome": "Carta 22",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -2018,7 +3220,9 @@
 	},
 	"23": {
 	  "Nome": "Carta 23",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 4,
@@ -2033,7 +3237,9 @@
 	},
 	"24": {
 	  "Nome": "Carta 24",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -2046,7 +3252,9 @@
 	},
 	"25": {
 	  "Nome": "Carta 25",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -2060,7 +3268,9 @@
 	},
 	"26": {
 	  "Nome": "Carta 26",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 5,
@@ -2075,7 +3285,9 @@
 	},
 	"27": {
 	  "Nome": "Carta 27",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -2088,7 +3300,9 @@
 	},
 	"28": {
 	  "Nome": "Carta 28",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 5,
@@ -2102,7 +3316,9 @@
 	},
 	"29": {
 	  "Nome": "Carta 29",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -2117,7 +3333,9 @@
 	},
 	"30": {
 	  "Nome": "Carta 30",
-	  "Tipo": "Besta",
+	  "Tipo": [
+		"Besta"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -2130,7 +3348,9 @@
 	},
 	"31": {
 	  "Nome": "Carta 31",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 0,
@@ -2144,7 +3364,9 @@
 	},
 	"32": {
 	  "Nome": "Carta 32",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -2159,7 +3381,9 @@
 	},
 	"33": {
 	  "Nome": "Carta 33",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 0,
@@ -2172,7 +3396,9 @@
 	},
 	"34": {
 	  "Nome": "Carta 34",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -2186,7 +3412,9 @@
 	},
 	"35": {
 	  "Nome": "Carta 35",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -2201,7 +3429,9 @@
 	},
 	"36": {
 	  "Nome": "Carta 36",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 1,
@@ -2214,7 +3444,9 @@
 	},
 	"37": {
 	  "Nome": "Carta 37",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -2228,7 +3460,9 @@
 	},
 	"38": {
 	  "Nome": "Carta 38",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 1,
@@ -2243,7 +3477,9 @@
 	},
 	"39": {
 	  "Nome": "Carta 39",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -2256,7 +3492,9 @@
 	},
 	"40": {
 	  "Nome": "Carta 40",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -2270,7 +3508,9 @@
 	},
 	"41": {
 	  "Nome": "Carta 41",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 2,
@@ -2285,7 +3525,9 @@
 	},
 	"42": {
 	  "Nome": "Carta 42",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -2298,7 +3540,9 @@
 	},
 	"43": {
 	  "Nome": "Carta 43",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 2,
@@ -2312,7 +3556,9 @@
 	},
 	"44": {
 	  "Nome": "Carta 44",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -2327,7 +3573,9 @@
 	},
 	"45": {
 	  "Nome": "Carta 45",
-	  "Tipo": "Dragao",
+	  "Tipo": [
+		"Dragao"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -2340,7 +3588,9 @@
 	},
 	"46": {
 	  "Nome": "Carta 46",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 3,
@@ -2350,7 +3600,9 @@
 	},
 	"47": {
 	  "Nome": "Carta 47",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -2360,7 +3612,9 @@
 	},
 	"48": {
 	  "Nome": "Carta 48",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 3,
@@ -2370,7 +3624,9 @@
 	},
 	"49": {
 	  "Nome": "Carta 49",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -2380,7 +3636,9 @@
 	},
 	"50": {
 	  "Nome": "Carta 50",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -2390,7 +3648,9 @@
 	},
 	"51": {
 	  "Nome": "Carta 51",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 4,
@@ -2400,7 +3660,9 @@
 	},
 	"52": {
 	  "Nome": "Carta 52",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -2410,7 +3672,9 @@
 	},
 	"53": {
 	  "Nome": "Carta 53",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 4,
@@ -2420,7 +3684,9 @@
 	},
 	"54": {
 	  "Nome": "Carta 54",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -2430,7 +3696,9 @@
 	},
 	"55": {
 	  "Nome": "Carta 55",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -2440,7 +3708,9 @@
 	},
 	"56": {
 	  "Nome": "Carta 56",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 5,
@@ -2450,7 +3720,9 @@
 	},
 	"57": {
 	  "Nome": "Carta 57",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -2460,7 +3732,9 @@
 	},
 	"58": {
 	  "Nome": "Carta 58",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 5,
@@ -2470,7 +3744,9 @@
 	},
 	"59": {
 	  "Nome": "Carta 59",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -2480,7 +3756,9 @@
 	},
 	"60": {
 	  "Nome": "Carta 60",
-	  "Tipo": "Naga",
+	  "Tipo": [
+		"Naga"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -2490,7 +3768,9 @@
 	},
 	"61": {
 	  "Nome": "Carta 61",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 0,
@@ -2500,7 +3780,9 @@
 	},
 	"62": {
 	  "Nome": "Carta 62",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -2510,7 +3792,9 @@
 	},
 	"63": {
 	  "Nome": "Carta 63",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 0,
@@ -2520,7 +3804,9 @@
 	},
 	"64": {
 	  "Nome": "Carta 64",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -2530,7 +3816,9 @@
 	},
 	"65": {
 	  "Nome": "Carta 65",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -2540,7 +3828,9 @@
 	},
 	"66": {
 	  "Nome": "Carta 66",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 1,
@@ -2550,7 +3840,9 @@
 	},
 	"67": {
 	  "Nome": "Carta 67",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -2560,7 +3852,9 @@
 	},
 	"68": {
 	  "Nome": "Carta 68",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 1,
@@ -2570,7 +3864,9 @@
 	},
 	"69": {
 	  "Nome": "Carta 69",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -2580,7 +3876,9 @@
 	},
 	"70": {
 	  "Nome": "Carta 70",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -2590,7 +3888,9 @@
 	},
 	"71": {
 	  "Nome": "Carta 71",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 2,
@@ -2600,7 +3900,9 @@
 	},
 	"72": {
 	  "Nome": "Carta 72",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -2610,7 +3912,9 @@
 	},
 	"73": {
 	  "Nome": "Carta 73",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 2,
@@ -2620,7 +3924,9 @@
 	},
 	"74": {
 	  "Nome": "Carta 74",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -2630,7 +3936,9 @@
 	},
 	"75": {
 	  "Nome": "Carta 75",
-	  "Tipo": "Elemental",
+	  "Tipo": [
+		"Elemental"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -2640,7 +3948,9 @@
 	},
 	"76": {
 	  "Nome": "Carta 76",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 3,
@@ -2650,7 +3960,9 @@
 	},
 	"77": {
 	  "Nome": "Carta 77",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -2660,7 +3972,9 @@
 	},
 	"78": {
 	  "Nome": "Carta 78",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 3,
@@ -2670,7 +3984,9 @@
 	},
 	"79": {
 	  "Nome": "Carta 79",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -2680,7 +3996,9 @@
 	},
 	"80": {
 	  "Nome": "Carta 80",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -2690,7 +4008,9 @@
 	},
 	"81": {
 	  "Nome": "Carta 81",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 4,
@@ -2700,7 +4020,9 @@
 	},
 	"82": {
 	  "Nome": "Carta 82",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -2710,7 +4032,9 @@
 	},
 	"83": {
 	  "Nome": "Carta 83",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 4,
@@ -2720,7 +4044,9 @@
 	},
 	"84": {
 	  "Nome": "Carta 84",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -2730,7 +4056,9 @@
 	},
 	"85": {
 	  "Nome": "Carta 85",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -2740,7 +4068,9 @@
 	},
 	"86": {
 	  "Nome": "Carta 86",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 5,
@@ -2750,7 +4080,9 @@
 	},
 	"87": {
 	  "Nome": "Carta 87",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 5,
@@ -2760,7 +4092,9 @@
 	},
 	"88": {
 	  "Nome": "Carta 88",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 5,
@@ -2770,7 +4104,9 @@
 	},
 	"89": {
 	  "Nome": "Carta 89",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 5,
@@ -2780,7 +4116,9 @@
 	},
 	"90": {
 	  "Nome": "Carta 90",
-	  "Tipo": "Pirata",
+	  "Tipo": [
+		"Pirata"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -2790,7 +4128,9 @@
 	},
 	"91": {
 	  "Nome": "Carta 91",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 0,
@@ -2800,7 +4140,9 @@
 	},
 	"92": {
 	  "Nome": "Carta 92",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 0,
@@ -2810,7 +4152,9 @@
 	},
 	"93": {
 	  "Nome": "Carta 93",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 0,
@@ -2820,7 +4164,9 @@
 	},
 	"94": {
 	  "Nome": "Carta 94",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 0,
@@ -2830,7 +4176,9 @@
 	},
 	"95": {
 	  "Nome": "Carta 95",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -2840,7 +4188,9 @@
 	},
 	"96": {
 	  "Nome": "Carta 96",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 1,
@@ -2850,7 +4200,9 @@
 	},
 	"97": {
 	  "Nome": "Carta 97",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 1,
@@ -2860,7 +4212,9 @@
 	},
 	"98": {
 	  "Nome": "Carta 98",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 1,
@@ -2870,7 +4224,9 @@
 	},
 	"99": {
 	  "Nome": "Carta 99",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 1,
@@ -2880,7 +4236,9 @@
 	},
 	"100": {
 	  "Nome": "Carta 100",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -2890,7 +4248,9 @@
 	},
 	"101": {
 	  "Nome": "Carta 101",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 2,
@@ -2900,7 +4260,9 @@
 	},
 	"102": {
 	  "Nome": "Carta 102",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 2,
@@ -2910,7 +4272,9 @@
 	},
 	"103": {
 	  "Nome": "Carta 103",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 2,
@@ -2920,7 +4284,9 @@
 	},
 	"104": {
 	  "Nome": "Carta 104",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 2,
@@ -2930,7 +4296,9 @@
 	},
 	"105": {
 	  "Nome": "Carta 105",
-	  "Tipo": "Elfo",
+	  "Tipo": [
+		"Elfo"
+	  ],
 	  "Raridade": "COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -2940,7 +4308,9 @@
 	},
 	"106": {
 	  "Nome": "Carta 106",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 3,
@@ -2950,7 +4320,9 @@
 	},
 	"107": {
 	  "Nome": "Carta 107",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_3",
 	  "Ataque": 3,
@@ -2960,7 +4332,9 @@
 	},
 	"108": {
 	  "Nome": "Carta 108",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "INCOMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 3,
@@ -2970,7 +4344,9 @@
 	},
 	"109": {
 	  "Nome": "Carta 109",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_1",
 	  "Ataque": 3,
@@ -2980,7 +4356,9 @@
 	},
 	"110": {
 	  "Nome": "Carta 110",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "RARO",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
@@ -2990,7 +4368,9 @@
 	},
 	"111": {
 	  "Nome": "Carta 111",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_RARO",
 	  "Tier": "TIER_3",
 	  "Ataque": 4,
@@ -3000,7 +4380,9 @@
 	},
 	"112": {
 	  "Nome": "Carta 112",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_0",
 	  "Ataque": 4,
@@ -3010,7 +4392,9 @@
 	},
 	"113": {
 	  "Nome": "Carta 113",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_1",
 	  "Ataque": 4,
@@ -3020,13 +4404,609 @@
 	},
 	"114": {
 	  "Nome": "Carta 114",
-	  "Tipo": "Anao",
+	  "Tipo": [
+		"Anao"
+	  ],
 	  "Raridade": "MUITO_COMUM",
 	  "Tier": "TIER_2",
 	  "Ataque": 4,
 	  "Defesa": 5,
 	  "Imagem": "Anao_Placeholder.jpg",
 	  "Valor": 3
+	},
+	"115": {
+	  "Nome": "Carta 115",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"116": {
+	  "Nome": "Carta 116",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"117": {
+	  "Nome": "Carta 117",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"118": {
+	  "Nome": "Carta 118",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"119": {
+	  "Nome": "Carta 119",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"120": {
+	  "Nome": "Carta 120",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"121": {
+	  "Nome": "Carta 121",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"122": {
+	  "Nome": "Carta 122",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"123": {
+	  "Nome": "Carta 123",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"124": {
+	  "Nome": "Carta 124",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"125": {
+	  "Nome": "Carta 125",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"126": {
+	  "Nome": "Carta 126",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"127": {
+	  "Nome": "Carta 127",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"128": {
+	  "Nome": "Carta 128",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"129": {
+	  "Nome": "Carta 129",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"130": {
+	  "Nome": "Carta 130",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"131": {
+	  "Nome": "Carta 131",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"132": {
+	  "Nome": "Carta 132",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"133": {
+	  "Nome": "Carta 133",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"134": {
+	  "Nome": "Carta 134",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"135": {
+	  "Nome": "Carta 135",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"136": {
+	  "Nome": "Carta 136",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"137": {
+	  "Nome": "Carta 137",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"138": {
+	  "Nome": "Carta 138",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"139": {
+	  "Nome": "Carta 139",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"140": {
+	  "Nome": "Carta 140",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"141": {
+	  "Nome": "Carta 141",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"142": {
+	  "Nome": "Carta 142",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"143": {
+	  "Nome": "Carta 143",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"144": {
+	  "Nome": "Carta 144",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"145": {
+	  "Nome": "Carta 145",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Metamorfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Morto_Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"146": {
+	  "Nome": "Carta 146",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Morto_Humano_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"147": {
+	  "Nome": "Carta 147",
+	  "Tipo": [
+		"Besta",
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Besta_Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"148": {
+	  "Nome": "Carta 148",
+	  "Tipo": [
+		"Besta",
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"149": {
+	  "Nome": "Carta 149",
+	  "Tipo": [
+		"Besta",
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Besta_Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"150": {
+	  "Nome": "Carta 150",
+	  "Tipo": [
+		"Besta",
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Besta_Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"151": {
+	  "Nome": "Carta 151",
+	  "Tipo": [
+		"Besta",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Besta_Elfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"152": {
+	  "Nome": "Carta 152",
+	  "Tipo": [
+		"Besta",
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Besta_Anao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"153": {
+	  "Nome": "Carta 153",
+	  "Tipo": [
+		"Besta",
+		"Metamorfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Metamorfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"154": {
+	  "Nome": "Carta 154",
+	  "Tipo": [
+		"Besta",
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"155": {
+	  "Nome": "Carta 155",
+	  "Tipo": [
+		"Naga",
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"156": {
+	  "Nome": "Carta 156",
+	  "Tipo": [
+		"Naga",
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"157": {
+	  "Nome": "Carta 157",
+	  "Tipo": [
+		"Naga",
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"158": {
+	  "Nome": "Carta 158",
+	  "Tipo": [
+		"Naga",
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Anao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"159": {
+	  "Nome": "Carta 159",
+	  "Tipo": [
+		"Naga",
+		"Metamorfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Metamorfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"160": {
+	  "Nome": "Carta 160",
+	  "Tipo": [
+		"Naga",
+		"Humano"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"161": {
+	  "Nome": "Carta 161",
+	  "Tipo": [
+		"Elemental",
+		"Pirata"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"162": {
+	  "Nome": "Carta 162",
+	  "Tipo": [
+		"Elemental",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Elfo_Placeholder.jpg",
+	  "Valor": 1
 	}
   }
 }

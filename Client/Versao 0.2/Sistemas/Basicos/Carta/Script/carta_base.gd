@@ -40,7 +40,8 @@ func carregar_informacoes_da_carta(index:int, colecao:String) -> void:
 	carta_info.colecao = colecao
 	
 	carta_info.nome = DATA.CardInfo[colecao][str(index)]["Nome"]
-	carta_info.tipo = DATA.CardInfo[colecao][str(index)]["Tipo"]
+	for tipo in DATA.CardInfo[colecao][str(index)]["Tipo"]:
+		carta_info.tipo.append(tipo)
 	carta_info.tier = cor_de_tier[DATA.CardInfo[colecao][str(index)]["Tier"]] 
 	carta_info.custo = DATA.CardInfo[colecao][str(index)]["Valor"]
 	carta_info.forca = DATA.CardInfo[colecao][str(index)]["Ataque"]
@@ -67,7 +68,10 @@ func update_visual() -> void:
 	etiqueta_ataque.set_text(str(carta_info.forca))
 	etiqueta_defesa.set_text(str(carta_info.defesa))
 	etiqueta_nome.set_text(carta_info.nome)
-	etiqueta_tipo.set_text(carta_info.tipo)
+	if carta_info.tipo.size() == 1:
+		etiqueta_tipo.set_text(carta_info.tipo[0])
+	else:
+		etiqueta_tipo.set_text(carta_info.tipo[0] + ", " + carta_info.tipo[1])
 	cor_tier.color = carta_info.tier
 	borda_plano_de_fundo.self_modulate = carta_info.raridade
 	imagem_retrato_carta.set_texture(carta_info.imagem)

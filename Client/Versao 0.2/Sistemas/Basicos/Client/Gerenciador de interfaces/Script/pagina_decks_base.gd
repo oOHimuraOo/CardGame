@@ -19,6 +19,7 @@ func instanciar_decks(decks_info:Dictionary) -> void:
 func abrir_editor(nome_do_deck:String) -> void:
 	var construtor_instancias:CONSTRUTOR_DE_DECK_BASE = CONS.CONSTRUTOR_DE_DECK_CENA.instantiate()
 	get_tree().root.add_child(construtor_instancias)
+	construtor_instancias.inicializar_mostruario(false)
 	SERVER.enviando.solicitar_colecao_ao_servidor()
 	SERVER.enviando.solicitar_deck_ao_servidor(nome_do_deck)
 

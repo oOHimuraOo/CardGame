@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://bd3oc5hes481y"]
 
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Construtor de deck/Script/construtor_de_deck_base.gd" id="1_qkqb5"]
 [ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="1_w4cmy"]
-[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Construtor de deck/Script/construtor_de_deck_base.gd" id="1_xfovb"]
 [ext_resource type="PackedScene" uid="uid://bxo737w2r5eea" path="res://Sistemas/Basicos/Client/Construtor de deck/Cena/carta_lista.tscn" id="2_7mxr3"]
 
 [sub_resource type="Gradient" id="Gradient_y0w1c"]
@@ -58,7 +58,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_xfovb")
+script = ExtResource("1_qkqb5")
 
 [node name="BordaPlanoDeFundo" type="NinePatchRect" parent="."]
 layout_mode = 1
@@ -530,19 +530,4 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorBotoes/BotaoVoltar" to="." method="quando_botao_voltar_pressionado"]
 [connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/PlanoDeFundoCartas/OrganizadorBotoes/BotaoAvancar" to="." method="quando_botao_avancar_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista" to="." method="quando_carta_lista_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista2" to="." method="quando_carta_lista_2_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista3" to="." method="quando_carta_lista_3_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista4" to="." method="quando_carta_lista_4_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista5" to="." method="quando_carta_lista_5_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista6" to="." method="quando_carta_lista_6_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista7" to="." method="quando_carta_lista_7_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista8" to="." method="quando_carta_lista_8_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista9" to="." method="quando_carta_lista_9_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista10" to="." method="quando_carta_lista_10_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista11" to="." method="quando_carta_lista_11_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista12" to="." method="quando_carta_lista_12_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista13" to="." method="quando_carta_lista_13_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista14" to="." method="quando_carta_lista_14_pressionado"]
-[connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/OrganizadorCartasLista/CartaLista15" to="." method="quando_carta_lista_15_pressionado"]
 [connection signal="pressed" from="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BotaoAplicarMudanca" to="." method="_on_botao_aplicar_mudanca_pressed"]

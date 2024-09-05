@@ -95,14 +95,18 @@ func salvar_user_info() -> void:
 
 func atualizar_deck(usuario:String, deck_list:Dictionary, raca:String) -> void:
 	var nome_do_deck:String
+	print(deck_list)
 	for deck in UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"]:
 		if UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][deck]["raca"] == raca:
 			nome_do_deck = deck
 	
-	for edicao in deck_list:
-		UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][nome_do_deck]["cartas"][edicao].clear()
-		for index in deck_list[edicao]:
-			for x in range(deck_list[edicao][index]["quantidade"]):
+	for nome in deck_list:
+		for edicao in deck_list[nome]["cartas"]:
+			if UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][nome_do_deck]["cartas"].has(edicao):
+				UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][nome_do_deck]["cartas"][edicao].clear()
+			else:
+				UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][nome_do_deck]["cartas"][edicao] = []
+			for index in deck_list[nome]["cartas"][edicao]:
 				UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][nome_do_deck]["cartas"][edicao].append(int(index))
 	
 			print(UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][nome_do_deck]["cartas"][edicao])

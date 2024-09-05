@@ -59,10 +59,10 @@ func criar_usuario(usuario:String, senha:String, email:String, nick:String, id:i
 			"gold": 0,
 			"packs": {
 				"edicao_0":{
-					"quantidade": 10
+					"quantidade": 30
 				},
 				"edicao_1":{
-					"quantidade": 21
+					"quantidade": 30
 				}
 			},
 			"racas_banidas": {
@@ -253,7 +253,9 @@ func criar_usuario(usuario:String, senha:String, email:String, nick:String, id:i
 					"derrotas": 0,
 				},
 			},
-			"colecao": {}
+			"colecao": {
+				"edicao_0": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 181, 182, 183, 184, 185, 186, 187, 188, 189]
+				}
 		}
 	}
 	

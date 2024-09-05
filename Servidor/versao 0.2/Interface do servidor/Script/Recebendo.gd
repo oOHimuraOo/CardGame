@@ -6,45 +6,18 @@ var testador:Dictionary = {0: "TYPE_NIL", 1: "TYPE_BOOL", 2: "TYPE_INT", 3: "TYP
 func verificar_possibilidade_de_deck_list(deck_list:Dictionary, raca:String, client:String, id:int) -> void:
 	var usuario_real:String = get_parent().iniciando.aplicar_regra_hash_de_usuario(client)
 	var novo_deck:Dictionary = converter_modelo_de_dicionario_de_deck_para_modelo_padrao(deck_list)
-	var count:int = 0
 	
-	var verificacao_de_tamanho:bool = false
-	var verificacao_de_repeticao:bool = false
-	var verificacao_de_carta:bool = false
-	
-	for edicao in novo_deck:
-		for x in range(novo_deck[edicao].size()):
-			count += 1
-	
-	if count == 15:
-		verificacao_de_tamanho = true
-	
-	for edicao in novo_deck:
-		for idx in novo_deck[edicao]:
-			if DATA.UserData[usuario_real]["informcoes_do_jogador"]["colecao"][edicao].has(idx):
-				verificacao_de_carta = true
-			else:
-				verificacao_de_carta = false
-	
-	if verificacao_de_carta:
-		for edicao in novo_deck:
-			for idx in novo_deck[edicao]:
-				if novo_deck[edicao].count(idx) == DATA.UserData[usuario_real]["informcoes_do_jogador"]["colecao"][edicao].count(idx):
-					verificacao_de_repeticao = true
-				else:
-					verificacao_de_repeticao = false
-	
-	if !verificacao_de_tamanho:
+	if verificar_tamanho_do_deck(novo_deck):
 		var msg:String = "Baralho nao atualizado! \nTamanho de deck invalido: Erro 001!"
 		get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg)
 		return
 	
-	if !verificacao_de_carta:
+	if verificar_existencia_de_cartas_na_colecao(novo_deck, usuario_real):
 		var msg:String = "Baralho nao atualizado! \nCarta nao existente na colecao: Erro 002!"
 		get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg)
 		return
 	
-	if !verificacao_de_repeticao:
+	if verificar_quantidade_de_cartas_na_colecao(novo_deck, usuario_real):
 		var msg:String = "Baralho nao atualizado! \nQuantidade de cartas invalida: Erro 003!"
 		get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg)
 		return
@@ -52,44 +25,71 @@ func verificar_possibilidade_de_deck_list(deck_list:Dictionary, raca:String, cli
 	var msg:String = "Baralho atualizado com sucesso!"
 	DATA.atualizar_deck(usuario_real, deck_list, raca)
 	get_parent().enviando.finalizando_alteracao_de_deck(id, true, msg)
+
+func verificar_tamanho_do_deck(deck:Dictionary) -> bool:
+	var count:int = 0
 	
+	print(deck)
+	for edicao in deck:
+		print(deck[edicao])
+		count += deck[edicao].size()
 	
-	#var count:int = 0
-	#for edicao in deck_list:
-		#for index in deck_list[edicao]:
-			#var array_temp:Array = DATA.UserData[usuario_real]["informcoes_do_jogador"]["colecao"][edicao].duplicate(true)
-			#for x in range(array_temp.size()):
-				#array_temp[x] = float(array_temp[x])
-			#index = float(index)
-			#if array_temp.has(index):
-				#if array_temp.count(index) >= deck_list[edicao][index]["quantidade"]:
-					#print("a")
-					#count += 1
-				#else:
-					#print("b")
-					#count -= 1
-			#else:
-				#count = 1000
-	#
-			#print("a contagem está em: ", count, "\nO array é : ", array_temp, "\nO index é: ", index, "\nO tipo do index é: ", testador[typeof(index)], "\nO index aparece: ", array_temp.count(index), " vezes | o valor recebido espera que tenha pelo menos: ", deck_list[edicao][index]["quantidade"], "\nO tipo do valor recebido é: ", testador[typeof(array_temp[array_temp.find(index)])], "\nO array possui o index? ", array_temp.has(index), "\nO index aparece no minimo a quantidade de vezes esperada? ", array_temp.count(index) >= deck_list[edicao][index]["quantidade"], "\nO array de bytes do index é: ", var_to_bytes(index), "\nO array de bytes do valor recebido é: ", var_to_bytes(array_temp[array_temp.find(index)]))
-		#
-	#if count < 15:
-		#var msg:String = "Baralho nao atualizado! \nCarta invalida: Erro 001!"
-		#get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg)
-	#elif count > 15:
-		#var msg:String = "Baralho nao atualizado! \nQuantidade de cartas invalida: Erro 002!"
-		#get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg)
-	#else:
-		#var msg:String = "Baralho atualizado com sucesso!"
-		#DATA.atualizar_deck(usuario_real, deck_list, raca)
-		#get_parent().enviando.finalizando_alteracao_de_deck(id, true, msg)
+	print(count)
+	if count == 15:
+		return false
+	
+	return true
+
+func verificar_existencia_de_cartas_na_colecao(deck:Dictionary, usuario:String) -> bool:
+	var colecao_convertida:Dictionary = converter_colecao_para_modelo_padrao(usuario)
+	for edicao in deck:
+		for idx in deck[edicao]:
+			if !colecao_convertida[edicao].has(idx):
+				return true
+	return false
+
+func verificar_quantidade_de_cartas_na_colecao(deck:Dictionary, usuario:String) -> bool:
+	var colecao_convertida:Dictionary = converter_colecao_para_modelo_padrao(usuario)
+	var count:int = 0
+	for edicao in deck:
+		for idx in deck[edicao]:
+			count = 0
+			for baralho in DATA.UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"]:
+				var deck_registrado_convertido:Dictionary = converter_deck_para_modelo_padrao(usuario, baralho)
+				if deck_registrado_convertido.has(edicao):
+					if deck_registrado_convertido[edicao].has(idx):
+						count += deck_registrado_convertido[edicao].count(idx)
+			
+			if deck[edicao].count(idx) > colecao_convertida[edicao].count(idx):
+				return true
+			
+			if count > colecao_convertida[edicao].count(idx):
+				return true
+			
+	return false
+
+func converter_deck_para_modelo_padrao(usuario:String, deck:String) -> Dictionary:
+	var dicionario:Dictionary = {}
+	for edicao in DATA.UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][deck]["cartas"]:
+		dicionario[edicao] = []
+		for idx in DATA.UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][deck]["cartas"][edicao]:
+			dicionario[edicao].append(idx)
+	return dicionario
 
 func converter_modelo_de_dicionario_de_deck_para_modelo_padrao(deck_list:Dictionary) -> Dictionary:
 	var dicionario:Dictionary = {}
-	for edicao in deck_list:
-		dicionario[edicao] = []
-		for index in deck_list[edicao]:
-			for x in range(deck_list[edicao][index]["quantidade"]):
-				dicionario[edicao].append(index)
+	print("decklist: ", deck_list)
+	for nome in deck_list:
+		for edicao in deck_list[nome]["cartas"]:
+			dicionario[edicao] = []
+			for index in deck_list[nome]["cartas"][edicao]:
+				dicionario[edicao].append(int(index))
 	return dicionario
-	
+
+func converter_colecao_para_modelo_padrao(usuario:String) -> Dictionary:
+	var dicionario:Dictionary = {}
+	for edicao in DATA.UserData[usuario]["informcoes_do_jogador"]["colecao"]:
+		dicionario[edicao] = []
+		for idx in DATA.UserData[usuario]["informcoes_do_jogador"]["colecao"][edicao]:
+			dicionario[edicao].append(int(idx))
+	return dicionario

@@ -5,7 +5,7 @@ extends Resource
 @export var colecao:String
 
 @export var nome:String
-@export var tipo:String
+@export var tipo:Array[String]
 @export var imagem:Texture2D
 @export var icone:Texture2D = preload("res://icon.svg")
 
