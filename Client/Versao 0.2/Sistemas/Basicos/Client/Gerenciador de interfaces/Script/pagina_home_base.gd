@@ -30,6 +30,16 @@ func quando_botao_jogar_pressionado():
 	get_tree().paused = true
 	pop_up_lobby_instancia.inicializar()
 
+func reconectar_a_fila() -> void:
+	var pop_up_lobby_instancia = CONS.POP_UP_LOBBY_CENA.instantiate()
+	get_tree().root.add_child(pop_up_lobby_instancia)
+	get_tree().paused = true
+	pop_up_lobby_instancia.em_fila = true
+	pop_up_lobby_instancia.configurar_tempo_em_fila()
+
+func reconectar_ao_jogo() -> void:
+	print("reconectado_ao_jogo!")
+
 func solicitar_noticias_de_jogo_ao_servidor() -> void:
 	SERVER.enviando.solicitiar_update_de_noticias_ao_servidor()
 

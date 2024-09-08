@@ -1,9 +1,10 @@
 class_name RECEBENDO
 extends Node
 
-func usuario_e_senha_autenticado(autenticado:bool, verificador:bool, usuario:String = "", senha:String = "") -> void:
+func usuario_e_senha_autenticado(autenticado:bool, verificador:bool, status:String, usuario:String = "", senha:String = "") -> void:
 	var client = get_tree().get_first_node_in_group("Client")
 	var gerenciador_de_interface = client.find_child("GerenciadorDeInterfaces")
+	print("status: ", status)
 	if autenticado:
 		if verificador:
 			if usuario != "" && senha != "":
@@ -11,11 +12,19 @@ func usuario_e_senha_autenticado(autenticado:bool, verificador:bool, usuario:Str
 				DATA.login_automatico(usuario, senha, verificador)
 				gerenciador_de_interface.desativar_interface_de_abertura()
 				gerenciador_de_interface.find_child("PaginaHome").solicitar_noticias_de_jogo_ao_servidor()
+				if status == "em_espera":
+					gerenciador_de_interface.find_child("PaginaHome").reconectar_a_fila()
+				elif status == "em_partida":
+					gerenciador_de_interface.find_child("PaginaHome").reconectar_ao_jogo()
 		else:
 			client.name = usuario
 			gerenciador_de_interface.desativar_interface_de_abertura()
 			gerenciador_de_interface.find_child("PaginaHome").solicitar_noticias_de_jogo_ao_servidor()
 			DATA.excluir_login_automatico()
+			if status == "em_espera":
+				gerenciador_de_interface.find_child("PaginaHome").reconectar_a_fila()
+			elif status == "em_partida":
+				gerenciador_de_interface.find_child("PaginaHome").reconectar_ao_jogo()
 	else:
 		var interface_de_abertura = gerenciador_de_interface.find_child("InterfaceDeAbertura")
 		interface_de_abertura.pop_up_de_falha_de_login()

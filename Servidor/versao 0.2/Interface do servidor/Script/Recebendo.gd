@@ -29,12 +29,9 @@ func verificar_possibilidade_de_deck_list(deck_list:Dictionary, raca:String, cli
 func verificar_tamanho_do_deck(deck:Dictionary) -> bool:
 	var count:int = 0
 	
-	print(deck)
 	for edicao in deck:
-		print(deck[edicao])
 		count += deck[edicao].size()
 	
-	print(count)
 	if count == 15:
 		return false
 	
@@ -78,7 +75,6 @@ func converter_deck_para_modelo_padrao(usuario:String, deck:String) -> Dictionar
 
 func converter_modelo_de_dicionario_de_deck_para_modelo_padrao(deck_list:Dictionary) -> Dictionary:
 	var dicionario:Dictionary = {}
-	print("decklist: ", deck_list)
 	for nome in deck_list:
 		for edicao in deck_list[nome]["cartas"]:
 			dicionario[edicao] = []

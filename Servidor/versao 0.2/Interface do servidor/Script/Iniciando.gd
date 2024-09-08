@@ -5,12 +5,27 @@ extends Node
 func autenticar_usuario_e_senha(usuario:String, senha:String, verificador:bool, id:int) -> void:
 	var novo_usuario: String = aplicar_regra_hash_de_usuario(usuario)
 	var novo_senha: String = aplicar_regra_hash_de_senha(senha)
+	var status:String = "conectado"
 	if DATA.UserData.has(novo_usuario):
 		if DATA.UserData[novo_usuario]["senha"] == novo_senha:
-			get_parent().enviando.servidor_client_usuario_autenticado(true, verificador, id, usuario, senha)
-			CONLOB.adicionar_ou_atualizar_jogador_conectado(id, novo_usuario,"conectado")
+			if CONLOB.jogadores_conectados.has(novo_usuario):
+				for index in CONLOB.jogadores_conectados[novo_usuario]:
+					if CONLOB.jogadores_conectados[novo_usuario][index]["status"] == "em_partida":
+						print("a")
+						status = "em_partida"
+						CONLOB.adicionar_ou_atualizar_jogador_conectado(id, novo_usuario, status)
+					elif CONLOB.jogadores_conectados[novo_usuario][index]["status"] == "em_espera":
+						print("b")
+						status = "em_espera"
+						CONLOB.adicionar_ou_atualizar_jogador_conectado(id, novo_usuario, status)
+					else:
+						CONLOB.adicionar_ou_atualizar_jogador_conectado(id, novo_usuario, status)
+			get_parent().enviando.servidor_client_usuario_autenticado(true, verificador, id, status, usuario, senha)
+			
+			if !CONLOB.jogadores_conectados.has(novo_usuario):
+				CONLOB.adicionar_ou_atualizar_jogador_conectado(id, novo_usuario, status)
 			return
-	get_parent().enviando.servidor_client_usuario_autenticado(false, verificador, id)
+	get_parent().enviando.servidor_client_usuario_autenticado(false, verificador, id, status)
 	
 
 func aplicar_regra_hash_de_usuario(valor:String) -> String:

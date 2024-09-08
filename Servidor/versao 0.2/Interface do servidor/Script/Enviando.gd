@@ -1,11 +1,11 @@
 class_name ENVIANDO
 extends Node
 
-func servidor_client_usuario_autenticado(autenticado:bool, verificador:bool, id:int, usuario:String = "", senha:String = "") -> void:
+func servidor_client_usuario_autenticado(autenticado:bool, verificador:bool, id:int, status:String, usuario:String = "", senha:String = "") -> void:
 	if usuario != "" && senha != "":
-		get_parent().servidor_client_usuario_autenticado(autenticado, verificador, id, usuario, senha)
+		get_parent().servidor_client_usuario_autenticado(autenticado, verificador, id, status, usuario, senha)
 		return
-	get_parent().servidor_client_usuario_autenticado(autenticado, verificador, id)
+	get_parent().servidor_client_usuario_autenticado(autenticado, verificador, id, status)
 
 func servidor_client_falha_ao_criar_cadastro(id:int) -> void:
 	get_parent().servidor_client_falha_ao_criar_cadastro(id)

@@ -26,11 +26,11 @@ func client_server_autenticar_usuario(usuario, senha, verificador) -> void:
 	rpc_id(1, "client_server_autenticar_usuario", usuario, senha, verificador, id)
 
 @rpc("authority", "reliable")
-func servidor_client_usuario_autenticado(autenticado:bool, verificador:bool, usuario:String = "", senha:String = "") -> void:
+func servidor_client_usuario_autenticado(autenticado:bool, verificador:bool, status:String, usuario:String = "", senha:String = "") -> void:
 	if usuario != "" && senha != "":
-		recebendo.usuario_e_senha_autenticado(autenticado, verificador, usuario, senha)
+		recebendo.usuario_e_senha_autenticado(autenticado, verificador, status, usuario, senha)
 		return
-	recebendo.usuario_e_senha_autenticado(autenticado, verificador)
+	recebendo.usuario_e_senha_autenticado(autenticado, verificador, status)
 
 @rpc("any_peer","reliable")
 func client_server_criar_usuario(usuario:String, senha:String, email:String, nick:String) -> void:
