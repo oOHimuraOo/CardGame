@@ -11,11 +11,9 @@ func autenticar_usuario_e_senha(usuario:String, senha:String, verificador:bool, 
 			if CONLOB.jogadores_conectados.has(novo_usuario):
 				for index in CONLOB.jogadores_conectados[novo_usuario]:
 					if CONLOB.jogadores_conectados[novo_usuario][index]["status"] == "em_partida":
-						print("a")
 						status = "em_partida"
 						CONLOB.adicionar_ou_atualizar_jogador_conectado(id, novo_usuario, status)
 					elif CONLOB.jogadores_conectados[novo_usuario][index]["status"] == "em_espera":
-						print("b")
 						status = "em_espera"
 						CONLOB.adicionar_ou_atualizar_jogador_conectado(id, novo_usuario, status)
 					else:

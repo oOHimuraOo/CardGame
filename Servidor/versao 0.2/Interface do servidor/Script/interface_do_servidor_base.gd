@@ -26,9 +26,7 @@ func client_server_autenticar_usuario(usuario:String, senha:String, verificador:
 
 @rpc("authority", "reliable")
 func servidor_client_usuario_autenticado(autenticado:bool, verificador:bool, id:int, status:String, usuario:String = "", senha:String = "") -> void:
-	print("aas: ", usuario)
 	if usuario != "" && senha != "":
-		print("aass: ", usuario)
 		rpc_id(id, "servidor_client_usuario_autenticado", autenticado, verificador, status, usuario, senha)
 		return
 	rpc_id(id, "servidor_client_usuario_autenticado", autenticado, verificador, status)

@@ -26,8 +26,7 @@ func inicializar() -> void:
 
 func entrar_no_lobby() -> void:
 	var user:String = get_tree().get_first_node_in_group("Client").name
-	var id:int = multiplayer.get_unique_id()
-	SERVER.enviando.solicitar_entrada_no_lobby(id,user)
+	SERVER.enviando.solicitar_entrada_no_lobby(user)
 
 func configurar_tempo_em_fila() -> void:
 	tempo_em_fila.wait_time = tempo_maximo_em_fila_em_segundos
@@ -44,8 +43,7 @@ func sair_do_lobby(sala_encontrada:bool) -> void:
 		fechar_pop_up()
 	else:
 		var user:String = get_tree().get_first_node_in_group("Client").name
-		var id:int = multiplayer.get_unique_id()
-		SERVER.enviando.notificar_saida_da_fila(id,user)
+		SERVER.enviando.notificar_saida_da_fila(user)
 		await fora_da_fila
 		fechar_pop_up()
 
@@ -56,8 +54,8 @@ func fechar_pop_up() -> void:
 func _on_botao_cancelar_pressed():
 	sair_do_lobby(false)
 
-func _process(delta):
-	tempo_atual_em_fila_em_segundos = tempo_maximo_em_fila_em_segundos - tempo_em_fila.time_left
+func _process(_delta):
+	tempo_atual_em_fila_em_segundos = int(float(tempo_maximo_em_fila_em_segundos - tempo_em_fila.time_left))
 	if em_fila:
 		atualizar_status()
 

@@ -63,7 +63,7 @@ func quando_botao_abrir_tudo_pressionado():
 	packs_disponiveis.clear()
 	atualizar_informacoes(packs_disponiveis)
 
-func quando_novo_booster_selecionado(Booster:BORDA_BOOSTER, colecao:String) -> void:
+func quando_novo_booster_selecionado(Booster:BORDA_BOOSTER, _colecao:String) -> void:
 	if Booster == booster_em_destaque:
 		var packs:Dictionary = {Booster.edicao: {"quantidade": 1}}
 		abrir_um_booster.emit(packs)

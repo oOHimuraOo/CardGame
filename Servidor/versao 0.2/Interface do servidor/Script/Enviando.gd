@@ -43,7 +43,6 @@ func abrir_booster(boosters:Dictionary, usuario:String, id:int) -> void:
 	for edicao in copia_de_boosters:
 		for x in range(copia_de_boosters[edicao]["quantidade"]):
 			DATA.UserData[usuario_real]["informcoes_do_jogador"]["packs"][edicao]["quantidade"] -= 1
-			print(edicao, "quantidade de booster disponivel:", DATA.UserData[usuario_real]["informcoes_do_jogador"]["packs"][edicao]["quantidade"])
 	
 	for edicao in carta_tirada:
 		for carta in carta_tirada[edicao]:

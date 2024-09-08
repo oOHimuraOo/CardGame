@@ -4,7 +4,6 @@ extends Node
 func usuario_e_senha_autenticado(autenticado:bool, verificador:bool, status:String, usuario:String = "", senha:String = "") -> void:
 	var client = get_tree().get_first_node_in_group("Client")
 	var gerenciador_de_interface = client.find_child("GerenciadorDeInterfaces")
-	print("status: ", status)
 	if autenticado:
 		if verificador:
 			if usuario != "" && senha != "":

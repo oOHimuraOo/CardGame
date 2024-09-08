@@ -93,11 +93,11 @@ func servidor_client_enviar_resposta_de_validacao(validacao:bool, msg:String) ->
 	recebendo.atualizacao_de_deck_validada(validacao, msg)
 
 @rpc("any_peer", "reliable")
-func client_server_solicitar_entrada_no_servidor(id:int, user:String) -> void:
+func client_server_solicitar_entrada_no_servidor(user:String) -> void:
 	rpc_id(1, "client_server_solicitar_entrada_no_servidor", id, user)
 
 @rpc("any_peer", "reliable")
-func client_server_notificar_saida_da_fila(id:int, user:String) -> void:
+func client_server_notificar_saida_da_fila(user:String) -> void:
 	rpc_id(1, "client_server_notificar_saida_da_fila", id, user)
 
 @rpc("authority", "reliable")

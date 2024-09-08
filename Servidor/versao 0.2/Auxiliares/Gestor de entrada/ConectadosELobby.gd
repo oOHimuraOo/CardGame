@@ -71,7 +71,6 @@ func descobrir_sala_atual(numero_atual:int) -> int:
 func criar_timer(lobby_nome:String) -> void:
 	var timer_nome:String = "timer_da_" + lobby_nome
 	if !find_child(timer_nome):
-		print(timer_nome)
 		var timer:Timer = Timer.new()
 		timer.name = timer_nome
 		timer.wait_time = 10

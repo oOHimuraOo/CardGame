@@ -148,7 +148,6 @@ func arredondar(x:int, y:int) -> int:
 
 func alocar_pagina_mutavel(edicao:String, index:int, tipo:Array) -> int:
 	var cartas_na_edicao:Dictionary = {}
-	
 	var tipo_1:String
 	var tipo_2:String
 	
@@ -157,27 +156,34 @@ func alocar_pagina_mutavel(edicao:String, index:int, tipo:Array) -> int:
 			tipo_1 = t
 		else:
 			tipo_2 = t
-	
+  
 	if tipo_1 == "Nenhum" || tipo_1 == "Todos":
 		tipo_1 = tipo_do_deck
-	
+  
+	if tipo_1 != tipo_do_deck:
+		if tipo_2 == tipo_do_deck:
+			tipo_1 = tipo_do_deck
+			tipo_2 = "" 
+	else:
+		if tipo_2 != tipo_do_deck:
+			tipo_2 = ""
+  
 	var pagina_atual_temp:int = 1
-	var posicao_atual_temp:int = 0
+	var posicao_atual_temp:int = -1
 	for ed in DATA.CardInfo:
 		for idx in DATA.CardInfo[ed]:
-			if DATA.CardInfo[ed][idx]["Tipo"].has(tipo_1) || (!tipo_2.is_empty() && DATA.CardInfo[ed][idx]["Tipo"].has(tipo_2)) || DATA.CardInfo[ed][idx]["Tipo"].has("Nenhum")  || DATA.CardInfo[ed][idx]["Tipo"].has("Todos"):
-					posicao_atual_temp += 1
-					if posicao_atual_temp >= 18:
-						pagina_atual_temp += 1
-						posicao_atual_temp = 0
-					if !cartas_na_edicao.has(ed):
-						cartas_na_edicao[ed] = {}
-					if !cartas_na_edicao[ed].has(idx):
-						cartas_na_edicao[ed][int(idx)] = {}
-					cartas_na_edicao[ed][int(idx)]["pagina"] = pagina_atual_temp
-					cartas_na_edicao[ed][int(idx)]["posicao"] = posicao_atual_temp
-	
-	print("idx: ", index," pagina: ",cartas_na_edicao[edicao][index]["pagina"], " posicao: ", cartas_na_edicao[edicao][index]["posicao"])
+			if DATA.CardInfo[ed][idx]["Tipo"].has(tipo_1) || DATA.CardInfo[ed][idx]["Tipo"].has("Nenhum")  || DATA.CardInfo[ed][idx]["Tipo"].has("Todos"):
+				posicao_atual_temp += 1
+				if posicao_atual_temp >= 18:
+					pagina_atual_temp += 1
+					posicao_atual_temp = 0
+				if !cartas_na_edicao.has(ed):
+					cartas_na_edicao[ed] = {}
+				if !cartas_na_edicao[ed].has(idx):
+					cartas_na_edicao[ed][int(idx)] = {}
+				cartas_na_edicao[ed][int(idx)]["pagina"] = pagina_atual_temp
+				cartas_na_edicao[ed][int(idx)]["posicao"] = posicao_atual_temp
+  
 	return cartas_na_edicao[edicao][index]["pagina"]
 
 func inicializar_colecao(informacao:Dictionary) -> void:
@@ -382,17 +388,36 @@ func limpar_pagina() -> void:
 	cartas_removidas.emit()
 
 func liberador_de_botoes() -> void:
-	if pagina_atual == 1:
-		botao_avancar.set_disabled(false)
-		botao_voltar.set_disabled(true)
-	elif pagina_atual == quantidade_de_paginas_total:
-		botao_avancar.set_disabled(true)
-		botao_voltar.set_disabled(false)
+	var comando_de_sobreposicao:bool = false
+	for filho in organizador_de_cartas.get_children():
+		if filho.is_visible_in_tree():
+			comando_de_sobreposicao = true
+		else:
+			comando_de_sobreposicao = false
+			break
+	
+	if comando_de_sobreposicao:
+		if pagina_atual == 1:
+			botao_avancar.set_disabled(false)
+			botao_voltar.set_disabled(true)
+		elif pagina_atual == quantidade_de_paginas_total:
+			botao_avancar.set_disabled(true)
+			botao_voltar.set_disabled(false)
+		else:
+			botao_avancar.set_disabled(false)
+			botao_voltar.set_disabled(false)
 	else:
-		botao_avancar.set_disabled(false)
-		botao_voltar.set_disabled(false)
+		if pagina_atual == 1:
+			botao_avancar.set_disabled(true)
+			botao_voltar.set_disabled(true)
+		elif pagina_atual == quantidade_de_paginas_total:
+			botao_avancar.set_disabled(true)
+			botao_voltar.set_disabled(false)
+		else:
+			botao_avancar.set_disabled(true)
+			botao_voltar.set_disabled(false)
 
-func _process(delta):
+func _process(_delta):
 	liberador_de_botoes()
 	
 	if mudanca_efetuada:
