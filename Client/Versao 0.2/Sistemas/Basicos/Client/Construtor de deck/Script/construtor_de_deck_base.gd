@@ -1,6 +1,8 @@
 class_name CONSTRUTOR_DE_DECK_BASE
 extends CONSTRUTOR_DE_DECK_REFERENCIAS
 
+signal nome_do_deck_atualizado(novo_nome:String)
+signal tipo_do_deck_atualizado(novo_tipo:String)
 signal catalogo_atualizado()
 signal deck_list_atualizada()
 signal cartas_removidas()
@@ -40,9 +42,10 @@ func inicializar_mostruario(modo_colecao:bool) -> void:
 	contar_cartas_no_catalogo()
 	contar_paginas()
 	conectar_sinais()
-	carregar_informacoes_basicas()
 
 func conectar_sinais() -> void:
+	#nome_do_deck_atualizado.connect()
+	#tipo_do_deck_atualizado.connect()
 	deck_list_atualizada.connect(revelar_cartas_possuidas)
 	catalogo_atualizado.connect(revelar_cartas_possuidas)
 	cartas_removidas.connect(revelar_cartas_possuidas)
@@ -158,19 +161,11 @@ func alocar_pagina_mutavel(edicao:String, index:int, tipo:Array) -> int:
 	if tipo_1 == "Nenhum" || tipo_1 == "Todos":
 		tipo_1 = tipo_do_deck
 	
-	if tipo_1 != tipo_do_deck:
-		if tipo_2 == tipo_do_deck:
-			tipo_1 = tipo_do_deck
-			tipo_2 = "" 
-	else:
-		if tipo_2 != tipo_do_deck:
-			tipo_2 = ""
-	
 	var pagina_atual_temp:int = 1
-	var posicao_atual_temp:int = -1
+	var posicao_atual_temp:int = 0
 	for ed in DATA.CardInfo:
 		for idx in DATA.CardInfo[ed]:
-			if DATA.CardInfo[ed][idx]["Tipo"].has(tipo_1) || DATA.CardInfo[ed][idx]["Tipo"].has("Nenhum")  || DATA.CardInfo[ed][idx]["Tipo"].has("Todos"):
+			if DATA.CardInfo[ed][idx]["Tipo"].has(tipo_1) || (!tipo_2.is_empty() && DATA.CardInfo[ed][idx]["Tipo"].has(tipo_2)) || DATA.CardInfo[ed][idx]["Tipo"].has("Nenhum")  || DATA.CardInfo[ed][idx]["Tipo"].has("Todos"):
 					posicao_atual_temp += 1
 					if posicao_atual_temp >= 18:
 						pagina_atual_temp += 1
@@ -182,6 +177,7 @@ func alocar_pagina_mutavel(edicao:String, index:int, tipo:Array) -> int:
 					cartas_na_edicao[ed][int(idx)]["pagina"] = pagina_atual_temp
 					cartas_na_edicao[ed][int(idx)]["posicao"] = posicao_atual_temp
 	
+	print("idx: ", index," pagina: ",cartas_na_edicao[edicao][index]["pagina"], " posicao: ", cartas_na_edicao[edicao][index]["posicao"])
 	return cartas_na_edicao[edicao][index]["pagina"]
 
 func inicializar_colecao(informacao:Dictionary) -> void:
@@ -296,58 +292,68 @@ func modificar_deck(carta:CARTA_BASE) -> void:
 	deck_list_atualizada.emit()
 
 func modificar_decklist(carta:CARTA_BASE) -> bool:
+	#roda o dicionario até encontrar a opção correta dentro dele.
+	for edicao in decklist.decklist[nome_do_deck]["cartas"]:
+		#se a colecao atual for a mesma que a colecao da carta antiga
+		if edicao == carta_lista_ativa.edc:
+			#remove o index de uma carta especifica na posição especifica do array
+			decklist.decklist[nome_do_deck]["cartas"][edicao].remove_at(decklist.decklist[nome_do_deck]["cartas"][edicao].find(carta_lista_ativa.idx))
+	
 	var count:int = 0
 	for edicao in decklist.decklist[nome_do_deck]["cartas"]:
-		count = decklist.decklist[nome_do_deck]["cartas"][edicao].size()
-	
-	var quantidade_em_deck:int = 0
-	for deck in catalogo_de_cartas.catalogo[carta.carta_info.colecao][carta.carta_info.index]["em_deck"]:
-		quantidade_em_deck += catalogo_de_cartas.catalogo[carta.carta_info.colecao][carta.carta_info.index]["em_deck"][deck]
-	
-	if count == 15 && quantidade_em_deck < catalogo_de_cartas.catalogo[carta.carta_info.colecao][carta.carta_info.index]["quantidade"]:
-		for edicao in decklist.decklist[nome_do_deck]["cartas"]:
-			if edicao == carta_lista_ativa.edc:
-				decklist.decklist[nome_do_deck]["cartas"][edicao].remove_at(decklist.decklist[nome_do_deck]["cartas"][edicao].find(carta_lista_ativa.idx))
-	
-		for edicao in catalogo_de_cartas.catalogo:
-			for idx in catalogo_de_cartas.catalogo[edicao]:
-				if edicao == carta_lista_ativa.edc:
-					if idx == carta_lista_ativa.idx:
-						catalogo_de_cartas.catalogo[edicao][idx]["em_deck"][nome_do_deck] -= 1
-	
-	for edicao in decklist.decklist[nome_do_deck]["cartas"]:
-		count = decklist.decklist[nome_do_deck]["cartas"][edicao].size()
+		count += decklist.decklist[nome_do_deck]["cartas"][edicao].size()
 	
 	if count == 14:
 		if decklist.decklist[nome_do_deck]["cartas"].has(carta.carta_info.colecao):
 			decklist.decklist[nome_do_deck]["cartas"][carta.carta_info.colecao].append(carta.carta_info.index)
 		else:
 			decklist.decklist[nome_do_deck]["cartas"][carta.carta_info.colecao] = [carta.carta_info.index]
+		
 	
-
+	#vai verificar todas as edicoes
+	for edicao in catalogo_de_cartas.catalogo:
+		#vai verificar todos os indices
+		for idx in catalogo_de_cartas.catalogo[edicao]:
+			#se a edicao for a mesma que a antiga
+			if edicao == carta_lista_ativa.edc:
+				#se o indice for o mesmo que o antigo
+				if idx == carta_lista_ativa.idx:
+					#reduz a quantidade de cartas no deck em 1
+					catalogo_de_cartas.catalogo[edicao][idx]["em_deck"][nome_do_deck] -= 1
 	
+	#verifica se já existiu alguma alteração
 	var cartas_modificadas:bool = false
+	#conta as cartas no deck
 	var cartas_em_deck:int = 0
 	
+	#vai verificar todas as ediçoões
 	for edicao in catalogo_de_cartas.catalogo:
+		#vai verificar todos os indices dentro de cada uma das edições
 		for idx in catalogo_de_cartas.catalogo[edicao]:
+			#se a edicao atual for igual ao da carta recebida no parametro
 			if edicao == carta.carta_info.colecao:
+				#Se o indice atual for igual ao da carta recebida no parametro
 				if idx == carta.carta_info.index:
+					#vai rodar por todos os decks dentro do catalogo, dentro da chave edicao, idx, "em_deck"
 					for deck in catalogo_de_cartas.catalogo[edicao][idx]["em_deck"]:
+						#adiciona o valor registrado dentro da chave deck ao cartas em deck.
 						cartas_em_deck += catalogo_de_cartas.catalogo[edicao][idx]["em_deck"][deck]
+					#se a quantidade de copias dessa carta na coleção for maior que a quantidade de cartas em deck
 					if catalogo_de_cartas.catalogo[edicao][idx]["quantidade"] > cartas_em_deck:
+						#se a carta em questão não possuir ainda uma entrada na chave "em_deck" 
 						if catalogo_de_cartas.catalogo[edicao][idx]["em_deck"].is_empty():
+							#registra que uma alteração foi feita
 							cartas_modificadas = true
+							#cria uma entrada na chave em_deck com o valor padrão 1.
 							catalogo_de_cartas.catalogo[edicao][idx]["em_deck"][nome_do_deck] = 1
 						else:
 							for deck in catalogo_de_cartas.catalogo[edicao][idx]["em_deck"]:
+								#registra que uma alteração foi feita
 								cartas_modificadas = true
 								for x in range(catalogo_de_cartas.catalogo[edicao][idx]["em_deck"][deck]):
+									#coleta a entrada já existente e aumenta seu valor em 1.
 									catalogo_de_cartas.catalogo[edicao][idx]["em_deck"][deck] += 1
 	
-	print(decklist.decklist)
-	print(catalogo_de_cartas.catalogo[carta_lista_ativa.edc][carta_lista_ativa.idx])
-	print(catalogo_de_cartas.catalogo[carta.carta_info.colecao][carta.carta_info.index])
 	limpar_pagina()
 	mudanca_efetuada = cartas_modificadas
 	return cartas_modificadas
@@ -376,34 +382,15 @@ func limpar_pagina() -> void:
 	cartas_removidas.emit()
 
 func liberador_de_botoes() -> void:
-	var comando_de_sobreposicao:bool = false
-	for filho in organizador_de_cartas.get_children():
-		if filho.is_visible_in_tree():
-			comando_de_sobreposicao = true
-		else:
-			comando_de_sobreposicao = false
-			break
-	
-	if comando_de_sobreposicao:
-		if pagina_atual == 1:
-			botao_avancar.set_disabled(false)
-			botao_voltar.set_disabled(true)
-		elif pagina_atual == quantidade_de_paginas_total:
-			botao_avancar.set_disabled(true)
-			botao_voltar.set_disabled(false)
-		else:
-			botao_avancar.set_disabled(false)
-			botao_voltar.set_disabled(false)
+	if pagina_atual == 1:
+		botao_avancar.set_disabled(false)
+		botao_voltar.set_disabled(true)
+	elif pagina_atual == quantidade_de_paginas_total:
+		botao_avancar.set_disabled(true)
+		botao_voltar.set_disabled(false)
 	else:
-		if pagina_atual == 1:
-			botao_avancar.set_disabled(true)
-			botao_voltar.set_disabled(true)
-		elif pagina_atual == quantidade_de_paginas_total:
-			botao_avancar.set_disabled(true)
-			botao_voltar.set_disabled(false)
-		else:
-			botao_avancar.set_disabled(true)
-			botao_voltar.set_disabled(false)
+		botao_avancar.set_disabled(false)
+		botao_voltar.set_disabled(false)
 
 func _process(delta):
 	liberador_de_botoes()
@@ -441,11 +428,5 @@ func exibir_popup_de_confirmacao_de_validacao_de_deck(validacao:bool, msg:String
 		popup_intancia.mudar_texto_do_pop_up(msg, validacao, true)
 		get_tree().paused = true
 
-func fechar_pagina() -> void:
+func fechar_pagina():
 	self.queue_free()
-
-func carregar_informacoes_basicas() -> void:
-	var interface_principal:Control = get_tree().get_first_node_in_group("Client").find_child("InterfacePrincipal")
-	var acount_info:Dictionary = interface_principal.AccountInfo
-	selecionador_de_raca_do_deck.set_texture(load(acount_info["decks_do_jogador"][nome_do_deck]["imagem"]))
-	etiqueta_nome_do_deck.set_text(nome_do_deck)

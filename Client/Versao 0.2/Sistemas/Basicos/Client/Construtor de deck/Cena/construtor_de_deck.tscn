@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://bd3oc5hes481y"]
+[gd_scene load_steps=19 format=3 uid="uid://bd3oc5hes481y"]
 
 [ext_resource type="Script" path="res://Sistemas/Basicos/Client/Construtor de deck/Script/construtor_de_deck_base.gd" id="1_qkqb5"]
+[ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="1_w4cmy"]
 [ext_resource type="PackedScene" uid="uid://bxo737w2r5eea" path="res://Sistemas/Basicos/Client/Construtor de deck/Cena/carta_lista.tscn" id="2_7mxr3"]
 
 [sub_resource type="Gradient" id="Gradient_y0w1c"]
@@ -436,10 +437,15 @@ theme_override_constants/margin_bottom = 5
 [node name="OrganizadorCabecalho" type="HBoxContainer" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho/Marginalizador"]
 layout_mode = 2
 
-[node name="SelecionadorDeRacaDoDeck" type="TextureRect" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho/Marginalizador/OrganizadorCabecalho"]
+[node name="SelecionadorDeRacaDoDeck" type="OptionButton" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho/Marginalizador/OrganizadorCabecalho"]
 custom_minimum_size = Vector2(90, 0)
 layout_mode = 2
-expand_mode = 1
+icon_alignment = 1
+expand_icon = true
+item_count = 1
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("1_w4cmy")
+popup/item_0/id = 0
 
 [node name="EtiquetaNomeDoDeck" type="Label" parent="BordaPlanoDeFundo/Marginalizador/OrganizadorMiolo/OrganizadorListaDeck/BordaCabecalho/Marginalizador/OrganizadorCabecalho"]
 layout_mode = 2
