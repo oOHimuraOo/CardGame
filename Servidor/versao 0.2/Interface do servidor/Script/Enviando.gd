@@ -68,4 +68,16 @@ func carregar_deck(id:int, usuario:String, nome_do_deck:String) -> void:
 
 func finalizando_alteracao_de_deck(id:int, validacao:bool, msg:String) -> void:
 	get_parent().servidor_client_enviar_resposta_de_validacao(id, validacao, msg)
+
+func jogador_em_fila_de_espera(id:int) -> void:
+	get_parent().servidor_client_jogador_em_fila_de_espera(id)
+
+func jogador_saiu_da_fila(id:int) -> void:
+	get_parent().servidor_client_jogador_saiu_da_fila_de_espera(id)
+
+func iniciar_partida(lobby:Array) -> void:
+	var array_de_ids:Array[int] = []
+	for player in lobby:
+		array_de_ids.append(int(CONLOB.jogadores_conectados[player].keys()[0])) 
 	
+	get_parent().servidor_client_iniciar_partida(array_de_ids)

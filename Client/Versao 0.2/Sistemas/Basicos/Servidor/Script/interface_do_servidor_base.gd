@@ -91,3 +91,23 @@ func client_server_solicitar_confirmacao_de_modificacao(deck_list:Dictionary, ra
 @rpc("authority", "reliable")
 func servidor_client_enviar_resposta_de_validacao(validacao:bool, msg:String) -> void:
 	recebendo.atualizacao_de_deck_validada(validacao, msg)
+
+@rpc("any_peer", "reliable")
+func client_server_solicitar_entrada_no_servidor(id:int, user:String) -> void:
+	rpc_id(1, "client_server_solicitar_entrada_no_servidor", id, user)
+
+@rpc("any_peer", "reliable")
+func client_server_notificar_saida_da_fila(id:int, user:String) -> void:
+	rpc_id(1, "client_server_notificar_saida_da_fila", id, user)
+
+@rpc("authority", "reliable")
+func servidor_client_jogador_em_fila_de_espera() -> void:
+	recebendo.jogador_em_fila_de_espera()
+
+@rpc("authority", "reliable")
+func servidor_client_jogador_saiu_da_fila_de_espera() -> void:
+	recebendo.jogador_saiu_da_fila_de_espera()
+
+@rpc("authority", "reliable")
+func servidor_client_iniciar_partida() -> void:
+	recebendo.iniciar_partida()

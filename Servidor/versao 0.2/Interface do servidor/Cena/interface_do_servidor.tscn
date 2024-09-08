@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://Interface do servidor/Script/Iniciando.gd" id="4_6575g"]
 [ext_resource type="Script" path="res://Interface do servidor/Script/Finalizando.gd" id="5_rukp8"]
 
-[node name="SERVER" type="Node"]
+[node name="SERVER" type="Node" groups=["Server"]]
 script = ExtResource("1_bge88")
 
 [node name="Enviando" type="Node" parent="."]

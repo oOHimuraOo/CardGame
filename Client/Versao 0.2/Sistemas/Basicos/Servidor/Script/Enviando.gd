@@ -28,3 +28,10 @@ func solicitar_deck_ao_servidor(nome_do_deck:String) -> void:
 func deck_modificado(deck_list: Dictionary, raca:String) -> void:
 	var client = get_tree().get_first_node_in_group("Client").name
 	SERVER.client_server_solicitar_confirmacao_de_modificacao(deck_list, raca, client)
+
+
+func solicitar_entrada_no_lobby(id:int, user:String) -> void:
+	SERVER.client_server_solicitar_entrada_no_servidor(id, user)
+
+func notificar_saida_da_fila(id:int, user:String) -> void:
+	SERVER.client_server_notificar_saida_da_fila(id,user)

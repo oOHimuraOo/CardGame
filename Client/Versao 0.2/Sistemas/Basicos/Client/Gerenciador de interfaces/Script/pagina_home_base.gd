@@ -25,7 +25,10 @@ func carregar_novas_infos_do_carrossel() -> void:
 	texto_carrossel.set_text(DATA.NoticiasInfo[Time.get_date_string_from_system()]["carrossel"][str(slide_counter)]["texto"])
 
 func quando_botao_jogar_pressionado():
-	pass # Replace with function body.
+	var pop_up_lobby_instancia = CONS.POP_UP_LOBBY_CENA.instantiate()
+	get_tree().root.add_child(pop_up_lobby_instancia)
+	get_tree().paused = true
+	pop_up_lobby_instancia.inicializar()
 
 func solicitar_noticias_de_jogo_ao_servidor() -> void:
 	SERVER.enviando.solicitiar_update_de_noticias_ao_servidor()

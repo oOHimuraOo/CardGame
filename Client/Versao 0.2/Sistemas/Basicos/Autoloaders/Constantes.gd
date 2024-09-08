@@ -20,3 +20,4 @@ const CARTA_FUNDO_CENA: PackedScene = preload("res://Sistemas/Basicos/Carta/Cena
 const BOOSTER_POPUP_CENA: PackedScene = preload("res://Sistemas/Basicos/Boosters/Cena/booster_popup.tscn")
 const CONSTRUTOR_DE_DECK_CENA: PackedScene = preload("res://Sistemas/Basicos/Client/Construtor de deck/Cena/construtor_de_deck.tscn")
 const POP_UP_GENERICO_CENA: PackedScene = preload("res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/pop_up.tscn")
+const POP_UP_LOBBY_CENA: PackedScene = preload("res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/pop_up_lobby.tscn")

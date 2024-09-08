@@ -1,6 +1,7 @@
 class_name BANCO_DE_DADOS
 extends Node
 
+var data_atual:String
 var RegrasHash: Dictionary = {}
 var UserData: Dictionary = {}
 var NoticiasInfor: Dictionary = {}
@@ -95,7 +96,6 @@ func salvar_user_info() -> void:
 
 func atualizar_deck(usuario:String, deck_list:Dictionary, raca:String) -> void:
 	var nome_do_deck:String
-	print(deck_list)
 	for deck in UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"]:
 		if UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][deck]["raca"] == raca:
 			nome_do_deck = deck
@@ -109,6 +109,10 @@ func atualizar_deck(usuario:String, deck_list:Dictionary, raca:String) -> void:
 			for index in deck_list[nome]["cartas"][edicao]:
 				UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][nome_do_deck]["cartas"][edicao].append(int(index))
 	
-			print(UserData[usuario]["informcoes_do_jogador"]["decks_do_jogador"][nome_do_deck]["cartas"][edicao])
 	salvar_user_info()
 	atualizar_user_data()
+
+func _process(_delta):
+	if data_atual != Time.get_date_string_from_system():
+		data_atual = Time.get_date_string_from_system()
+		atualizar_noticias()

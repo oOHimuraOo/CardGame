@@ -41,7 +41,6 @@ func instanciar_cartas(cartas:Dictionary) -> void:
 func adicionar_cartas_a_colecao(_cartas:Dictionary) -> void:
 	pass
 
-
 func _on_botao_fechar_pressed():
 	get_tree().paused = false
 	queue_free()

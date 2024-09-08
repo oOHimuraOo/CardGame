@@ -18,7 +18,7 @@ func quando_peer_conectar(peer_id:int) -> void:
 	print("peer: ", peer_id, " conectou!")
 
 func quando_peer_desconectar(peer_id:int) -> void:
-	print("peer: ", peer_id, " desconectou!")
+	finalizando.desconectar_peer(peer_id)
 
 @rpc("any_peer","reliable")
 func client_server_autenticar_usuario(usuario:String, senha:String, verificador:bool, id:int) -> void:
@@ -90,3 +90,24 @@ func client_server_solicitar_confirmacao_de_modificacao(deck_list:Dictionary, ra
 @rpc("authority", "reliable")
 func servidor_client_enviar_resposta_de_validacao(id:int, validacao:bool, msg:String) -> void:
 	rpc_id(id, "servidor_client_enviar_resposta_de_validacao", validacao, msg)
+
+@rpc("any_peer", "reliable")
+func client_server_solicitar_entrada_no_servidor(id:int, user:String) -> void:
+	recebendo.verificar_e_criar_sala_de_lobby(id, user)
+
+@rpc("any_peer", "reliable")
+func client_server_notificar_saida_da_fila(id:int, user:String) -> void:
+	recebendo.verificar_e_sair_da_sala_de_lobby(id, user)
+
+@rpc("authority", "reliable")
+func servidor_client_jogador_em_fila_de_espera(id:int) -> void:
+	rpc_id(id, "servidor_client_jogador_em_fila_de_espera")
+
+@rpc("authority", "reliable")
+func servidor_client_jogador_saiu_da_fila_de_espera(id:int) -> void:
+	rpc_id(id, "servidor_client_jogador_saiu_da_fila_de_espera")
+
+@rpc("authority", "reliable")
+func servidor_client_iniciar_partida(array_de_ids:Array[int]) -> void:
+	for id in array_de_ids:
+		rpc_id(id, "servidor_client_iniciar_partida")

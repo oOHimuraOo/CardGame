@@ -1,0 +1,213 @@
+[gd_scene load_steps=21 format=3 uid="uid://e6onj8lpap8"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/pop_up_lobby.gd" id="1_6whkq"]
+[ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="2_o5kmm"]
+
+[sub_resource type="Gradient" id="Gradient_gshbj"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.298039, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_r5k7k"]
+gradient = SubResource("Gradient_gshbj")
+
+[sub_resource type="Gradient" id="Gradient_c57ps"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_upm61"]
+gradient = SubResource("Gradient_c57ps")
+
+[sub_resource type="Gradient" id="Gradient_pr8jo"]
+colors = PackedColorArray(0.393086, 0.393086, 0.393085, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_d12pf"]
+gradient = SubResource("Gradient_pr8jo")
+
+[sub_resource type="Gradient" id="Gradient_feu4y"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_5h4a7"]
+gradient = SubResource("Gradient_feu4y")
+
+[sub_resource type="Gradient" id="Gradient_geuq1"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_db78a"]
+gradient = SubResource("Gradient_geuq1")
+
+[sub_resource type="Gradient" id="Gradient_vrp0i"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vjuop"]
+gradient = SubResource("Gradient_vrp0i")
+
+[sub_resource type="Gradient" id="Gradient_vrmow"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_be138"]
+gradient = SubResource("Gradient_vrmow")
+
+[sub_resource type="Gradient" id="Gradient_n08g2"]
+offsets = PackedFloat32Array(0, 0.539683, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0.792157, 0.32549, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_hyaoi"]
+gradient = SubResource("Gradient_n08g2")
+
+[sub_resource type="Gradient" id="Gradient_kufq0"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.462291, 0.462291, 0.462291, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1lp13"]
+gradient = SubResource("Gradient_kufq0")
+
+[node name="PopUpLobby" type="Control" groups=["Lobby"]]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6whkq")
+
+[node name="PlanoDeFundo" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Centralizador" type="CenterContainer" parent="PlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlanoDeFundoMiolo" type="NinePatchRect" parent="PlanoDeFundo/Centralizador"]
+custom_minimum_size = Vector2(750, 450)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_r5k7k")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="OrganizadorMiolo" type="VBoxContainer" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador"]
+custom_minimum_size = Vector2(700, 400)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="PlanoDeFundoPictograma" type="NinePatchRect" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_upm61")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo/PlanoDeFundoPictograma"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Pictograma" type="TextureRect" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo/PlanoDeFundoPictograma/Marginalizador"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+texture = ExtResource("2_o5kmm")
+
+[node name="PlanoDeFundoBarraTimer" type="NinePatchRect" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("GradientTexture1D_d12pf")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo/PlanoDeFundoBarraTimer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="BarraTimer" type="TextureProgressBar" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo/PlanoDeFundoBarraTimer/Marginalizador"]
+process_mode = 2
+layout_mode = 2
+size_flags_vertical = 3
+value = 75.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_5h4a7")
+texture_progress = SubResource("GradientTexture1D_db78a")
+tint_under = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="EtiquetaTimer" type="Label" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo/PlanoDeFundoBarraTimer/Marginalizador/BarraTimer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 34
+text = "Procurando jogadores!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Centralizador" type="CenterContainer" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BotaoCancelar" type="TextureButton" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo/Centralizador"]
+custom_minimum_size = Vector2(150, 65)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_vjuop")
+texture_pressed = SubResource("GradientTexture1D_be138")
+texture_hover = SubResource("GradientTexture1D_hyaoi")
+texture_disabled = SubResource("GradientTexture1D_1lp13")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaCancelar" type="Label" parent="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo/Centralizador/BotaoCancelar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Cancelar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TempoEmFila" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="pressed" from="PlanoDeFundo/Centralizador/PlanoDeFundoMiolo/Marginalizador/OrganizadorMiolo/Centralizador/BotaoCancelar" to="." method="_on_botao_cancelar_pressed"]
+[connection signal="timeout" from="TempoEmFila" to="." method="_on_tempo_em_fila_timeout"]

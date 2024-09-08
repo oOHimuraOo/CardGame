@@ -8,6 +8,7 @@ func autenticar_usuario_e_senha(usuario:String, senha:String, verificador:bool, 
 	if DATA.UserData.has(novo_usuario):
 		if DATA.UserData[novo_usuario]["senha"] == novo_senha:
 			get_parent().enviando.servidor_client_usuario_autenticado(true, verificador, id, usuario, senha)
+			CONLOB.adicionar_ou_atualizar_jogador_conectado(id, novo_usuario,"conectado")
 			return
 	get_parent().enviando.servidor_client_usuario_autenticado(false, verificador, id)
 	

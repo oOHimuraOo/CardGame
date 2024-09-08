@@ -93,3 +93,23 @@ func converter_colecao_para_modelo_padrao(usuario:String) -> Dictionary:
 		for idx in DATA.UserData[usuario]["informcoes_do_jogador"]["colecao"][edicao]:
 			dicionario[edicao].append(int(idx))
 	return dicionario
+
+func verificar_e_criar_sala_de_lobby(id:int, user:String) -> void:
+	var usuario_real = get_parent().iniciando.aplicar_regra_hash_de_usuario(user)
+	CONLOB.criar_ou_gerenciar_lobby(id, usuario_real)
+	if CONLOB.jogadores_conectados.has(usuario_real):
+		if CONLOB.jogadores_conectados[usuario_real].has(id):
+			if CONLOB.jogadores_conectados[usuario_real][id]["status"] == "em_espera":
+				get_parent().enviando.jogador_em_fila_de_espera(id)
+
+func verificar_e_sair_da_sala_de_lobby(id:int, user:String) -> void:
+	var usuario_real = get_parent().iniciando.aplicar_regra_hash_de_usuario(user)
+	if CONLOB.jogadores_conectados.has(usuario_real):
+		if CONLOB.jogadores_conectados[usuario_real].has(id):
+			if CONLOB.jogadores_conectados[usuario_real][id]["status"] == "em_espera":
+				CONLOB.sair_da_espera(id, usuario_real)
+	
+	if CONLOB.jogadores_conectados.has(usuario_real):
+		if CONLOB.jogadores_conectados[usuario_real].has(id):
+			if CONLOB.jogadores_conectados[usuario_real][id]["status"] == "conectado":
+				get_parent().enviando.jogador_saiu_da_fila(id)

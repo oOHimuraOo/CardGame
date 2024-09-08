@@ -60,3 +60,16 @@ func informacoes_do_deck(deck:Dictionary) -> void:
 func atualizacao_de_deck_validada(validacao:bool, msg:String) -> void:
 	var construtor:CONSTRUTOR_DE_DECK_BASE = get_tree().get_first_node_in_group("Construtor")
 	construtor.exibir_popup_de_confirmacao_de_validacao_de_deck(validacao, msg)
+
+func jogador_em_fila_de_espera() -> void:
+	var lobby = get_tree().get_first_node_in_group("Lobby")
+	lobby.em_fila = true
+	lobby.configurar_tempo_em_fila()
+
+func jogador_saiu_da_fila_de_espera() -> void:
+	var lobby = get_tree().get_first_node_in_group("Lobby")
+	lobby.em_fila = false
+
+func iniciar_partida() -> void:
+	var lobby = get_tree().get_first_node_in_group("Lobby")
+	lobby.sair_do_lobby(true)

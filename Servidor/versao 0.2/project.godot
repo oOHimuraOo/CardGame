@@ -18,3 +18,4 @@ config/icon="res://icon.svg"
 [autoload]
 
 DATA="*res://Banco de dados/Cena/banco_de_dados.tscn"
+CONLOB="*res://Auxiliares/Gestor de entrada/ConectadosELobby.gd"
