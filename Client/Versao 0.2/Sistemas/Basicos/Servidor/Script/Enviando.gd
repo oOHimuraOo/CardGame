@@ -34,3 +34,12 @@ func solicitar_entrada_no_lobby(user:String) -> void:
 
 func notificar_saida_da_fila(user:String) -> void:
 	SERVER.client_server_notificar_saida_da_fila(user)
+
+func verificar_se_jogadores_prontos() -> void:
+	SERVER.client_server_verificar_se_jogadores_prontos()
+
+func coletar_racas_mais_banidas(sala:String) -> void:
+	SERVER.client_server_coletar_racas_mais_banidas(sala)
+
+func informacoes_de_inicio_de_partida(dicionario:Dictionary, sala:String) -> void:
+	SERVER.client_server_informacoes_de_inicio_de_partida(dicionario, sala)

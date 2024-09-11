@@ -82,6 +82,6 @@ func _on_tempo_em_fila_timeout():
 	sair_do_lobby(false)
 
 func iniciar_partida() -> void:
-	print(get_tree().get_first_node_in_group("Client").name, " iniciou a partida!")
+	get_tree().get_first_node_in_group("Client").find_child("GerenciadorDeInterfaces").desativar_interface_principal(true)
 	await get_tree().create_timer(0.1).timeout
 	em_partida.emit()

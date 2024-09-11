@@ -81,3 +81,16 @@ func jogador_saiu_da_fila_de_espera() -> void:
 func iniciar_partida() -> void:
 	var lobby = get_tree().get_first_node_in_group("Lobby")
 	lobby.sair_do_lobby(true)
+
+func liberar_inicio_de_partida(sala:String) -> void:
+	get_tree().get_first_node_in_group("Client").find_child("InterfaceEmPartida").sala = sala
+	get_tree().get_first_node_in_group("Client").find_child("InterfaceEmPartida").jogadores_prontos.emit()
+
+func racas_mais_banidas(racas:Array) -> void:
+	var inicio = get_tree().get_first_node_in_group("Inicio")
+	inicio.racas_mais_banidas_pela_sala = racas
+	inicio.atualizar_visual_racas_banidas()
+
+func finalizar_inicio_de_partida() -> void:
+	var inicio = get_tree().get_first_node_in_group("Inicio")
+	inicio.finalizar_inicio_de_partida()

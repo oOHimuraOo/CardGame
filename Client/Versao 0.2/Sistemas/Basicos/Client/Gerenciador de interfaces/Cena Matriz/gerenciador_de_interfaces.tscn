@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://2teiyh4e2uc2"]
+[gd_scene load_steps=5 format=3 uid="uid://2teiyh4e2uc2"]
 
 [ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/gerenciador_de_interfaces_base.gd" id="1_fhoss"]
 [ext_resource type="PackedScene" uid="uid://23kgsip4aa2e" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Cenas gerenciadas/interface_de_abertura.tscn" id="2_mcpbp"]
 [ext_resource type="PackedScene" uid="uid://dsn0nevrakfg1" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Cenas gerenciadas/interface_principal.tscn" id="3_22onc"]
+[ext_resource type="PackedScene" uid="uid://cy1rsukvv6m1l" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Cenas gerenciadas/interface_em_partida.tscn" id="4_81h01"]
 
 [node name="GerenciadorDeInterfaces" type="Node"]
 script = ExtResource("1_fhoss")
@@ -11,3 +12,5 @@ script = ExtResource("1_fhoss")
 
 [node name="InterfacePrincipal" parent="." instance=ExtResource("3_22onc")]
 visible = false
+
+[node name="InterfaceEmPartida" parent="." instance=ExtResource("4_81h01")]

@@ -111,3 +111,27 @@ func servidor_client_jogador_saiu_da_fila_de_espera() -> void:
 @rpc("authority", "reliable")
 func servidor_client_iniciar_partida() -> void:
 	recebendo.iniciar_partida()
+
+@rpc("any_peer", "reliable")
+func client_server_verificar_se_jogadores_prontos() -> void:
+	rpc_id(1, "client_server_verificar_se_jogadores_prontos", id)
+
+@rpc("authority", "reliable")
+func servidor_client_liberar_inicio_de_partida(sala:String) -> void:
+	recebendo.liberar_inicio_de_partida(sala)
+
+@rpc("any_peer", "reliable")
+func client_server_coletar_racas_mais_banidas(sala:String) -> void:
+	rpc_id(1, "client_server_coletar_racas_mais_banidas", id, sala)
+
+@rpc("authority","reliable")
+func servidor_client_racas_mais_banidas(racas_mais_banidas:Array) -> void:
+	recebendo.racas_mais_banidas(racas_mais_banidas)
+
+@rpc("any_peer", "reliable")
+func client_server_informacoes_de_inicio_de_partida(dicionario:Dictionary, sala:String) -> void:
+	rpc_id(1, "client_server_informacoes_de_inicio_de_partida", id, dicionario, sala)
+
+@rpc("authority", "reliable")
+func servidor_client_finalizar_inicio_de_partida() -> void:
+	recebendo.finalizar_inicio_de_partida()

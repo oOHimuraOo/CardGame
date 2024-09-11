@@ -174,7 +174,6 @@ func alocar_cartas(visualizacao_de_colecao:bool = false) -> void:
 	if !visualizacao_de_colecao:
 		for edicao in catalogo_de_cartas:
 			for idx in catalogo_de_cartas[edicao]:
-				print(edicao, " ", idx, " ", catalogo_de_cartas[edicao][idx]["pagina"]["mutavel"])
 				if catalogo_de_cartas[edicao][idx]["raca"] == raca_do_deck:
 					if int(pagina_atual) == int(catalogo_de_cartas[edicao][idx]["pagina"]["mutavel"]):
 						for slot in array_de_slots:

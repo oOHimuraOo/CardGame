@@ -111,3 +111,29 @@ func servidor_client_jogador_saiu_da_fila_de_espera(id:int) -> void:
 func servidor_client_iniciar_partida(array_de_ids:Array[int]) -> void:
 	for id in array_de_ids:
 		rpc_id(id, "servidor_client_iniciar_partida")
+
+@rpc("any_peer", "reliable")
+func client_server_verificar_se_jogadores_prontos(id:int) -> void:
+	recebendo.verificar_se_jogadores_prontos(id)
+
+@rpc("authority", "reliable")
+func servidor_client_liberar_inicio_de_partida(id:int, sala:String) -> void:
+	rpc_id(id, "servidor_client_liberar_inicio_de_partida", sala)
+
+@rpc("any_peer", "reliable")
+func client_server_coletar_racas_mais_banidas(id:int, sala:String) -> void:
+	enviando.coletar_racas_mais_banidas(id, sala)
+
+@rpc("authority","reliable")
+func servidor_client_racas_mais_banidas(id:int, racas_mais_banidas:Array) -> void:
+	rpc_id(id, "servidor_client_racas_mais_banidas", racas_mais_banidas)
+
+@rpc("any_peer", "reliable")
+func client_server_informacoes_de_inicio_de_partida(id:int, dicionario:Dictionary, sala:String) -> void:
+	recebendo.informacoes_de_inicio_de_partida(id, dicionario, sala)
+
+@rpc("authority", "reliable")
+func servidor_client_finalizar_inicio_de_partida(sala:String) -> void:
+	for jogador in CONLOB.lobbys_em_partidas[sala]:
+		if typeof(jogador) == 2:
+			rpc_id(jogador, "servidor_client_finalizar_inicio_de_partida")

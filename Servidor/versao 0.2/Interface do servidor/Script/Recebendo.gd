@@ -8,18 +8,18 @@ func verificar_possibilidade_de_deck_list(deck_list:Dictionary, raca:String, cli
 	var novo_deck:Dictionary = converter_modelo_de_dicionario_de_deck_para_modelo_padrao(deck_list)
 	
 	if verificar_tamanho_do_deck(novo_deck):
-		var msg:String = "Baralho nao atualizado! \nTamanho de deck invalido: Erro 001!"
-		get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg)
+		var msg_a:String = "Baralho nao atualizado! \nTamanho de deck invalido: Erro 001!"
+		get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg_a)
 		return
 	
 	if verificar_existencia_de_cartas_na_colecao(novo_deck, usuario_real):
-		var msg:String = "Baralho nao atualizado! \nCarta nao existente na colecao: Erro 002!"
-		get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg)
+		var msg_b:String = "Baralho nao atualizado! \nCarta nao existente na colecao: Erro 002!"
+		get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg_b)
 		return
 	
 	if verificar_quantidade_de_cartas_na_colecao(novo_deck, usuario_real):
-		var msg:String = "Baralho nao atualizado! \nQuantidade de cartas invalida: Erro 003!"
-		get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg)
+		var msg_c:String = "Baralho nao atualizado! \nQuantidade de cartas invalida: Erro 003!"
+		get_parent().enviando.finalizando_alteracao_de_deck(id, false, msg_c)
 		return
 	
 	var msg:String = "Baralho atualizado com sucesso!"
@@ -109,3 +109,38 @@ func verificar_e_sair_da_sala_de_lobby(id:int, user:String) -> void:
 		if CONLOB.jogadores_conectados[usuario_real].has(id):
 			if CONLOB.jogadores_conectados[usuario_real][id]["status"] == "conectado":
 				get_parent().enviando.jogador_saiu_da_fila(id)
+
+func verificar_se_jogadores_prontos(peer_id:int) -> void:
+	var sala_em_verificacao:String = ""
+	for sala in CONLOB.lobbys_em_partidas:
+		for id in CONLOB.lobbys_em_partidas[sala]:
+			if int(id) == int(peer_id):
+				sala_em_verificacao = sala
+				if CONLOB.lobbys_em_partidas[sala][id]["inicio_da_partida"] == false:
+					CONLOB.lobbys_em_partidas[sala][id]["inicio_da_partida"] = true
+	
+	var verificado:bool = false
+	for id in CONLOB.lobbys_em_partidas[sala_em_verificacao]:
+		if CONLOB.lobbys_em_partidas[sala_em_verificacao][id]["inicio_da_partida"] == true:
+			verificado = true
+	
+	if verificado:
+		get_parent().enviando.liberar_inicio_de_partida(peer_id, sala_em_verificacao)
+
+func informacoes_de_inicio_de_partida(id:int, dicionario:Dictionary, sala:String) -> void:
+	if CONLOB.lobbys_em_partidas[sala][id].has("heroi"):
+		return
+	if CONLOB.lobbys_em_partidas[sala][id].has("voto"):
+		return
+
+	CONLOB.lobbys_em_partidas[sala][id]["voto"] = dicionario[id][0]
+	CONLOB.lobbys_em_partidas[sala][id]["heroi"] = dicionario[id][1]
+	
+	var voto_e_heroi:bool = true
+	for player in CONLOB.lobbys_em_partidas[sala]:
+		if typeof(player) == 2:
+			if !CONLOB.lobbys_em_partidas[sala][player].has("heroi") && !CONLOB.lobbys_em_partidas[sala][player].has("voto"):
+				voto_e_heroi = false
+		
+	if voto_e_heroi:
+		get_parent().enviando.descobrir_racas_mais_votadas_para_banimento(sala)

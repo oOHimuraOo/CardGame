@@ -345,9 +345,6 @@ func modificar_decklist(carta:CARTA_BASE) -> bool:
 								for x in range(catalogo_de_cartas.catalogo[edicao][idx]["em_deck"][deck]):
 									catalogo_de_cartas.catalogo[edicao][idx]["em_deck"][deck] += 1
 	
-	print(decklist.decklist)
-	print(catalogo_de_cartas.catalogo[carta_lista_ativa.edc][carta_lista_ativa.idx])
-	print(catalogo_de_cartas.catalogo[carta.carta_info.colecao][carta.carta_info.index])
 	limpar_pagina()
 	mudanca_efetuada = cartas_modificadas
 	return cartas_modificadas
@@ -405,9 +402,8 @@ func liberador_de_botoes() -> void:
 			botao_avancar.set_disabled(true)
 			botao_voltar.set_disabled(false)
 
-func _process(delta):
+func _process(_delta):
 	liberador_de_botoes()
-	
 	if mudanca_efetuada:
 		etiqueta_aplicar_mudanca.set_text("Aplicar")
 	else:

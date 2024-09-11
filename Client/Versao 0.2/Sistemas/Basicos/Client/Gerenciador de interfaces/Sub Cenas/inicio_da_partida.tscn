@@ -1,0 +1,568 @@
+[gd_scene load_steps=33 format=3 uid="uid://bmq8wl3p2fv2f"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/inicio_da_partida_base.gd" id="1_0gy1n"]
+[ext_resource type="Texture2D" uid="uid://bfplcnhiged7e" path="res://Assets/Carta/Imagem/Cartas/Anao_Placeholder.jpg" id="1_18fql"]
+[ext_resource type="Texture2D" uid="uid://tj8jvh734dmn" path="res://Assets/Carta/Imagem/Cartas/Besta_Placeholder.jpg" id="2_bt2ah"]
+[ext_resource type="Texture2D" uid="uid://x8gx2lhfifh8" path="res://Assets/Carta/Imagem/Cartas/Dragao_Placeholder.jpg" id="3_3wiva"]
+[ext_resource type="Texture2D" uid="uid://bb7tfe1jlbfx1" path="res://Assets/Carta/Imagem/Cartas/Elemental_Placeholder.jpg" id="4_2sg5b"]
+[ext_resource type="Texture2D" uid="uid://17jss20ky1pi" path="res://Assets/Carta/Imagem/Cartas/Elfo_Placeholder.jpg" id="5_au2ko"]
+[ext_resource type="Texture2D" uid="uid://bn6rxarsikif6" path="res://Assets/Carta/Imagem/Cartas/Humano_Placeholder.jpg" id="6_3acwh"]
+[ext_resource type="Texture2D" uid="uid://g4o53xus1v74" path="res://Assets/Carta/Imagem/Cartas/Metamorfo_Placeholder.jpg" id="7_w2laa"]
+[ext_resource type="Texture2D" uid="uid://br8ovhh7wrbfw" path="res://Assets/Carta/Imagem/Cartas/MortoVivo_Placeholder.jpg" id="8_imrpw"]
+[ext_resource type="Texture2D" uid="uid://buwsnhsy7ldd1" path="res://Assets/Carta/Imagem/Cartas/Naga_Placeholder.jpg" id="9_527bj"]
+[ext_resource type="Texture2D" uid="uid://cy5grlls1jxma" path="res://Assets/Carta/Imagem/Cartas/Pirata_Placeholder.jpg" id="10_por6a"]
+[ext_resource type="PackedScene" uid="uid://bulchqbxeyt70" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/selecionador_de_heroi.tscn" id="11_ymtxp"]
+
+[sub_resource type="Gradient" id="Gradient_8dxnb"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_g00v4"]
+gradient = SubResource("Gradient_8dxnb")
+
+[sub_resource type="Gradient" id="Gradient_brwge"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_o8rgu"]
+gradient = SubResource("Gradient_brwge")
+
+[sub_resource type="Gradient" id="Gradient_237p2"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wlhet"]
+gradient = SubResource("Gradient_237p2")
+
+[sub_resource type="Gradient" id="Gradient_0okhn"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0, 0.6, 0, 0.882353)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ycsdc"]
+gradient = SubResource("Gradient_0okhn")
+
+[sub_resource type="Gradient" id="Gradient_nc6gd"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 1, 0, 0.882353)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pub62"]
+gradient = SubResource("Gradient_nc6gd")
+
+[sub_resource type="Gradient" id="Gradient_b5fjy"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.317647, 0.317647, 0.317647, 0.882353)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jnvj1"]
+gradient = SubResource("Gradient_b5fjy")
+
+[sub_resource type="Gradient" id="Gradient_0lj6q"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wy4nd"]
+gradient = SubResource("Gradient_0lj6q")
+
+[sub_resource type="Gradient" id="Gradient_drbug"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_as54y"]
+gradient = SubResource("Gradient_drbug")
+
+[sub_resource type="Gradient" id="Gradient_h8mm8"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_j5rfp"]
+gradient = SubResource("Gradient_h8mm8")
+
+[sub_resource type="Gradient" id="Gradient_048x5"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.396889, 0.396889, 0.396889, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_quevr"]
+gradient = SubResource("Gradient_048x5")
+
+[node name="InicioDaPartida" type="Control" groups=["Inicio"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0gy1n")
+
+[node name="PlanoDeFundoDoMiolo" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="OrganizadorDeMiolo" type="VBoxContainer" parent="PlanoDeFundoDoMiolo/Marginalizador"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="BarraDeTempoSelecaoRacas" type="TextureProgressBar" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+value = 72.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_g00v4")
+texture_progress = SubResource("GradientTexture1D_o8rgu")
+
+[node name="EtiquetaTempoSelecaoRacas" type="Label" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/BarraDeTempoSelecaoRacas"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "3000000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MioloSelecaoRacas" type="HBoxContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 750)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorRacas" type="GridContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas"]
+custom_minimum_size = Vector2(1890, 0)
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 5
+
+[node name="PlanoDeFundoAnao" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoAnao"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoAnao" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoAnao/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("1_18fql")
+expand_mode = 1
+
+[node name="BotaoSelecionarAnao" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoAnao/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PlanoDeFundoBesta" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoBesta"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoBesta" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoBesta/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("2_bt2ah")
+expand_mode = 1
+
+[node name="BotaoSelecionarBesta" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoBesta/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PlanoDeFundoDragao" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoDragao"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoDragao" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoDragao/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("3_3wiva")
+expand_mode = 1
+
+[node name="BotaoSelecionarDragao" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoDragao/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PlanoDeFundoElemental" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoElemental"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoElemental" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoElemental/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("4_2sg5b")
+expand_mode = 1
+
+[node name="BotaoSelecionarElemental" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoElemental/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PlanoDeFundoElfo" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoElfo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoElfo" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoElfo/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("5_au2ko")
+expand_mode = 1
+
+[node name="BotaoSelecionarElfo" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoElfo/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PlanoDeFundoHumano" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoHumano"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoHumano" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoHumano/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("6_3acwh")
+expand_mode = 1
+
+[node name="BotaoSelecionarHumano" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoHumano/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PlanoDeFundoMetamorfo" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoMetamorfo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoMetamorfo" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoMetamorfo/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("7_w2laa")
+expand_mode = 1
+
+[node name="BotaoSelecionarMetamorfo" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoMetamorfo/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PlanoDeFundoMortoVivo" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoMortoVivo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoMortoVivo" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoMortoVivo/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("8_imrpw")
+expand_mode = 1
+
+[node name="BotaoSelecionarMortoVivo" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoMortoVivo/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PlanoDeFundoNaga" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoNaga"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoNaga" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoNaga/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("9_527bj")
+expand_mode = 1
+
+[node name="BotaoSelecionarNaga" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoNaga/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PlanoDeFundoPirata" type="NinePatchRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas"]
+custom_minimum_size = Vector2(370, 370)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wlhet")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoPirata"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoPirata" type="TextureRect" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoPirata/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("10_por6a")
+expand_mode = 1
+
+[node name="BotaoSelecionarPirata" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas/OrganizadorRacas/PlanoDeFundoPirata/Marginalizador"]
+layout_mode = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_ycsdc")
+texture_hover = SubResource("GradientTexture1D_pub62")
+texture_disabled = SubResource("GradientTexture1D_jnvj1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoRacas"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MioloSelecaoHerois" type="HBoxContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo"]
+visible = false
+custom_minimum_size = Vector2(0, 750)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoHerois"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorRacas" type="GridContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoHerois"]
+custom_minimum_size = Vector2(1890, 0)
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 4
+
+[node name="SelecionadorDeHeroi" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoHerois/OrganizadorRacas" instance=ExtResource("11_ymtxp")]
+layout_mode = 2
+
+[node name="SelecionadorDeHeroi2" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoHerois/OrganizadorRacas" instance=ExtResource("11_ymtxp")]
+layout_mode = 2
+
+[node name="SelecionadorDeHeroi3" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoHerois/OrganizadorRacas" instance=ExtResource("11_ymtxp")]
+layout_mode = 2
+
+[node name="SelecionadorDeHeroi4" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoHerois/OrganizadorRacas" instance=ExtResource("11_ymtxp")]
+layout_mode = 2
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/MioloSelecaoHerois"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Centralizador" type="CenterContainer" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BotaoConfirmar" type="TextureButton" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/Centralizador"]
+custom_minimum_size = Vector2(200, 75)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_wy4nd")
+texture_pressed = SubResource("GradientTexture1D_as54y")
+texture_hover = SubResource("GradientTexture1D_j5rfp")
+texture_disabled = SubResource("GradientTexture1D_quevr")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaConfirmar" type="Label" parent="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/Centralizador/BotaoConfirmar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Confirmar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="PlanoDeFundoDoMiolo/Marginalizador/OrganizadorDeMiolo/Centralizador/BotaoConfirmar" to="." method="quando_botao_confirmar_pressionado"]

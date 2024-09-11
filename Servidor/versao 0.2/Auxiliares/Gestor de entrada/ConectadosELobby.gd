@@ -4,6 +4,7 @@ const quantidade_maxima_de_jogadores:int = 2
 
 var jogadores_conectados: Dictionary = {}
 var lobbys_criados: Dictionary = {}
+var lobbys_em_partidas: Dictionary = {}
 var numero_da_sala: int = 0
 
 func adicionar_ou_atualizar_jogador_conectado(id:int, user_real:String, status:String) -> void:
@@ -59,7 +60,6 @@ func criar_ou_gerenciar_lobby(id:int, user_real:String) -> void:
 				break
 
 func descobrir_sala_atual(numero_atual:int) -> int:
-	var numero:int = numero_atual
 	var nome_da_sala:String = "Sala_numero_" + str(numero_atual)
 	if lobbys_criados.has(nome_da_sala):
 		if lobbys_criados[nome_da_sala].size() >= quantidade_maxima_de_jogadores:
@@ -84,6 +84,7 @@ func atualizar_status_da_sala(lobby_nome:String, timer:Timer) -> void:
 			server.enviando.iniciar_partida(lobbys_criados[lobby_nome])
 			for jogador in lobbys_criados[lobby_nome]:
 				adicionar_ou_atualizar_jogador_conectado(jogadores_conectados[jogador].keys()[0], jogador, "em_partida")
+			ajustar_padrao_lobby_em_partida(lobby_nome)
 			lobbys_criados[lobby_nome].clear()
 	
 	elif lobbys_criados[lobby_nome].size() == 0:
@@ -105,3 +106,45 @@ func sair_da_espera(id:int, usuario_real:String) -> void:
 	for sala in lobbys_criados:
 		if lobbys_criados[sala].has(usuario_real):
 			lobbys_criados[sala].erase(usuario_real)
+
+func ajustar_padrao_lobby_em_partida(lobby_nome:String) -> void:
+	if lobbys_em_partidas.has(lobby_nome):
+		if lobbys_em_partidas[lobby_nome].size() > 0:
+			var novo_nome:String = gerar_novo_nome_de_lobby()
+			lobbys_em_partidas[novo_nome] = {}
+			for user in lobbys_criados[lobby_nome]:
+				var id:int = int(jogadores_conectados[user].keys()[0])
+				formatar_dicionario_de_partida(novo_nome, id)
+		else:
+			for user in lobbys_criados[lobby_nome]:
+				var id:int = int(jogadores_conectados[user].keys()[0])
+				formatar_dicionario_de_partida(lobby_nome, id)
+	else:
+		lobbys_em_partidas[lobby_nome] = {}
+		for user in lobbys_criados[lobby_nome]:
+			var id:int = int(jogadores_conectados[user].keys()[0])
+			formatar_dicionario_de_partida(lobby_nome, id)
+	
+	limpar_lobby_em_partidas()
+
+func limpar_lobby_em_partidas() -> void:
+	for sala in lobbys_em_partidas:
+		if lobbys_em_partidas[sala].size() == 0:
+			lobbys_em_partidas.erase(sala)
+
+func formatar_dicionario_de_partida(nome:String, id:int) -> void:
+	lobbys_em_partidas[nome][id] = {}
+	lobbys_em_partidas[nome][id]["inicio_da_partida"] = false
+	lobbys_em_partidas[nome][id]["manutencao"] = false
+	lobbys_em_partidas[nome][id]["combate"] = false
+	lobbys_em_partidas[nome][id]["sacrificio"] = false
+	lobbys_em_partidas[nome][id]["especial"] = false
+
+func gerar_novo_nome_de_lobby() -> String:
+	randomize()
+	var novo_numero:String = str(randi_range(1000,2500))
+	var novo_nome:String = "Sala_numero_" + novo_numero
+	if lobbys_em_partidas.has(novo_nome):
+		gerar_novo_nome_de_lobby()
+	return novo_nome
+	

@@ -12,3 +12,4 @@ signal botao_de_historia_selecionado(nome_do_dono_do_botao:String)
 
 func _quando_botao_selecionador_de_historia_pressionado():
 	botao_de_historia_selecionado.emit(etiqueta_nome.get_text())
+
