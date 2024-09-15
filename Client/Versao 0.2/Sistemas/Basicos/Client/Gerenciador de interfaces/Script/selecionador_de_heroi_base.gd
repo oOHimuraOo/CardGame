@@ -11,8 +11,8 @@ func iniciar_heroi(nome_do_heroi:String) -> void:
 	informacoes.forca = DATA.HeroiInfo[nome_do_heroi]["Forca"]
 	informacoes.vida = DATA.HeroiInfo[nome_do_heroi]["Vida"]
 	informacoes.escudo = DATA.HeroiInfo[nome_do_heroi]["Escudo"]
-	informacoes.habilidade_1 = DATA.HeroiInfo[nome_do_heroi]["Habilidade_de_heroi"]
-	informacoes.habilidade_2 = DATA.HeroiInfo[nome_do_heroi]["Poder_do_heroi"]
+	informacoes.habilidade_de_heroi = DATA.HeroiInfo[nome_do_heroi]["Habilidade_de_heroi"]
+	informacoes.poder_do_heroi = DATA.HeroiInfo[nome_do_heroi]["Poder_do_heroi"]
 	
 	registrar_informacoes()
 
@@ -21,8 +21,8 @@ func registrar_informacoes() -> void:
 	etiqueta_contador_de_vida.set_text(str(informacoes.vida))
 	etiqueta_contador_de_ataque.set_text(str(informacoes.forca))
 	etiqueta_contador_de_escudo.set_text(str(informacoes.escudo))
-	texto_habilidade_1.set_text(informacoes.habilidade_1)
-	texto_habilidade_2.set_text(informacoes.habilidade_2)
+	texto_habilidade_1.set_text(informacoes.habilidade_de_heroi)
+	texto_habilidade_2.set_text(informacoes.poder_do_heroi)
 	
 	implementar_texturas()
 

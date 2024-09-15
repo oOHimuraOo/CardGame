@@ -242,6 +242,6 @@ func descobrir_raca() -> String:
 func descobrir_heroi() -> String:
 	return heroi_selecionado.informacoes.nome
 
-func finalizar_inicio_de_partida() -> void:
-	get_parent().inicializar_primeira_manutencao()
+func finalizar_inicio_de_partida(dicionario:Dictionary) -> void:
+	get_parent().inicializar_primeira_manutencao(dicionario)
 	self.queue_free()

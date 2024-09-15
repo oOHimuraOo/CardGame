@@ -43,3 +43,10 @@ func coletar_racas_mais_banidas(sala:String) -> void:
 
 func informacoes_de_inicio_de_partida(dicionario:Dictionary, sala:String) -> void:
 	SERVER.client_server_informacoes_de_inicio_de_partida(dicionario, sala)
+
+func solicitar_criar_pool(sala:String) -> void:
+	SERVER.client_server_solicitar_criar_pool(sala)
+
+func solicitar_inicializacao_de_taverna(sala:String) -> void:
+	SERVER.client_server_solicitar_inicializacao_de_taverna(sala)
+

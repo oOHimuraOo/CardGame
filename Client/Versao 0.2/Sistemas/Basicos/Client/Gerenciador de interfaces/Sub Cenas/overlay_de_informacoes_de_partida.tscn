@@ -1,0 +1,729 @@
+[gd_scene load_steps=43 format=3 uid="uid://4bmrcaikdie3"]
+
+[ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="1_67pmm"]
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/overlay_de_informacoes_base.gd" id="1_cgkb0"]
+
+[sub_resource type="Gradient" id="Gradient_bgyhc"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_c687m"]
+gradient = SubResource("Gradient_bgyhc")
+
+[sub_resource type="Gradient" id="Gradient_ubqnp"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_afxeo"]
+gradient = SubResource("Gradient_ubqnp")
+
+[sub_resource type="Gradient" id="Gradient_2fb65"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4jq58"]
+gradient = SubResource("Gradient_2fb65")
+
+[sub_resource type="Gradient" id="Gradient_eh38h"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fxqy6"]
+gradient = SubResource("Gradient_eh38h")
+
+[sub_resource type="Gradient" id="Gradient_we8la"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xfjmg"]
+gradient = SubResource("Gradient_we8la")
+
+[sub_resource type="Gradient" id="Gradient_eoytk"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_5dm8y"]
+gradient = SubResource("Gradient_eoytk")
+
+[sub_resource type="Gradient" id="Gradient_xfoji"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0, 1, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4ojm1"]
+gradient = SubResource("Gradient_xfoji")
+
+[sub_resource type="Gradient" id="Gradient_8evay"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_07bta"]
+gradient = SubResource("Gradient_8evay")
+
+[sub_resource type="Gradient" id="Gradient_d37f0"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0, 0, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_hxuld"]
+gradient = SubResource("Gradient_d37f0")
+
+[sub_resource type="Gradient" id="Gradient_k6v8e"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_laxt3"]
+gradient = SubResource("Gradient_k6v8e")
+
+[sub_resource type="Gradient" id="Gradient_ekrfv"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_quysv"]
+gradient = SubResource("Gradient_ekrfv")
+
+[sub_resource type="Gradient" id="Gradient_nbxrr"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_elb3t"]
+gradient = SubResource("Gradient_nbxrr")
+
+[sub_resource type="Gradient" id="Gradient_sp13i"]
+colors = PackedColorArray(0, 0, 0, 1, 0.270222, 0.270222, 0.270222, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mkjhy"]
+gradient = SubResource("Gradient_sp13i")
+
+[sub_resource type="Gradient" id="Gradient_8ashf"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jjwce"]
+gradient = SubResource("Gradient_8ashf")
+
+[sub_resource type="Gradient" id="Gradient_i2ovf"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_w8dks"]
+gradient = SubResource("Gradient_i2ovf")
+
+[sub_resource type="Gradient" id="Gradient_m6b3r"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_d0dax"]
+gradient = SubResource("Gradient_m6b3r")
+
+[sub_resource type="Gradient" id="Gradient_pvhq0"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xouwi"]
+gradient = SubResource("Gradient_pvhq0")
+
+[sub_resource type="Gradient" id="Gradient_l3fr3"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ureln"]
+gradient = SubResource("Gradient_l3fr3")
+
+[sub_resource type="Gradient" id="Gradient_vjh13"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3w5eo"]
+gradient = SubResource("Gradient_vjh13")
+
+[sub_resource type="Gradient" id="Gradient_4ewhg"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_dy2t6"]
+gradient = SubResource("Gradient_4ewhg")
+
+[node name="OverlayDeInformacoesDePartida" type="Control" groups=["Overlay"]]
+custom_minimum_size = Vector2(500, 800)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_cgkb0")
+
+[node name="PlanoDeFundo" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_c687m")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="OrganizadorDeMiolo" type="VBoxContainer" parent="PlanoDeFundo/Marginalizador"]
+layout_mode = 2
+
+[node name="OrganizadorDeRetrato" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlanoDeFundoRetrato" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_afxeo")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoHeroi" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("1_67pmm")
+expand_mode = 1
+
+[node name="OrganizadorBarras" type="VBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorBarrasHorizontal" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="BarraVida" type="TextureProgressBar" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+value = 75.0
+fill_mode = 5
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_4jq58")
+texture_progress = SubResource("GradientTexture1D_fxqy6")
+radial_initial_angle = 315.0
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal/BarraVida"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="IconeVida" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal/BarraVida/Marginalizador"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_xfjmg")
+expand_mode = 1
+
+[node name="EtiquetaVida" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal/BarraVida/Marginalizador/IconeVida"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlanoDeFundoAtaque" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_5dm8y")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal/PlanoDeFundoAtaque"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="IconeAtaque" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal/PlanoDeFundoAtaque/Marginalizador"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_4ojm1")
+expand_mode = 1
+
+[node name="EtiquetaAtaque" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal/PlanoDeFundoAtaque/Marginalizador/IconeAtaque"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BarraEscudo" type="TextureProgressBar" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+value = 75.0
+fill_mode = 4
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_07bta")
+texture_progress = SubResource("GradientTexture1D_hxuld")
+radial_initial_angle = 45.0
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal/BarraEscudo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="IconeEscudo" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal/BarraEscudo/Marginalizador"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_laxt3")
+expand_mode = 1
+
+[node name="EtiquetaEscudo" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato/PlanoDeFundoRetrato/Marginalizador/RetratoHeroi/OrganizadorBarras/OrganizadorBarrasHorizontal/BarraEscudo/Marginalizador/IconeEscudo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorDeRetrato"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EtiquetaNick" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+text = "Nick do jogador + como:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EtiquetaNomeHeroi" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_font_sizes/font_size = 54
+text = "Nome do heroi"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Separador" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_quysv")
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="PlanoDeVidaRacas" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_elb3t")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/PlanoDeVidaRacas"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="TexturaDeFundoRacas" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/PlanoDeVidaRacas/Marginalizador"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mkjhy")
+
+[node name="EtiquetaRacas" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/PlanoDeVidaRacas/Marginalizador/TexturaDeFundoRacas"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Racas no campo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorIcones" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorIcones"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="IconeTaverna" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorIcones"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_jjwce")
+expand_mode = 1
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorIcones"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="IconeTriplos" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorIcones"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_w8dks")
+expand_mode = 1
+
+[node name="EtiquetaTriplos" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorIcones/IconeTriplos"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "99
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador3" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorIcones"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="IconeStreak" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorIcones"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_d0dax")
+expand_mode = 1
+
+[node name="Espacador4" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorIcones"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Espacador3" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Separador2" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_xouwi")
+
+[node name="Espacador4" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="OrganizadorResultadoPartida1" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlanoDeFundoInimigo1" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1"]
+custom_minimum_size = Vector2(62, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_ureln")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1/PlanoDeFundoInimigo1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="RetratoInimigo1" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1/PlanoDeFundoInimigo1/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("1_67pmm")
+expand_mode = 1
+
+[node name="EtiquetaDanoCausado1" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="IconeDanoRecebidoOuCausado1" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1/Espacador"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_3w5eo")
+expand_mode = 1
+
+[node name="EtiquetaDanoRecebido1" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlanoDeFundoHeroi1" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1"]
+custom_minimum_size = Vector2(62, 62)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_dy2t6")
+patch_margin_left = 6
+patch_margin_top = 5
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1/PlanoDeFundoHeroi1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="RetratoHeroi1" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida1/PlanoDeFundoHeroi1/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("1_67pmm")
+expand_mode = 1
+
+[node name="OrganizadorResultadoPartida2" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlanoDeFundoInimigo2" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2"]
+custom_minimum_size = Vector2(62, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_ureln")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2/PlanoDeFundoInimigo2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="RetratoInimigo2" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2/PlanoDeFundoInimigo2/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("1_67pmm")
+expand_mode = 1
+
+[node name="EtiquetaDanoCausado2" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="IconeDanoRecebidoOuCausado2" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2/Marginalizador"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_3w5eo")
+expand_mode = 1
+
+[node name="EtiquetaDanoRecebido2" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlanoDeFundoHeroi2" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2"]
+custom_minimum_size = Vector2(62, 62)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_dy2t6")
+patch_margin_left = 6
+patch_margin_top = 5
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2/PlanoDeFundoHeroi2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="RetratoHeroi2" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida2/PlanoDeFundoHeroi2/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("1_67pmm")
+expand_mode = 1
+
+[node name="OrganizadorResultadoPartida3" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlanoDeFundoInimigo3" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3"]
+custom_minimum_size = Vector2(62, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_ureln")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3/PlanoDeFundoInimigo3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="RetratoInimigo3" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3/PlanoDeFundoInimigo3/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("1_67pmm")
+expand_mode = 1
+
+[node name="EtiquetaDanoCausado3" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="IconeDanoRecebidoOuCausado3" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3/Marginalizador"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_3w5eo")
+expand_mode = 1
+
+[node name="EtiquetaDanoRecebido3" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlanoDeFundoHeroi3" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3"]
+custom_minimum_size = Vector2(62, 62)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_dy2t6")
+patch_margin_left = 6
+patch_margin_top = 5
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3/PlanoDeFundoHeroi3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="RetratoHeroi3" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorDeMiolo/OrganizadorResultadoPartida3/PlanoDeFundoHeroi3/Marginalizador"]
+layout_mode = 2
+texture = ExtResource("1_67pmm")
+expand_mode = 1

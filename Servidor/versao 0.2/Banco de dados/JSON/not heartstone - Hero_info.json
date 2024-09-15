@@ -1,0 +1,107 @@
+{
+  "heroi 1": {
+    "Forca": 1,
+    "Vida": 30,
+    "Escudo": 5,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 1",
+    "Poder_do_heroi": "esse é o poder do heroi 1"
+  },
+  "heroi 2": {
+    "Forca": 2,
+    "Vida": 30,
+    "Escudo": 10,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 2",
+    "Poder_do_heroi": "esse é o poder do heroi 2"
+  },
+  "heroi 3": {
+    "Forca": 3,
+    "Vida": 30,
+    "Escudo": 15,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 3",
+    "Poder_do_heroi": "esse é o poder do heroi 3"
+  },
+  "heroi 4": {
+    "Forca": 4,
+    "Vida": 30,
+    "Escudo": 20,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 4",
+    "Poder_do_heroi": "esse é o poder do heroi 4"
+  },
+  "heroi 5": {
+    "Forca": 5,
+    "Vida": 30,
+    "Escudo": 25,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 5",
+    "Poder_do_heroi": "esse é o poder do heroi 5"
+  },
+  "heroi 6": {
+    "Forca": 5,
+    "Vida": 30,
+    "Escudo": 30,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 6",
+    "Poder_do_heroi": "esse é o poder do heroi 6"
+  },
+  "heroi 7": {
+    "Forca": 4,
+    "Vida": 30,
+    "Escudo": 25,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 7",
+    "Poder_do_heroi": "esse é o poder do heroi 7"
+  },
+  "heroi 8": {
+    "Forca": 3,
+    "Vida": 30,
+    "Escudo": 20,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 8",
+    "Poder_do_heroi": "esse é o poder do heroi 8"
+  },
+  "heroi 9": {
+    "Forca": 2,
+    "Vida": 30,
+    "Escudo": 15,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 9",
+    "Poder_do_heroi": "esse é o poder do heroi 9"
+  },
+  "heroi 10": {
+    "Forca": 1,
+    "Vida": 30,
+    "Escudo": 10,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 10",
+    "Poder_do_heroi": "esse é o poder do heroi 10"
+  },
+  "heroi 11": {
+    "Forca": 1,
+    "Vida": 30,
+    "Escudo": 5,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 11",
+    "Poder_do_heroi": "esse é o poder do heroi 11"
+  },
+  "heroi 12": {
+    "Forca": 2,
+    "Vida": 30,
+    "Escudo": 10,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 12",
+    "Poder_do_heroi": "esse é o poder do heroi 12"
+  },
+  "heroi 13": {
+    "Forca": 3,
+    "Vida": 30,
+    "Escudo": 15,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 13",
+    "Poder_do_heroi": "esse é o poder do heroi 13"
+  },
+  "heroi 14": {
+    "Forca": 4,
+    "Vida": 30,
+    "Escudo": 20,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 14",
+    "Poder_do_heroi": "esse é o poder do heroi 14"
+  },
+  "heroi 15": {
+    "Forca": 5,
+    "Vida": 30,
+    "Escudo": 25,
+    "Habilidade_de_heroi": "essa é a habilidade do heroi 15",
+    "Poder_do_heroi": "esse é o poder do heroi 15"
+  }
+}

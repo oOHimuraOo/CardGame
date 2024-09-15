@@ -191,4 +191,229 @@ func descobrir_racas_mais_votadas_para_banimento(sala:String) -> void:
 				segunda_raca_mais_votada = voto
 		
 	CONLOB.lobbys_em_partidas[sala]["racas_banidas"] = [raca_mais_votada, segunda_raca_mais_votada]
-	get_parent().servidor_client_finalizar_inicio_de_partida(sala)
+	montar_dicionario_de_primeira_manutencao(sala)
+	#get_parent().servidor_client_finalizar_inicio_de_partida(sala)
+
+func montar_dicionario_de_primeira_manutencao(sala:String) -> void:
+	var dicionario:Dictionary = {}
+	for jogador in CONLOB.lobbys_em_partidas[sala]:
+		if typeof(jogador) == 2:
+			if !dicionario.has(sala):
+				dicionario[sala] = {}
+			
+			dicionario[sala]["rodada"] = 0
+			
+			if !dicionario[sala].has("jogadores"):
+				dicionario[sala]["jogadores"] = {}
+			
+			if !dicionario[sala]["jogadores"].has(jogador):
+				dicionario[sala]["jogadores"][jogador] = {}
+			
+			dicionario[sala]["jogadores"][jogador]["apelido"] = DATA.UserData[descobrir_usuario_em_partida(jogador)]["informcoes_do_jogador"]["nick"]
+			
+			if !dicionario[sala]["jogadores"][jogador].has("etapas_de_jogo"):
+				dicionario[sala]["jogadores"][jogador]["etapas_de_jogo"] = {}
+			
+			dicionario[sala]["jogadores"][jogador]["etapas_de_jogo"]["inicio_de_partida"] = true
+			dicionario[sala]["jogadores"][jogador]["etapas_de_jogo"]["manutencao"] = true
+			dicionario[sala]["jogadores"][jogador]["etapas_de_jogo"]["combate"] = false
+			dicionario[sala]["jogadores"][jogador]["etapas_de_jogo"]["sacrificio"] = false
+			dicionario[sala]["jogadores"][jogador]["etapas_de_jogo"]["especial"] = false
+			
+			dicionario[sala]["jogadores"][jogador]["voto"] = CONLOB.lobbys_em_partidas[sala][jogador]["voto"]
+			
+			if !dicionario[sala]["jogadores"][jogador].has("has"):
+				dicionario[sala]["jogadores"][jogador]["heroi"] = {}
+			
+			dicionario[sala]["jogadores"][jogador]["heroi"]["nome"] = CONLOB.lobbys_em_partidas[sala][jogador]["heroi"]
+			dicionario[sala]["jogadores"][jogador]["heroi"]["vida"] = DATA.Hero_info[CONLOB.lobbys_em_partidas[sala][jogador]["heroi"]]["Vida"]
+			dicionario[sala]["jogadores"][jogador]["heroi"]["ataque"] = DATA.Hero_info[CONLOB.lobbys_em_partidas[sala][jogador]["heroi"]]["Forca"]
+			dicionario[sala]["jogadores"][jogador]["heroi"]["escudo"] = DATA.Hero_info[CONLOB.lobbys_em_partidas[sala][jogador]["heroi"]]["Escudo"]
+			
+			if !dicionario[sala]["jogadores"][jogador].has("resultado_de_partidas"):
+				dicionario[sala]["jogadores"][jogador]["resultado_de_partidas"] = {}
+			
+			dicionario[sala]["jogadores"][jogador]["resultado_de_partidas"]["ultima_partida"] = "empate"
+			dicionario[sala]["jogadores"][jogador]["resultado_de_partidas"]["penultima_partida"] = "empate"
+			dicionario[sala]["jogadores"][jogador]["resultado_de_partidas"]["antepenultima_partida"] = "empate"
+			
+			dicionario[sala]["jogadores"][jogador]["posicao_atual"] = 0
+			
+			dicionario[sala]["jogadores"][jogador]["dinheiro_atual"] = calcular_dinheiro_atual(0)
+			
+			dicionario[sala]["racas_banidas"] = [CONLOB.lobbys_em_partidas[sala]["racas_banidas"]]
+			
+			dicionario[sala]["racas_em_jogo"] = descobrir_racas_em_jogo(sala)
+	
+	dicionario = calcular_posicao_atual(dicionario)
+	CONLOB.infomacoes_de_partidas[sala] = dicionario[sala]
+	get_parent().servidor_client_finalizar_inicio_de_partida(sala, dicionario)
+
+func calcular_posicao_atual(dicionario:Dictionary) -> Dictionary:
+	var novo_dicionario:Dictionary = dicionario.duplicate(true)
+	var lista_de_posicoes:Array = ["primeiro", "segundo", "terceiro", "quarto", "quinto", "sexto", "setimo", "oitavo"]
+	
+	var dicionario_temp:Dictionary = {}
+	for sala in dicionario:
+		for jogador in dicionario[sala]["jogadores"]:
+			var soma:int = dicionario[sala]["jogadores"][jogador]["heroi"]["vida"] + dicionario[sala]["jogadores"][jogador]["heroi"]["escudo"]
+			dicionario_temp[jogador] = soma
+	
+	var index_ordenados:Array = organizar(dicionario_temp)
+	
+	var primeiro:int = index_ordenados[0]
+	var segundo:int = index_ordenados[1]
+	#var terceiro:int = index_ordenados[2]
+	#var quarto:int = index_ordenados[3]
+	#var quinto:int = index_ordenados[4]
+	#var sexto:int = index_ordenados[5]
+	#var setimo:int = index_ordenados[6]
+	#var oitavo:int = index_ordenados[7]
+	
+	for sala in dicionario:
+		for posicao in lista_de_posicoes:
+			for jogador in dicionario[sala]["jogadores"]:
+				if jogador == primeiro:
+					novo_dicionario[sala]["jogadores"][jogador]["posicao_atual"] = 0
+				elif jogador == segundo:
+					novo_dicionario[sala]["jogadores"][jogador]["posicao_atual"] = 1
+				#elif jogador == terceiro:
+					#novo_dicionario[sala]["jogadores"][jogador]["posicao_atual"] = 2
+				#elif jogador == quarto:
+					#novo_dicionario[sala]["jogadores"][jogador]["posicao_atual"] = 3
+				#elif jogador == quinto:
+					#novo_dicionario[sala]["jogadores"][jogador]["posicao_atual"] = 4
+				#elif jogador == sexto:
+					#novo_dicionario[sala]["jogadores"][jogador]["posicao_atual"] = 5
+				#elif jogador == setimo:
+					#novo_dicionario[sala]["jogadores"][jogador]["posicao_atual"] = 6
+				#elif jogador == oitavo:
+					#novo_dicionario[sala]["jogadores"][jogador]["posicao_atual"] = 7
+	
+	return novo_dicionario
+
+func calcular_dinheiro_atual(rodada_atual:int) -> int:
+	if rodada_atual == 0:
+		return int(3)
+	else:
+		return int(3 + rodada_atual)
+
+func descobrir_racas_em_jogo(sala:String) -> Array:
+	var primeira_raca = CONLOB.lobbys_em_partidas[sala]["racas_em_jogo"][0]
+	var segunda_raca = CONLOB.lobbys_em_partidas[sala]["racas_em_jogo"][1]
+	
+	var array_de_racas:Array = ["anao", "besta", "dragao", "elemental", "elfo", "humano", "metamorfo", "mortoVivo", "naga", "pirata"]
+	
+	for raca in array_de_racas:
+		if CONLOB.lobbys_em_partidas[sala]["racas_banidas"].has(raca):
+			array_de_racas.erase(raca)
+		if raca == primeira_raca:
+			array_de_racas.erase(raca)
+		if raca == segunda_raca:
+			array_de_racas.erase(raca)
+	
+	var terceira_raca = array_de_racas.pick_random()
+	array_de_racas.erase(terceira_raca)
+	
+	var quarta_raca = array_de_racas.pick_random()
+	
+	var racas_em_jogo:Array = [primeira_raca, segunda_raca, terceira_raca, quarta_raca]
+	
+	return racas_em_jogo
+
+func organizar(dicionario: Dictionary) -> Array:
+	var jogadores_e_somas:Array = []
+	
+	for jogador in dicionario:
+		jogadores_e_somas.append([jogador, dicionario[jogador]])
+	
+	organizar_array(jogadores_e_somas, 0, jogadores_e_somas.size() -1)
+	jogadores_e_somas.reverse()
+	
+	var array_de_index:Array = []
+	for x in jogadores_e_somas:
+		array_de_index.append(x[0])
+	
+	return array_de_index
+
+func organizar_array(lista:Array, menor_valor:int, maior_valor:int) -> void:
+	if lista.is_empty():
+		return
+	
+	if menor_valor < maior_valor:
+		var index_primario = particao_do_algoritimo(lista, menor_valor, maior_valor)
+		
+		organizar_array(lista, menor_valor, index_primario - 1)
+		organizar_array(lista,index_primario + 1, maior_valor)
+
+func particao_do_algoritimo(lista:Array, menor_valor:int, maior_valor:int) -> int:
+	var pivot = lista[maior_valor]
+	var i:int = menor_valor - 1
+	
+	for j in range(menor_valor, maior_valor):
+		if lista[j][1] <= pivot[1]:
+			i += 1
+			var valor_temp = lista[i]
+			lista[i] = lista[j]
+			lista[j] = valor_temp
+	
+	lista[maior_valor] = lista[i+1]
+	lista[i+1] = pivot
+	
+	return i+1
+
+func criar_pool(sala:String, id:int) -> void:
+	if CONLOB.infomacoes_de_partidas[sala].has("pool"):
+		get_parent().servidor_client_pool_criada(CONLOB.infomacoes_de_partidas[sala]["pool"], id)
+		return
+	
+	var pool:Dictionary = {}
+	for jogador in CONLOB.infomacoes_de_partidas[sala]["jogadores"]:
+		if CONLOB.infomacoes_de_partidas[sala]["jogadores"][jogador]["etapas_de_jogo"]["inicio_de_partida"]:
+			CONLOB.infomacoes_de_partidas[sala]["jogadores"][jogador]["etapas_de_jogo"]["inicio_de_partida"] = false
+			CONLOB.infomacoes_de_partidas[sala]["jogadores"][jogador]["decks_em_partida"] = {}
+			for raca in CONLOB.infomacoes_de_partidas[sala]["racas_em_jogo"]:
+				CONLOB.infomacoes_de_partidas[sala]["jogadores"][jogador]["decks_em_partida"][descobrir_nome_do_deck(raca)] = DATA.UserData[descobrir_usuario_em_partida(jogador)]["informcoes_do_jogador"]["decks_do_jogador"][descobrir_nome_do_deck(raca)]["cartas"]
+	
+	for jogador in CONLOB.infomacoes_de_partidas[sala]["jogadores"]:
+		for deck in CONLOB.infomacoes_de_partidas[sala]["jogadores"][jogador]["decks_em_partida"]:
+			for edicao in CONLOB.infomacoes_de_partidas[sala]["jogadores"][jogador]["decks_em_partida"][deck]:
+				if !pool.has(edicao):
+					pool[edicao] = []
+				for carta in CONLOB.infomacoes_de_partidas[sala]["jogadores"][jogador]["decks_em_partida"][deck][edicao]:
+					pool[edicao].append(carta)
+	
+	CONLOB.infomacoes_de_partidas[sala]["pool"] = {}
+	CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"] = pool
+	CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_em_descarte"] = {}
+	CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_removidas"] = {}
+	get_parent().servidor_client_pool_criada(CONLOB.infomacoes_de_partidas[sala]["pool"], id)
+
+func descobrir_nome_do_deck(raca:String) -> String:
+	var nome_do_deck:String
+	match raca:
+		"anao":
+			nome_do_deck = "anao_base"
+		"besta":
+			nome_do_deck = "besta_base"
+		"dragao":
+			nome_do_deck = "dragao_base"
+		"elemental":
+			nome_do_deck = "elemental_base"
+		"elfo":
+			nome_do_deck = "elfo_base"
+		"humano":
+			nome_do_deck = "humano_base"
+		"metamorfo":
+			nome_do_deck = "metamorfo_base"
+		"mortoVivo":
+			nome_do_deck = "mortoVivo_base"
+		"naga":
+			nome_do_deck = "naga_base"
+		"pirata":
+			nome_do_deck = "pirata_base"
+	return nome_do_deck
+
+func informacoes_atualizadas(sala:String) -> void:
+	var informacoes = CONLOB.infomacoes_de_partidas[sala]
+	get_parent().servidor_client_informacoes_atualizadas(sala, informacoes)

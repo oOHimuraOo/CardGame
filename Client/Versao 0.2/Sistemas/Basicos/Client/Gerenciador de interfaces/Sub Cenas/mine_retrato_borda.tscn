@@ -1,4 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dep0xfhkuuy2c"]
+[gd_scene load_steps=16 format=3 uid="uid://dep0xfhkuuy2c"]
+
+[ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/mine_retrato_borda_base.gd" id="1_4tvde"]
 
 [sub_resource type="Gradient" id="Gradient_2n0sq"]
 offsets = PackedFloat32Array(0)
@@ -14,6 +16,41 @@ colors = PackedColorArray(1, 1, 1, 1)
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_kp65u"]
 gradient = SubResource("Gradient_8dtnl")
 
+[sub_resource type="Gradient" id="Gradient_2xjog"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jdfl7"]
+gradient = SubResource("Gradient_2xjog")
+
+[sub_resource type="Gradient" id="Gradient_detw3"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nqqno"]
+gradient = SubResource("Gradient_detw3")
+
+[sub_resource type="Gradient" id="Gradient_5gjfm"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_v55e1"]
+gradient = SubResource("Gradient_5gjfm")
+
+[sub_resource type="Gradient" id="Gradient_aqs2o"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_8w61u"]
+gradient = SubResource("Gradient_aqs2o")
+
+[sub_resource type="Gradient" id="Gradient_8md57"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_l43rf"]
+gradient = SubResource("Gradient_8md57")
+
 [node name="MineRetratoBorda" type="NinePatchRect"]
 custom_minimum_size = Vector2(40, 40)
 texture = SubResource("GradientTexture1D_ejnm4")
@@ -21,8 +58,9 @@ patch_margin_left = 2
 patch_margin_top = 2
 patch_margin_right = 2
 patch_margin_bottom = 2
+script = ExtResource("1_4tvde")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="Marginalizador" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -34,7 +72,74 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 2
 theme_override_constants/margin_bottom = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+[node name="RetratoHeroi" type="TextureRect" parent="Marginalizador"]
 layout_mode = 2
 texture = SubResource("GradientTexture1D_kp65u")
 expand_mode = 1
+
+[node name="OrganizadorDeMiolo" type="HBoxContainer" parent="Marginalizador/RetratoHeroi"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="BarraDeVida" type="TextureProgressBar" parent="Marginalizador/RetratoHeroi/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+mouse_filter = 2
+value = 72.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_jdfl7")
+texture_progress = SubResource("GradientTexture1D_nqqno")
+
+[node name="Marginalizador" type="MarginContainer" parent="Marginalizador/RetratoHeroi/OrganizadorDeMiolo"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="BarraDeEscudo" type="TextureProgressBar" parent="Marginalizador/RetratoHeroi/OrganizadorDeMiolo"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+mouse_filter = 2
+value = 50.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_v55e1")
+texture_progress = SubResource("GradientTexture1D_8w61u")
+
+[node name="IconeAtaque" type="TextureRect" parent="Marginalizador/RetratoHeroi"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = -10.0
+offset_right = 5.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = SubResource("GradientTexture1D_l43rf")
+expand_mode = 1
+
+[node name="EtiquetaValorAtaque" type="Label" parent="Marginalizador/RetratoHeroi/IconeAtaque"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="Marginalizador/RetratoHeroi" to="." method="quando_retrato_heroi_mouse_entrado"]
+[connection signal="mouse_exited" from="Marginalizador/RetratoHeroi" to="." method="quando_retrato_heroi_mouse_saido"]

@@ -133,7 +133,26 @@ func client_server_informacoes_de_inicio_de_partida(id:int, dicionario:Dictionar
 	recebendo.informacoes_de_inicio_de_partida(id, dicionario, sala)
 
 @rpc("authority", "reliable")
-func servidor_client_finalizar_inicio_de_partida(sala:String) -> void:
+func servidor_client_finalizar_inicio_de_partida(sala:String, dicionario:Dictionary) -> void:
 	for jogador in CONLOB.lobbys_em_partidas[sala]:
 		if typeof(jogador) == 2:
-			rpc_id(jogador, "servidor_client_finalizar_inicio_de_partida")
+			rpc_id(jogador, "servidor_client_finalizar_inicio_de_partida", dicionario)
+
+@rpc("any_peer", "reliable")
+func client_server_solicitar_criar_pool(sala:String, id:int) -> void:
+	enviando.criar_pool(sala, id)
+
+@rpc("authority", "reliable")
+func servidor_client_pool_criada(pool:Dictionary, id:int) -> void:
+	rpc_id(id, "servidor_client_pool_criada", pool)
+
+@rpc("any_peer", "reliable")
+func client_server_solicitar_inicializacao_de_taverna(sala:String, id:int) -> void:
+	recebendo.inicializacao_de_taverna(sala, id)
+
+@rpc("authority","reliable")
+func servidor_client_informacoes_atualizadas(sala:String, informacoes:Dictionary) -> void:
+	var dicionario:Dictionary = {}
+	dicionario[sala] = informacoes
+	for jogador in informacoes["jogadores"]:
+		rpc_id(int(jogador), "servidor_client_informacoes_atualizadas", dicionario)

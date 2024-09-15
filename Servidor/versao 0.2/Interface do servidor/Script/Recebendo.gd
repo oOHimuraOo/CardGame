@@ -2,6 +2,7 @@ class_name RECEBENDO
 extends Node
 
 var testador:Dictionary = {0: "TYPE_NIL", 1: "TYPE_BOOL", 2: "TYPE_INT", 3: "TYPE_FLOAT", 4: "TYPE_STRING", 5:"TYPE_VECTOR2", 6: "TYPE_VECTOR2I", 7: "TYPE_RECT2", 8: "TYPE_RECT2I", 9: "TYPE_VECTOR3", 10: "TYPE_VECTOR3I", 11: "TYPE_TRANSFORM2D", 12: "TYPE_VECTOR4", 13: "TYPE_VECTOR4I",14: "TYPE_PLANE", 15: "TYPE_QUATERNION", 16:"TYPE_AABB", 17:"TYPE_BASIS", 18:"TYPE_TRANSFORM3D", 19:"TYPE_PROJECTION", 20:"TYPE_COLOR", 21:"TYPE_STRING_NAME", 22:"TYPE_NODE_PATH", 23:"TYPE_RID", 24:"TYPE_OBJECT", 25:"TYPE_CALLABLE", 26:"TYPE_SIGNAL", 27:"TYPE_DICTIONARY", 28:"TYPE_ARRAY", 29:"TYPE_PACKED_BYTE_ARRAY", 30:"TYPE_PACKED_INT32_ARRAY", 31:"TYPE_PACKED_INT64_ARRAY", 32:"TYPE_PACKED_FLOAT32_ARRAY", 33:"TYPE_PACKED_FLOAT64_ARRAY", 34:"TYPE_PACKED_STRING_ARRAY", 35: "TYPE_PACKED_VECTOR2_ARRAY", 36:"TYPE_PACKED_VECTOR3_ARRAY", 37:"TYPE_PACKED_COLOR_ARRAY", 38:"TYPE_MAX"}
+var fila_de_compra:Array[int] = []
 
 func verificar_possibilidade_de_deck_list(deck_list:Dictionary, raca:String, client:String, id:int) -> void:
 	var usuario_real:String = get_parent().iniciando.aplicar_regra_hash_de_usuario(client)
@@ -144,3 +145,88 @@ func informacoes_de_inicio_de_partida(id:int, dicionario:Dictionary, sala:String
 		
 	if voto_e_heroi:
 		get_parent().enviando.descobrir_racas_mais_votadas_para_banimento(sala)
+
+func inicializacao_de_taverna(sala:String, id:int) -> void:
+	if CONLOB.infomacoes_de_partidas[sala]["jogadores"][id].has("taverna"):
+		var cartas_antigas:Array = CONLOB.infomacoes_de_partidas[sala]["jogadores"][id]["taverna"]["cartas_exibidas"]
+		for edicao in cartas_antigas:
+			for carta in cartas_antigas[edicao]:
+				CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"].append(carta)
+		CONLOB.infomacoes_de_partidas[sala]["jogadores"][id]["taverna"]["cartas_exibidas"] = cavar_cartas_da_pool(sala, id)
+	else:
+		CONLOB.infomacoes_de_partidas[sala]["jogadores"][id]["taverna"] = {}
+		CONLOB.infomacoes_de_partidas[sala]["jogadores"][id]["taverna"]["tier"] = "TIER_0"
+		CONLOB.infomacoes_de_partidas[sala]["jogadores"][id]["taverna"]["cartas_exibidas"] = cavar_cartas_da_pool(sala, id)
+		CONLOB.infomacoes_de_partidas[sala]["jogadores"][id]["taverna"]["congelada"] = false
+	
+	get_parent().enviando.informacoes_atualizadas(sala)
+
+func cavar_cartas_da_pool(sala:String, id:int):
+	randomize()
+	entrar_na_fila_de_compra(id)
+	if fila_de_compra[0] == id:
+		fila_de_compra.erase(id)
+		var edicoes:Array
+		for edicao in CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"]:
+			CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"][edicao].shuffle()
+			edicoes.append(edicao)
+		var cartas_cavadas:Dictionary = {}
+		for x in range(4):
+			var edicao_selecionada:String = edicoes.pick_random()
+			var carta_selecionada:int = CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"][edicao_selecionada][randi_range(0,CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"][edicao_selecionada].size() - 1)]
+			if carta_valida(CONLOB.infomacoes_de_partidas[sala]["jogadores"][id]["taverna"]["tier"], edicao_selecionada, carta_selecionada):
+				CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"][edicao_selecionada].erase(carta_selecionada)
+				if !cartas_cavadas.has(edicao_selecionada):
+					cartas_cavadas[edicao_selecionada] = []
+				cartas_cavadas[edicao_selecionada].append(carta_selecionada)
+			else:
+				for edicao in CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"]:
+					for carta in CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"][edicao]:
+						if DATA.Carta_info[edicao][str(carta)]["Tier"] == CONLOB.infomacoes_de_partidas[sala]["jogadores"][id]["taverna"]["tier"]:
+							edicao_selecionada = edicao
+							carta_selecionada = carta
+							break
+					break
+				
+				CONLOB.infomacoes_de_partidas[sala]["pool"]["cartas_disponiveis"][edicao_selecionada].erase(carta_selecionada)
+				if !cartas_cavadas.has(edicao_selecionada):
+					cartas_cavadas[edicao_selecionada] = []
+				cartas_cavadas[edicao_selecionada].append(carta_selecionada)
+		
+		return cartas_cavadas
+	else:
+		cavar_cartas_da_pool(sala, id)
+
+func carta_valida(tier:String, edicao:String, carta_id:int) -> bool:
+	var valor_1:int = 0
+	var valor_2:int = 0
+	match tier:
+		"TIER_0":
+			valor_1 = 0
+		"TIER_1":
+			valor_1 = 1
+		"TIER_2":
+			valor_1 = 2
+		"TIER_3":
+			valor_1 = 3
+	
+	match DATA.Carta_info[edicao][str(carta_id)]["Tier"]:
+		"TIER_0":
+			valor_2 = 0
+		"TIER_1":
+			valor_2 = 1
+		"TIER_2":
+			valor_2 = 2
+		"TIER_3":
+			valor_2 = 3
+	
+	if valor_1 >= valor_2:
+		return true
+	else:
+		return false
+
+
+func entrar_na_fila_de_compra(id:int) -> void:
+	if fila_de_compra.has(id):
+		return
+	fila_de_compra.append(id)

@@ -5,6 +5,7 @@ const quantidade_maxima_de_jogadores:int = 2
 var jogadores_conectados: Dictionary = {}
 var lobbys_criados: Dictionary = {}
 var lobbys_em_partidas: Dictionary = {}
+var infomacoes_de_partidas:Dictionary = {}
 var numero_da_sala: int = 0
 
 func adicionar_ou_atualizar_jogador_conectado(id:int, user_real:String, status:String) -> void:

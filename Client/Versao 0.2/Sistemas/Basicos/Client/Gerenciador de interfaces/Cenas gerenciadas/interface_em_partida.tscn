@@ -1,7 +1,8 @@
-[gd_scene load_steps=69 format=3 uid="uid://cy1rsukvv6m1l"]
+[gd_scene load_steps=68 format=3 uid="uid://cy1rsukvv6m1l"]
 
 [ext_resource type="Script" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Script/interface_em_partida.gd" id="1_j02dj"]
 [ext_resource type="PackedScene" uid="uid://dep0xfhkuuy2c" path="res://Sistemas/Basicos/Client/Gerenciador de interfaces/Sub Cenas/mine_retrato_borda.tscn" id="1_qyrvc"]
+[ext_resource type="Texture2D" uid="uid://rdk250i0crvj" path="res://icon.svg" id="3_dl7sa"]
 
 [sub_resource type="Gradient" id="Gradient_npa1a"]
 
@@ -160,13 +161,6 @@ gradient = SubResource("Gradient_jrjcl")
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_sy16k"]
 gradient = SubResource("Gradient_7nd1t")
 
-[sub_resource type="Gradient" id="Gradient_pfd1s"]
-offsets = PackedFloat32Array(0)
-colors = PackedColorArray(0, 1, 0, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_bu6i7"]
-gradient = SubResource("Gradient_pfd1s")
-
 [sub_resource type="Gradient" id="Gradient_5gtot"]
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_l1pro"]
@@ -181,7 +175,7 @@ gradient = SubResource("Gradient_e4cv4")
 
 [sub_resource type="Gradient" id="Gradient_dc0no"]
 offsets = PackedFloat32Array(0)
-colors = PackedColorArray(0, 0.443137, 0, 1)
+colors = PackedColorArray(1, 1, 1, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_ygk1u"]
 gradient = SubResource("Gradient_dc0no")
@@ -750,70 +744,70 @@ vertical_alignment = 1
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="OuroSlot2" type="TextureRect" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="OuroSlot3" type="TextureRect" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="OuroSlot4" type="TextureRect" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="OuroSlot5" type="TextureRect" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="OuroSlot6" type="TextureRect" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="OuroSlot7" type="TextureRect" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="OuroSlot8" type="TextureRect" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="OuroSlot9" type="TextureRect" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="OuroSlot10" type="TextureRect" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
 visible = false
 custom_minimum_size = Vector2(44, 44)
 layout_mode = 2
-texture = SubResource("GradientTexture1D_bu6i7")
+texture = ExtResource("3_dl7sa")
 expand_mode = 1
 
 [node name="Espacador" type="MarginContainer" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita"]
@@ -840,7 +834,6 @@ texture_under = SubResource("GradientTexture1D_q6phh")
 texture_progress = SubResource("GradientTexture1D_ygk1u")
 
 [node name="EtiquetaTempoDisponivel" type="Label" parent="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita/BarraTempoDisponivel"]
-custom_minimum_size = Vector2(976, 44)
 layout_mode = 1
 offset_top = 976.0
 offset_right = 976.0
@@ -910,3 +903,10 @@ texture = SubResource("GradientTexture1D_smydc")
 
 [node name="TemporizadorDeTurno" type="Timer" parent="."]
 wait_time = 120.0
+one_shot = true
+
+[connection signal="pressed" from="OrganizadorPrincipal/OrganizadorTaberna/PlanoDeFundoTaberna/Marginalizador/OrganizadorMioloTaberna/OrganizadorBotoesTaberna/BotaoMelhorar" to="." method="quando_botao_melhorar_pressionado"]
+[connection signal="pressed" from="OrganizadorPrincipal/OrganizadorTaberna/PlanoDeFundoTaberna/Marginalizador/OrganizadorMioloTaberna/OrganizadorBotoesTaberna/BotaoCongelar" to="." method="quando_botao_congelar_pressionado"]
+[connection signal="pressed" from="OrganizadorPrincipal/OrganizadorTaberna/PlanoDeFundoTaberna/Marginalizador/OrganizadorMioloTaberna/OrganizadorBotoesTaberna/BotaoAtualizar" to="." method="quando_botao_atualizar_pressionado"]
+[connection signal="pressed" from="OrganizadorPrincipal/OrganizadorTaberna/PlanoDeFundoJogador/OrganizadorJogador/OrganizadorPoderHeroi/BotaoPoderHeroi" to="." method="quando_botao_poder_heroi_pressionado"]
+[connection signal="pressed" from="OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita/BotaoTerminarTurno" to="." method="quando_botao_terminar_turno_pressionado"]

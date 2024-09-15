@@ -6,6 +6,8 @@ var RegrasHash: Dictionary = {}
 var UserData: Dictionary = {}
 var NoticiasInfor: Dictionary = {}
 var EdicaoTamanhos: Dictionary = {}
+var Hero_info: Dictionary = {}
+var Carta_info: Dictionary = {}
 
 func _ready():
 	var ler_regras_hash = FileAccess.open("res://Banco de dados/JSON/Not_Heartstone_Regras_Hash.json", FileAccess.READ)
@@ -14,9 +16,13 @@ func _ready():
 	var ler_edicao_tamanhos = FileAccess.open("res://Banco de dados/JSON/Edicao_tamanhos.json", FileAccess.READ)
 	EdicaoTamanhos = JSON.parse_string(ler_edicao_tamanhos.get_as_text())
 	
+	var ler_heroi_info = FileAccess.open("res://Banco de dados/JSON/not heartstone - Hero_info.json", FileAccess.READ)
+	Hero_info = JSON.parse_string(ler_heroi_info.get_as_text())
+	
+	var ler_carta_info = FileAccess.open("res://Banco de dados/JSON/not heartstone - Cartas_info.json", FileAccess.READ)
+	Carta_info = JSON.parse_string(ler_carta_info.get_as_text())
+	
 	atualizar_noticias()
-	#var ler_noticias = FileAccess.open("res://Banco de dados/JSON/Noticias_info.json", FileAccess.READ)
-	#NoticiasInfor = JSON.parse_string(ler_noticias.get_as_text())
 	
 	if FileAccess.file_exists("res://Banco de dados/JSON/User_data.json"):
 		atualizar_user_data()

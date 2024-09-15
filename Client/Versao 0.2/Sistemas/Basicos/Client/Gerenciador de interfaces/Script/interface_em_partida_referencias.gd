@@ -1,6 +1,7 @@
 class_name INTERFACE_EM_PARTIDA_REFERENCIAS
 extends Control
 
+@onready var organizador_borda_esquerda:VBoxContainer = $OrganizadorPrincipal/PlanoDeFundoBordaEsquerda/Marginalizador/OrganizadorBordaEsquerda
 @onready var mine_retrato_borda_1:NinePatchRect = $OrganizadorPrincipal/PlanoDeFundoBordaEsquerda/Marginalizador/OrganizadorBordaEsquerda/MineRetratoBorda1
 @onready var mine_retrato_borda_2:NinePatchRect = $OrganizadorPrincipal/PlanoDeFundoBordaEsquerda/Marginalizador/OrganizadorBordaEsquerda/MineRetratoBorda2
 @onready var mine_retrato_borda_3:NinePatchRect = $OrganizadorPrincipal/PlanoDeFundoBordaEsquerda/Marginalizador/OrganizadorBordaEsquerda/MineRetratoBorda3
@@ -45,6 +46,7 @@ extends Control
 @onready var mao_slot_6:NinePatchRect = $OrganizadorMao/MaoSlot6
 @onready var mao_slot_7:NinePatchRect = $OrganizadorMao/MaoSlot7
 
+@onready var etiqueta_ouro:Label = $OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita/EtiquetaOuro
 @onready var ouro_slot_1:TextureRect = $OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita/OuroSlot1
 @onready var ouro_slot_2:TextureRect = $OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita/OuroSlot2
 @onready var ouro_slot_3:TextureRect = $OrganizadorPrincipal/PlanoDeFundoBarraLateralDireita/Marginalizador/OrganizadorBarraLateralDireita/OuroSlot3

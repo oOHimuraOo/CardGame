@@ -133,5 +133,21 @@ func client_server_informacoes_de_inicio_de_partida(dicionario:Dictionary, sala:
 	rpc_id(1, "client_server_informacoes_de_inicio_de_partida", id, dicionario, sala)
 
 @rpc("authority", "reliable")
-func servidor_client_finalizar_inicio_de_partida() -> void:
-	recebendo.finalizar_inicio_de_partida()
+func servidor_client_finalizar_inicio_de_partida(dicionario:Dictionary) -> void:
+	recebendo.finalizar_inicio_de_partida(dicionario)
+
+@rpc("any_peer", "reliable")
+func client_server_solicitar_criar_pool(sala:String) -> void:
+	rpc_id(1, "client_server_solicitar_criar_pool", sala, id)
+
+@rpc("authority", "reliable")
+func servidor_client_pool_criada(pool:Dictionary) -> void:
+	recebendo.pool_criada(pool)
+
+@rpc("any_peer", "reliable")
+func client_server_solicitar_inicializacao_de_taverna(sala:String) -> void:
+	rpc_id(1, "client_server_solicitar_inicializacao_de_taverna", sala, id)
+
+@rpc("authority","reliable")
+func servidor_client_informacoes_atualizadas(informacoes:Dictionary) -> void:
+	recebendo.atualizacao_de_informacoes(informacoes)

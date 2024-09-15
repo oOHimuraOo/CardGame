@@ -1,0 +1,5012 @@
+{
+  "edicao_0": {
+	"0": {
+	  "Nome": "Carta 00",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"1": {
+	  "Nome": "Carta 01",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 0,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"2": {
+	  "Nome": "Carta 02",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"3": {
+	  "Nome": "Carta 03",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 0,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"4": {
+	  "Nome": "Carta 04",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"5": {
+	  "Nome": "Carta 05",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"6": {
+	  "Nome": "Carta 06",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 1,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"7": {
+	  "Nome": "Carta 07",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"8": {
+	  "Nome": "Carta 08",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 1,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"9": {
+	  "Nome": "Carta 09",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"10": {
+	  "Nome": "Carta 10",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"11": {
+	  "Nome": "Carta 11",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 2,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"12": {
+	  "Nome": "Carta 12",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"13": {
+	  "Nome": "Carta 13",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 2,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"14": {
+	  "Nome": "Carta 14",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"15": {
+	  "Nome": "Carta 15",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"16": {
+	  "Nome": "Carta 16",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"17": {
+	  "Nome": "Carta 17",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"18": {
+	  "Nome": "Carta 18",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"19": {
+	  "Nome": "Carta 19",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"20": {
+	  "Nome": "Carta 20",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"21": {
+	  "Nome": "Carta 21",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"22": {
+	  "Nome": "Carta 22",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"23": {
+	  "Nome": "Carta 23",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"24": {
+	  "Nome": "Carta 24",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"25": {
+	  "Nome": "Carta 25",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"26": {
+	  "Nome": "Carta 26",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"27": {
+	  "Nome": "Carta 27",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"28": {
+	  "Nome": "Carta 28",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"29": {
+	  "Nome": "Carta 29",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"30": {
+	  "Nome": "Carta 30",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"31": {
+	  "Nome": "Carta 31",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 0,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"32": {
+	  "Nome": "Carta 32",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"33": {
+	  "Nome": "Carta 33",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 0,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"34": {
+	  "Nome": "Carta 34",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"35": {
+	  "Nome": "Carta 35",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"36": {
+	  "Nome": "Carta 36",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 1,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"37": {
+	  "Nome": "Carta 37",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"38": {
+	  "Nome": "Carta 38",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 1,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"39": {
+	  "Nome": "Carta 39",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"40": {
+	  "Nome": "Carta 40",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"41": {
+	  "Nome": "Carta 41",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 2,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"42": {
+	  "Nome": "Carta 42",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"43": {
+	  "Nome": "Carta 43",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 2,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"44": {
+	  "Nome": "Carta 44",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"45": {
+	  "Nome": "Carta 45",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"46": {
+	  "Nome": "Carta 46",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"47": {
+	  "Nome": "Carta 47",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"48": {
+	  "Nome": "Carta 48",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"49": {
+	  "Nome": "Carta 49",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"50": {
+	  "Nome": "Carta 50",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"51": {
+	  "Nome": "Carta 51",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"52": {
+	  "Nome": "Carta 52",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"53": {
+	  "Nome": "Carta 53",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"54": {
+	  "Nome": "Carta 54",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"55": {
+	  "Nome": "Carta 55",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"56": {
+	  "Nome": "Carta 56",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"57": {
+	  "Nome": "Carta 57",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"58": {
+	  "Nome": "Carta 58",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"59": {
+	  "Nome": "Carta 59",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"60": {
+	  "Nome": "Carta 60",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"61": {
+	  "Nome": "Carta 61",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 0,
+	  "Defesa": 2,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"62": {
+	  "Nome": "Carta 62",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"63": {
+	  "Nome": "Carta 63",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 0,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"64": {
+	  "Nome": "Carta 64",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 5,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"65": {
+	  "Nome": "Carta 65",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 1,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"66": {
+	  "Nome": "Carta 66",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 1,
+	  "Defesa": 2,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"67": {
+	  "Nome": "Carta 67",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"68": {
+	  "Nome": "Carta 68",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 1,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"69": {
+	  "Nome": "Carta 69",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 5,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"70": {
+	  "Nome": "Carta 70",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 1,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"71": {
+	  "Nome": "Carta 71",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 2,
+	  "Defesa": 2,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"72": {
+	  "Nome": "Carta 72",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"73": {
+	  "Nome": "Carta 73",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 2,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"74": {
+	  "Nome": "Carta 74",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 5,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"75": {
+	  "Nome": "Carta 75",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 1,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"76": {
+	  "Nome": "Carta 76",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"77": {
+	  "Nome": "Carta 77",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"78": {
+	  "Nome": "Carta 78",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"79": {
+	  "Nome": "Carta 79",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"80": {
+	  "Nome": "Carta 80",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"81": {
+	  "Nome": "Carta 81",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"82": {
+	  "Nome": "Carta 82",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"83": {
+	  "Nome": "Carta 83",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"84": {
+	  "Nome": "Carta 84",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"85": {
+	  "Nome": "Carta 85",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"86": {
+	  "Nome": "Carta 86",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"87": {
+	  "Nome": "Carta 87",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"88": {
+	  "Nome": "Carta 88",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"89": {
+	  "Nome": "Carta 89",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"90": {
+	  "Nome": "Carta 90",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"91": {
+	  "Nome": "Carta 91",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 0,
+	  "Defesa": 2,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"92": {
+	  "Nome": "Carta 92",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 3,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"93": {
+	  "Nome": "Carta 93",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 0,
+	  "Defesa": 4,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"94": {
+	  "Nome": "Carta 94",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 5,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"95": {
+	  "Nome": "Carta 95",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 1,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"96": {
+	  "Nome": "Carta 96",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 1,
+	  "Defesa": 2,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"97": {
+	  "Nome": "Carta 97",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 3,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"98": {
+	  "Nome": "Carta 98",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 1,
+	  "Defesa": 4,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"99": {
+	  "Nome": "Carta 99",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 5,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"100": {
+	  "Nome": "Carta 100",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 1,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"101": {
+	  "Nome": "Carta 101",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 2,
+	  "Defesa": 2,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"102": {
+	  "Nome": "Carta 102",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 3,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"103": {
+	  "Nome": "Carta 103",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 2,
+	  "Defesa": 4,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"104": {
+	  "Nome": "Carta 104",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 5,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"105": {
+	  "Nome": "Carta 105",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 1,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"106": {
+	  "Nome": "Carta 106",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"107": {
+	  "Nome": "Carta 107",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"108": {
+	  "Nome": "Carta 108",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"109": {
+	  "Nome": "Carta 109",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"110": {
+	  "Nome": "Carta 110",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"111": {
+	  "Nome": "Carta 111",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"112": {
+	  "Nome": "Carta 112",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"113": {
+	  "Nome": "Carta 113",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"114": {
+	  "Nome": "Carta 114",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"115": {
+	  "Nome": "Carta 115",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"116": {
+	  "Nome": "Carta 116",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"117": {
+	  "Nome": "Carta 117",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"118": {
+	  "Nome": "Carta 118",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"119": {
+	  "Nome": "Carta 119",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"120": {
+	  "Nome": "Carta 120",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"121": {
+	  "Nome": "Carta 121",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 0,
+	  "Defesa": 2,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"122": {
+	  "Nome": "Carta 122",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 3,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"123": {
+	  "Nome": "Carta 123",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 0,
+	  "Defesa": 4,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"124": {
+	  "Nome": "Carta 124",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 5,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"125": {
+	  "Nome": "Carta 125",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 1,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"126": {
+	  "Nome": "Carta 126",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 1,
+	  "Defesa": 2,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"127": {
+	  "Nome": "Carta 127",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 3,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"128": {
+	  "Nome": "Carta 128",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 1,
+	  "Defesa": 4,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"129": {
+	  "Nome": "Carta 129",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 5,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"130": {
+	  "Nome": "Carta 130",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 1,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"131": {
+	  "Nome": "Carta 131",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 2,
+	  "Defesa": 2,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"132": {
+	  "Nome": "Carta 132",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 3,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"133": {
+	  "Nome": "Carta 133",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 2,
+	  "Defesa": 4,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"134": {
+	  "Nome": "Carta 134",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 5,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"135": {
+	  "Nome": "Carta 135",
+	  "Tipo": [
+		"Metamorfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 1,
+	  "Imagem": "Metamorfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"136": {
+	  "Nome": "Carta 136",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"137": {
+	  "Nome": "Carta 137",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"138": {
+	  "Nome": "Carta 138",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"139": {
+	  "Nome": "Carta 139",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"140": {
+	  "Nome": "Carta 140",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"141": {
+	  "Nome": "Carta 141",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"142": {
+	  "Nome": "Carta 142",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"143": {
+	  "Nome": "Carta 143",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"144": {
+	  "Nome": "Carta 144",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"145": {
+	  "Nome": "Carta 145",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"146": {
+	  "Nome": "Carta 146",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"147": {
+	  "Nome": "Carta 147",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"148": {
+	  "Nome": "Carta 148",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"149": {
+	  "Nome": "Carta 149",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"150": {
+	  "Nome": "Carta 150",
+	  "Tipo": [
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"151": {
+	  "Nome": "Carta 151",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"152": {
+	  "Nome": "Carta 152",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"153": {
+	  "Nome": "Carta 153",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"154": {
+	  "Nome": "Carta 154",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"155": {
+	  "Nome": "Carta 155",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"156": {
+	  "Nome": "Carta 156",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"157": {
+	  "Nome": "Carta 157",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"158": {
+	  "Nome": "Carta 158",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"159": {
+	  "Nome": "Carta 159",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"160": {
+	  "Nome": "Carta 160",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"161": {
+	  "Nome": "Carta 161",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"162": {
+	  "Nome": "Carta 162",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"163": {
+	  "Nome": "Carta 163",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"164": {
+	  "Nome": "Carta 164",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"165": {
+	  "Nome": "Carta 165",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"166": {
+	  "Nome": "Carta 166",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"167": {
+	  "Nome": "Carta 167",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"168": {
+	  "Nome": "Carta 168",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"169": {
+	  "Nome": "Carta 169",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"170": {
+	  "Nome": "Carta 170",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"171": {
+	  "Nome": "Carta 171",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"172": {
+	  "Nome": "Carta 172",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"173": {
+	  "Nome": "Carta 173",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"174": {
+	  "Nome": "Carta 174",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"175": {
+	  "Nome": "Carta 175",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"176": {
+	  "Nome": "Carta 176",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"177": {
+	  "Nome": "Carta 177",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"178": {
+	  "Nome": "Carta 178",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"179": {
+	  "Nome": "Carta 179",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"180": {
+	  "Nome": "Carta 180",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"181": {
+	  "Nome": "Carta 181",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Morto_Besta_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"182": {
+	  "Nome": "Carta 182",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Morto_Dragao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"183": {
+	  "Nome": "Carta 183",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Morto_Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"184": {
+	  "Nome": "Carta 184",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Elemental"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Morto_Elemental_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"185": {
+	  "Nome": "Carta 185",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Pirata"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Morto_Pirata_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"186": {
+	  "Nome": "Carta 186",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Morto_Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"187": {
+	  "Nome": "Carta 187",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Anao"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Morto_Anao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"188": {
+	  "Nome": "Carta 188",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Metamorfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Morto_Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"189": {
+	  "Nome": "Carta 189",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Morto_Humano_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"190": {
+	  "Nome": "Carta 190",
+	  "Tipo": [
+		"Besta",
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Besta_Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"191": {
+	  "Nome": "Carta 191",
+	  "Tipo": [
+		"Besta",
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"192": {
+	  "Nome": "Carta 192",
+	  "Tipo": [
+		"Besta",
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Besta_Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"193": {
+	  "Nome": "Carta 193",
+	  "Tipo": [
+		"Besta",
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Besta_Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"194": {
+	  "Nome": "Carta 194",
+	  "Tipo": [
+		"Besta",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Besta_Elfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"195": {
+	  "Nome": "Carta 195",
+	  "Tipo": [
+		"Besta",
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Besta_Anao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"196": {
+	  "Nome": "Carta 196",
+	  "Tipo": [
+		"Besta",
+		"Metamorfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Metamorfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"197": {
+	  "Nome": "Carta 197",
+	  "Tipo": [
+		"Besta",
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"198": {
+	  "Nome": "Carta 198",
+	  "Tipo": [
+		"Naga",
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"199": {
+	  "Nome": "Carta 199",
+	  "Tipo": [
+		"Naga",
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"200": {
+	  "Nome": "Carta 200",
+	  "Tipo": [
+		"Naga",
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"201": {
+	  "Nome": "Carta 201",
+	  "Tipo": [
+		"Naga",
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Anao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"202": {
+	  "Nome": "Carta 202",
+	  "Tipo": [
+		"Naga",
+		"Metamorfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Metamorfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"203": {
+	  "Nome": "Carta 203",
+	  "Tipo": [
+		"Naga",
+		"Humano"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"204": {
+	  "Nome": "Carta 204",
+	  "Tipo": [
+		"Elemental",
+		"Pirata"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"205": {
+	  "Nome": "Carta 205",
+	  "Tipo": [
+		"Elemental",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Elfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"206": {
+	  "Nome": "Carta 206",
+	  "Tipo": [
+		"Elemental",
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Elemental_Anao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"207": {
+	  "Nome": "Carta 207",
+	  "Tipo": [
+		"Elemental",
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Elemental_Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"208": {
+	  "Nome": "Carta 208",
+	  "Tipo": [
+		"Elemental",
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Elemental_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"209": {
+	  "Nome": "Carta 209",
+	  "Tipo": [
+		"Pirata",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Pirata_Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"210": {
+	  "Nome": "Carta 210",
+	  "Tipo": [
+		"Pirata",
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Pirata_Anao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"211": {
+	  "Nome": "Carta 211",
+	  "Tipo": [
+		"Pirata",
+		"Metamorfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Pirata_Metamorfor_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"212": {
+	  "Nome": "Carta 212",
+	  "Tipo": [
+		"Pirata",
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Pirata_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"213": {
+	  "Nome": "Carta 213",
+	  "Tipo": [
+		"Elfo",
+		"Anao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Elfo_Anao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"214": {
+	  "Nome": "Carta 214",
+	  "Tipo": [
+		"Elfo",
+		"Metamorfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Elfo_Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"215": {
+	  "Nome": "Carta 215",
+	  "Tipo": [
+		"Elfo",
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Elfo_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"216": {
+	  "Nome": "Carta 216",
+	  "Tipo": [
+		"Anao",
+		"Metamorfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Anao_Metamorfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"217": {
+	  "Nome": "Carta 217",
+	  "Tipo": [
+		"Anao",
+		"Humano"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Anao_Humano_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"218": {
+	  "Nome": "Carta 218",
+	  "Tipo": [
+		"Metamorfo",
+		"Humano"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Metamorfo_Humano_Placeholder.jpg",
+	  "Valor": 4
+	}
+  },
+  "edicao_1": {
+	"0": {
+	  "Nome": "Carta 00",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"1": {
+	  "Nome": "Carta 01",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 0,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"2": {
+	  "Nome": "Carta 02",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"3": {
+	  "Nome": "Carta 03",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 0,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"4": {
+	  "Nome": "Carta 04",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"5": {
+	  "Nome": "Carta 05",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"6": {
+	  "Nome": "Carta 06",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 1,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"7": {
+	  "Nome": "Carta 07",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"8": {
+	  "Nome": "Carta 08",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 1,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"9": {
+	  "Nome": "Carta 09",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"10": {
+	  "Nome": "Carta 10",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"11": {
+	  "Nome": "Carta 11",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 2,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"12": {
+	  "Nome": "Carta 12",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"13": {
+	  "Nome": "Carta 13",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 2,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"14": {
+	  "Nome": "Carta 14",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"15": {
+	  "Nome": "Carta 15",
+	  "Tipo": [
+		"Morto-Vivo"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "MortoVivo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"16": {
+	  "Nome": "Carta 16",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"17": {
+	  "Nome": "Carta 17",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"18": {
+	  "Nome": "Carta 18",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"19": {
+	  "Nome": "Carta 19",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"20": {
+	  "Nome": "Carta 20",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"21": {
+	  "Nome": "Carta 21",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"22": {
+	  "Nome": "Carta 22",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"23": {
+	  "Nome": "Carta 23",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"24": {
+	  "Nome": "Carta 24",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"25": {
+	  "Nome": "Carta 25",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"26": {
+	  "Nome": "Carta 26",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"27": {
+	  "Nome": "Carta 27",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"28": {
+	  "Nome": "Carta 28",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"29": {
+	  "Nome": "Carta 29",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"30": {
+	  "Nome": "Carta 30",
+	  "Tipo": [
+		"Besta"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "Besta_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"31": {
+	  "Nome": "Carta 31",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 0,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"32": {
+	  "Nome": "Carta 32",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"33": {
+	  "Nome": "Carta 33",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 0,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"34": {
+	  "Nome": "Carta 34",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"35": {
+	  "Nome": "Carta 35",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"36": {
+	  "Nome": "Carta 36",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 1,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"37": {
+	  "Nome": "Carta 37",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"38": {
+	  "Nome": "Carta 38",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 1,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"voar",
+		"impeto",
+		"iniciativa"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"39": {
+	  "Nome": "Carta 39",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"atropelar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"40": {
+	  "Nome": "Carta 40",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"41": {
+	  "Nome": "Carta 41",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 2,
+	  "Defesa": 2,
+	  "Palavra-Chave": [
+		"atropelar",
+		"lampejo",
+		"resistenciaAMagia"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"42": {
+	  "Nome": "Carta 42",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 3,
+	  "Palavra-Chave": [
+		"provocar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"43": {
+	  "Nome": "Carta 43",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 2,
+	  "Defesa": 4,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"44": {
+	  "Nome": "Carta 44",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 5,
+	  "Palavra-Chave": [
+		"provocar",
+		"renascer",
+		"escudoDivino"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"45": {
+	  "Nome": "Carta 45",
+	  "Tipo": [
+		"Dragao"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 1,
+	  "Palavra-Chave": [
+		"voar"
+	  ],
+	  "Imagem": "Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"46": {
+	  "Nome": "Carta 46",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"47": {
+	  "Nome": "Carta 47",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"48": {
+	  "Nome": "Carta 48",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"49": {
+	  "Nome": "Carta 49",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"50": {
+	  "Nome": "Carta 50",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"51": {
+	  "Nome": "Carta 51",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"52": {
+	  "Nome": "Carta 52",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"53": {
+	  "Nome": "Carta 53",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"54": {
+	  "Nome": "Carta 54",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"55": {
+	  "Nome": "Carta 55",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"56": {
+	  "Nome": "Carta 56",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"57": {
+	  "Nome": "Carta 57",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"58": {
+	  "Nome": "Carta 58",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"59": {
+	  "Nome": "Carta 59",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"60": {
+	  "Nome": "Carta 60",
+	  "Tipo": [
+		"Naga"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"61": {
+	  "Nome": "Carta 61",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 0,
+	  "Defesa": 2,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"62": {
+	  "Nome": "Carta 62",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"63": {
+	  "Nome": "Carta 63",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 0,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"64": {
+	  "Nome": "Carta 64",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 5,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"65": {
+	  "Nome": "Carta 65",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 1,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"66": {
+	  "Nome": "Carta 66",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 1,
+	  "Defesa": 2,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"67": {
+	  "Nome": "Carta 67",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"68": {
+	  "Nome": "Carta 68",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 1,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"69": {
+	  "Nome": "Carta 69",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 5,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"70": {
+	  "Nome": "Carta 70",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 1,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"71": {
+	  "Nome": "Carta 71",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 2,
+	  "Defesa": 2,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"72": {
+	  "Nome": "Carta 72",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"73": {
+	  "Nome": "Carta 73",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 2,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"74": {
+	  "Nome": "Carta 74",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 5,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"75": {
+	  "Nome": "Carta 75",
+	  "Tipo": [
+		"Elemental"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 1,
+	  "Imagem": "Elemental_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"76": {
+	  "Nome": "Carta 76",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"77": {
+	  "Nome": "Carta 77",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"78": {
+	  "Nome": "Carta 78",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"79": {
+	  "Nome": "Carta 79",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"80": {
+	  "Nome": "Carta 80",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"81": {
+	  "Nome": "Carta 81",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"82": {
+	  "Nome": "Carta 82",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"83": {
+	  "Nome": "Carta 83",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"84": {
+	  "Nome": "Carta 84",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"85": {
+	  "Nome": "Carta 85",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"86": {
+	  "Nome": "Carta 86",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"87": {
+	  "Nome": "Carta 87",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"88": {
+	  "Nome": "Carta 88",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"89": {
+	  "Nome": "Carta 89",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"90": {
+	  "Nome": "Carta 90",
+	  "Tipo": [
+		"Pirata"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Pirata_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"91": {
+	  "Nome": "Carta 91",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 0,
+	  "Defesa": 2,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"92": {
+	  "Nome": "Carta 92",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 0,
+	  "Defesa": 3,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"93": {
+	  "Nome": "Carta 93",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 0,
+	  "Defesa": 4,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"94": {
+	  "Nome": "Carta 94",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 5,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"95": {
+	  "Nome": "Carta 95",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 1,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"96": {
+	  "Nome": "Carta 96",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 1,
+	  "Defesa": 2,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"97": {
+	  "Nome": "Carta 97",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 1,
+	  "Defesa": 3,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"98": {
+	  "Nome": "Carta 98",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 1,
+	  "Defesa": 4,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"99": {
+	  "Nome": "Carta 99",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 1,
+	  "Defesa": 5,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"100": {
+	  "Nome": "Carta 100",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 1,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"101": {
+	  "Nome": "Carta 101",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 2,
+	  "Defesa": 2,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"102": {
+	  "Nome": "Carta 102",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 2,
+	  "Defesa": 3,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"103": {
+	  "Nome": "Carta 103",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 2,
+	  "Defesa": 4,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"104": {
+	  "Nome": "Carta 104",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 2,
+	  "Defesa": 5,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"105": {
+	  "Nome": "Carta 105",
+	  "Tipo": [
+		"Elfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 1,
+	  "Imagem": "Elfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"106": {
+	  "Nome": "Carta 106",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"107": {
+	  "Nome": "Carta 107",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"108": {
+	  "Nome": "Carta 108",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"109": {
+	  "Nome": "Carta 109",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"110": {
+	  "Nome": "Carta 110",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"111": {
+	  "Nome": "Carta 111",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"112": {
+	  "Nome": "Carta 112",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"113": {
+	  "Nome": "Carta 113",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"114": {
+	  "Nome": "Carta 114",
+	  "Tipo": [
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Anao_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"115": {
+	  "Nome": "Carta 115",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"116": {
+	  "Nome": "Carta 116",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"117": {
+	  "Nome": "Carta 117",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"118": {
+	  "Nome": "Carta 118",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"119": {
+	  "Nome": "Carta 119",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"120": {
+	  "Nome": "Carta 120",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"121": {
+	  "Nome": "Carta 121",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"122": {
+	  "Nome": "Carta 122",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"123": {
+	  "Nome": "Carta 123",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"124": {
+	  "Nome": "Carta 124",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"125": {
+	  "Nome": "Carta 125",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"126": {
+	  "Nome": "Carta 126",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"127": {
+	  "Nome": "Carta 127",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"128": {
+	  "Nome": "Carta 128",
+	  "Tipo": [
+		"Nenhum"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Nenhum_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"129": {
+	  "Nome": "Carta 129",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"130": {
+	  "Nome": "Carta 130",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"131": {
+	  "Nome": "Carta 131",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"132": {
+	  "Nome": "Carta 132",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"133": {
+	  "Nome": "Carta 133",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"134": {
+	  "Nome": "Carta 134",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"135": {
+	  "Nome": "Carta 135",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"136": {
+	  "Nome": "Carta 136",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"137": {
+	  "Nome": "Carta 137",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"138": {
+	  "Nome": "Carta 138",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"139": {
+	  "Nome": "Carta 139",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"140": {
+	  "Nome": "Carta 140",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"141": {
+	  "Nome": "Carta 141",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"142": {
+	  "Nome": "Carta 142",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"143": {
+	  "Nome": "Carta 143",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"144": {
+	  "Nome": "Carta 144",
+	  "Tipo": [
+		"Todos"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Todos_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"145": {
+	  "Nome": "Carta 145",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Metamorfo"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Morto_Metamorfo_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"146": {
+	  "Nome": "Carta 146",
+	  "Tipo": [
+		"Morto-Vivo",
+		"Humano"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Morto_Humano_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"147": {
+	  "Nome": "Carta 147",
+	  "Tipo": [
+		"Besta",
+		"Dragao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 5,
+	  "Imagem": "Besta_Dragao_Placeholder.jpg",
+	  "Valor": 1
+	},
+	"148": {
+	  "Nome": "Carta 148",
+	  "Tipo": [
+		"Besta",
+		"Naga"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Naga_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"149": {
+	  "Nome": "Carta 149",
+	  "Tipo": [
+		"Besta",
+		"Elemental"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 5,
+	  "Defesa": 2,
+	  "Imagem": "Besta_Elemental_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"150": {
+	  "Nome": "Carta 150",
+	  "Tipo": [
+		"Besta",
+		"Pirata"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 5,
+	  "Defesa": 3,
+	  "Imagem": "Besta_Pirata_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"151": {
+	  "Nome": "Carta 151",
+	  "Tipo": [
+		"Besta",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 5,
+	  "Defesa": 4,
+	  "Imagem": "Besta_Elfo_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"152": {
+	  "Nome": "Carta 152",
+	  "Tipo": [
+		"Besta",
+		"Anao"
+	  ],
+	  "Raridade": "MUITO_COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 5,
+	  "Defesa": 5,
+	  "Imagem": "Besta_Anao_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"153": {
+	  "Nome": "Carta 153",
+	  "Tipo": [
+		"Besta",
+		"Metamorfo"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Metamorfo_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"154": {
+	  "Nome": "Carta 154",
+	  "Tipo": [
+		"Besta",
+		"Humano"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 0,
+	  "Defesa": 1,
+	  "Imagem": "Besta_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"155": {
+	  "Nome": "Carta 155",
+	  "Tipo": [
+		"Naga",
+		"Elemental"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 3,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Elemental_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"156": {
+	  "Nome": "Carta 156",
+	  "Tipo": [
+		"Naga",
+		"Pirata"
+	  ],
+	  "Raridade": "COMUM",
+	  "Tier": "TIER_1",
+	  "Ataque": 3,
+	  "Defesa": 3,
+	  "Imagem": "Naga_Pirata_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"157": {
+	  "Nome": "Carta 157",
+	  "Tipo": [
+		"Naga",
+		"Elfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_2",
+	  "Ataque": 3,
+	  "Defesa": 4,
+	  "Imagem": "Naga_Elfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"158": {
+	  "Nome": "Carta 158",
+	  "Tipo": [
+		"Naga",
+		"Anao"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_3",
+	  "Ataque": 3,
+	  "Defesa": 5,
+	  "Imagem": "Naga_Anao_Placeholder.jpg",
+	  "Valor": 5
+	},
+	"159": {
+	  "Nome": "Carta 159",
+	  "Tipo": [
+		"Naga",
+		"Metamorfo"
+	  ],
+	  "Raridade": "INCOMUM",
+	  "Tier": "TIER_0",
+	  "Ataque": 4,
+	  "Defesa": 1,
+	  "Imagem": "Naga_Metamorfo_Placeholder.jpg",
+	  "Valor": 4
+	},
+	"160": {
+	  "Nome": "Carta 160",
+	  "Tipo": [
+		"Naga",
+		"Humano"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_1",
+	  "Ataque": 4,
+	  "Defesa": 2,
+	  "Imagem": "Naga_Humano_Placeholder.jpg",
+	  "Valor": 3
+	},
+	"161": {
+	  "Nome": "Carta 161",
+	  "Tipo": [
+		"Elemental",
+		"Pirata"
+	  ],
+	  "Raridade": "RARO",
+	  "Tier": "TIER_2",
+	  "Ataque": 4,
+	  "Defesa": 3,
+	  "Imagem": "Elemental_Pirata_Placeholder.jpg",
+	  "Valor": 2
+	},
+	"162": {
+	  "Nome": "Carta 162",
+	  "Tipo": [
+		"Elemental",
+		"Elfo"
+	  ],
+	  "Raridade": "MUITO_RARO",
+	  "Tier": "TIER_3",
+	  "Ataque": 4,
+	  "Defesa": 4,
+	  "Imagem": "Elemental_Elfo_Placeholder.jpg",
+	  "Valor": 1
+	}
+  }
+}

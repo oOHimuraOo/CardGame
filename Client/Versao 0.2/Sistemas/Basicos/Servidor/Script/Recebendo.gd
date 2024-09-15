@@ -91,6 +91,12 @@ func racas_mais_banidas(racas:Array) -> void:
 	inicio.racas_mais_banidas_pela_sala = racas
 	inicio.atualizar_visual_racas_banidas()
 
-func finalizar_inicio_de_partida() -> void:
+func finalizar_inicio_de_partida(dicionario:Dictionary) -> void:
 	var inicio = get_tree().get_first_node_in_group("Inicio")
-	inicio.finalizar_inicio_de_partida()
+	inicio.finalizar_inicio_de_partida(dicionario)
+
+func pool_criada(pool:Dictionary) -> void:
+	get_tree().get_first_node_in_group("Client").find_child("InterfaceEmPartida").atualizar_pool(pool)
+
+func atualizacao_de_informacoes(informacoes:Dictionary) -> void:
+	get_tree().get_first_node_in_group("Client").find_child("InterfaceEmPartida").atualizar_informacoes_gerais(informacoes)
